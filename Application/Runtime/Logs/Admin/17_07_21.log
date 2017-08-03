@@ -1,0 +1,1069 @@
+[ 2017-07-21T11:28:50+08:00 ] 127.0.0.1 /index.php/admin/index/__ADMIN__/menu.html
+ERR: 非法操作:__ADMIN__
+
+[ 2017-07-21T11:28:50+08:00 ] 127.0.0.1 /index.php/admin/index/__ADMIN__/bar.html
+ERR: 非法操作:__ADMIN__
+
+[ 2017-07-21T11:28:50+08:00 ] 127.0.0.1 /index.php/admin/index/__ADMIN__/top.html
+ERR: 非法操作:__ADMIN__
+
+[ 2017-07-21T11:28:50+08:00 ] 127.0.0.1 /index.php/admin/index/__ADMIN__/main.html
+ERR: 非法操作:__ADMIN__
+
+[ 2017-07-21T13:42:35+08:00 ] 127.0.0.1 /admin/index/__ADMIN__/top.html
+ERR: 非法操作:__ADMIN__
+
+[ 2017-07-21T13:42:35+08:00 ] 127.0.0.1 /admin/index/__ADMIN__/menu.html
+ERR: 非法操作:__ADMIN__
+
+[ 2017-07-21T13:42:35+08:00 ] 127.0.0.1 /admin/index/__ADMIN__/bar.html
+ERR: 非法操作:__ADMIN__
+
+[ 2017-07-21T13:42:35+08:00 ] 127.0.0.1 /admin/index/__ADMIN__/main.html
+ERR: 非法操作:__ADMIN__
+
+[ 2017-07-21T13:44:21+08:00 ] 127.0.0.1 /admin/index/__ADMIN__/main.html
+ERR: 非法操作:__ADMIN__
+
+[ 2017-07-21T13:46:00+08:00 ] 127.0.0.1 /admin/Public/top.html
+ERR: 无法加载控制器:Public
+
+[ 2017-07-21T13:46:00+08:00 ] 127.0.0.1 /admin/Public/main.html
+ERR: 无法加载控制器:Public
+
+[ 2017-07-21T13:46:00+08:00 ] 127.0.0.1 /admin/Public/bar.html
+ERR: 无法加载控制器:Public
+
+[ 2017-07-21T13:46:00+08:00 ] 127.0.0.1 /admin/Public/menu.html
+ERR: 无法加载控制器:Public
+
+[ 2017-07-21T13:46:47+08:00 ] 127.0.0.1 /admin/index/top.html
+ERR: 非法操作:top
+
+[ 2017-07-21T13:46:47+08:00 ] 127.0.0.1 /admin/index/menu.html
+ERR: 非法操作:menu
+
+[ 2017-07-21T13:46:47+08:00 ] 127.0.0.1 /admin/index/main.html
+ERR: 非法操作:main
+
+[ 2017-07-21T13:46:47+08:00 ] 127.0.0.1 /admin/index/bar.html
+ERR: 非法操作:bar
+
+[ 2017-07-21T13:47:07+08:00 ] 127.0.0.1 /admin/index/menu.html
+ERR: 非法操作:menu
+
+[ 2017-07-21T13:47:07+08:00 ] 127.0.0.1 /admin/index/top.html
+ERR: 非法操作:top
+
+[ 2017-07-21T13:47:07+08:00 ] 127.0.0.1 /admin/index/bar.html
+ERR: 非法操作:bar
+
+[ 2017-07-21T13:47:07+08:00 ] 127.0.0.1 /admin/index/main.html
+ERR: 非法操作:main
+
+[ 2017-07-21T13:49:30+08:00 ] 127.0.0.1 /admin/index/top.html
+ERR: 非法操作:top
+
+[ 2017-07-21T13:49:30+08:00 ] 127.0.0.1 /admin/index/menu.html
+ERR: 非法操作:menu
+
+[ 2017-07-21T13:49:30+08:00 ] 127.0.0.1 /admin/index/bar.html
+ERR: 非法操作:bar
+
+[ 2017-07-21T13:49:30+08:00 ] 127.0.0.1 /admin/index/main.html
+ERR: 非法操作:main
+
+[ 2017-07-21T13:50:52+08:00 ] 127.0.0.1 /admin/index/top.html
+ERR: 非法操作:top
+
+[ 2017-07-21T13:50:52+08:00 ] 127.0.0.1 /admin/index/menu.html
+ERR: 非法操作:menu
+
+[ 2017-07-21T13:50:52+08:00 ] 127.0.0.1 /admin/index/bar.html
+ERR: 非法操作:bar
+
+[ 2017-07-21T13:50:52+08:00 ] 127.0.0.1 /admin/index/main.html
+ERR: 非法操作:main
+
+[ 2017-07-21T13:53:27+08:00 ] 127.0.0.1 /admin/index/___AdminPublic__/menu.html
+ERR: 非法操作:___AdminPublic__
+
+[ 2017-07-21T13:53:27+08:00 ] 127.0.0.1 /admin/index/___AdminPublic__/top.html
+ERR: 非法操作:___AdminPublic__
+
+[ 2017-07-21T13:53:27+08:00 ] 127.0.0.1 /admin/index/___AdminPublic__/main.html
+ERR: 非法操作:___AdminPublic__
+
+[ 2017-07-21T13:53:28+08:00 ] 127.0.0.1 /admin/index/___AdminPublic__/bar.html
+ERR: 非法操作:___AdminPublic__
+
+[ 2017-07-21T13:54:06+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/menu.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:06+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/top.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:06+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/main.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:06+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/bar.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:09+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/menu.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:09+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/main.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:09+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/top.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:09+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/bar.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:38+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/top.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:38+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/menu.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:38+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/bar.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:38+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/main.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:40+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/bar.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:40+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/top.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:40+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/main.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:54:40+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/menu.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:55:06+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/main.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:55:29+08:00 ] 127.0.0.1 /admin/index/_/Application/Admin/Public/main.html
+ERR: 非法操作:_
+
+[ 2017-07-21T13:56:48+08:00 ] 127.0.0.1 /admin/index/Application/Admin/Public/top.html
+ERR: 非法操作:Application
+
+[ 2017-07-21T13:56:48+08:00 ] 127.0.0.1 /admin/index/Application/Admin/Public/main.html
+ERR: 非法操作:Application
+
+[ 2017-07-21T13:56:48+08:00 ] 127.0.0.1 /admin/index/Application/Admin/Public/bar.html
+ERR: 非法操作:Application
+
+[ 2017-07-21T13:56:48+08:00 ] 127.0.0.1 /admin/index/Application/Admin/Public/menu.html
+ERR: 非法操作:Application
+
+[ 2017-07-21T13:57:36+08:00 ] 127.0.0.1 /admin/index/Application/Admin/Public/main.html
+ERR: 非法操作:Application
+
+[ 2017-07-21T14:37:15+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T14:37:17+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T14:37:18+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T14:37:22+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T14:37:26+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T14:46:14+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T14:47:24+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T14:47:28+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T14:47:30+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T14:49:48+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T15:03:34+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T15:03:36+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T15:03:44+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T15:03:45+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T15:03:48+08:00 ] 127.0.0.1 /index.php/Admin/view/game/game_list.html
+ERR: 无法加载控制器:View
+
+[ 2017-07-21T15:11:03+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:04+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:04+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:04+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:04+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:05+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:10+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:10+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:10+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:10+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:10+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:14+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:14+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:14+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:14+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-21T15:11:14+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-07-21T15:11:15+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:15+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:15+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:15+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:15+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:15+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:15+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:16+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:16+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:16+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:20+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:21+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:21+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-21T15:11:21+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:21+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:44+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:11:44+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:44+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:11:44+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:12:42+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:12:42+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:12:42+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:12:42+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:12:42+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:13:28+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:13:28+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:13:35+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:15:53+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:15:54+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:17:34+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:17:34+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:17:49+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:17:49+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:18:11+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:18:11+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:20:32+08:00 ] 127.0.0.1 /index.php/Admin/game/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:20:32+08:00 ] 127.0.0.1 /index.php/Admin/game/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:20:40+08:00 ] 127.0.0.1 /index.php/Admin/game/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:20:40+08:00 ] 127.0.0.1 /index.php/Admin/game/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:22:46+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:22:46+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:23:06+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-21T15:23:06+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:23:09+08:00 ] 127.0.0.1 /index.php/Admin/index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:23:12+08:00 ] 127.0.0.1 /index.php/Admin/index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:23:14+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:23:14+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:31:15+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-21T15:31:15+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-21T15:31:21+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:31:21+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:35:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:35:51+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:35:51+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:35:51+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:35:51+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:35:53+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-21T15:35:53+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:36:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:36:05+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:36:05+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:36:05+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:36:05+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:36:06+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:36:06+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:46:27+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:46:27+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:46:36+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-21T15:46:36+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:47:44+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:47:44+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:56:42+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:56:42+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:57:49+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T15:58:34+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:58:34+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T15:58:35+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 模板不存在:./Application/Admin/View/Game/addGame.html
+
+[ 2017-07-21T15:58:40+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:00:19+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:00:20+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:00:20+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:00:20+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:01:04+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:01:04+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:03:17+08:00 ] 127.0.0.1 /index.php/Admin/game/game_list.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:03:17+08:00 ] 127.0.0.1 /index.php/Admin/game/game_list.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:03:56+08:00 ] 127.0.0.1 /index.php/Admin/game/game_list.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:03:56+08:00 ] 127.0.0.1 /index.php/Admin/game/game_list.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:03:57+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:03:57+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:03:58+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:04:08+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:04:08+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:04:09+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:04:09+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:04:15+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:04:15+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:05:08+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:05:08+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:07:08+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:07:10+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:07:10+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:08:23+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-21T16:08:23+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:08:28+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:08:28+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-21T16:22:07+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:22:07+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:24:42+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:24:42+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:25:19+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:25:19+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-21T16:33:32+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:33:33+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:37:14+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:37:14+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:50:11+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:50:11+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T16:51:27+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T16:51:27+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:15:41+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:15:41+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:15:43+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:15:43+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:17:32+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:17:32+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:17:57+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:17:57+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:20:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:20:31+08:00 ] 127.0.0.1 /index.php/Admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T17:20:31+08:00 ] 127.0.0.1 /index.php/Admin/index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:20:31+08:00 ] 127.0.0.1 /index.php/Admin/index/bar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T17:20:31+08:00 ] 127.0.0.1 /index.php/Admin/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:20:34+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:20:34+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:20:36+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:20:36+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:24:24+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:27:02+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-07-21T17:27:02+08:00 ] 127.0.0.1 /index.php/Admin/game/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T17:27:03+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:27:03+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:27:43+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:27:43+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:28:12+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:28:12+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T17:28:59+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:28:59+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-21T17:31:02+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:31:02+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:32:37+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T17:32:37+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T18:34:14+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-21T18:34:14+08:00 ] 127.0.0.1 /index.php/Admin/game/addGame
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

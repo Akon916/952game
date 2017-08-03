@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>游戏列表</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__AdminPublic__/css/adminStyle.css" rel="stylesheet" type="text/css" />
+<script src="__AdminPublic__/js/jquery.js"></script>
+ <script src="__AdminPublic__/js/public.js"></script>
+ <script src="__Public__/Vendors/layer/layer.js"></script>
+ <style>.current  {  display: inline-block;  border: 1px #8ca3c0 solid;  padding: 5px 10px;  cursor: pointer;  background: #96aecd;  color: #555555;  }</style>
+</head>
+<body>
+ <div class="wrap">
+  <div class="page-title">
+    <span class="modular fl"><i></i><em>游戏列表</em></span>
+    <span class="modular fr"><a href="{:U('game/addGame')}" class="pt-link-btn">+添加游戏</a></span>
+  </div>
+  <div class="operate">
+   <form action="{:U('game/index')}" method="post">
+    <select class="inline-select">
+     <option>A店铺</option>
+     <option>B店铺</option>
+    </select>
+    <input type="text" class="textBox length-long" placeholder="输入游戏名称..." name="name"/>
+    <input type="submit" value="查询" class="tdBtn"/>
+   </form>
+  </div>
+  <table class="list-style Interlaced" id="table">
+   <tr>
+    <th> ID编号</th>
+    <th>游戏</th>
+    <th>名称</th>
+    <th>推荐星级</th>
+    <th>游戏类型</th>
+    <th>游戏热度</th>
+    <th>精品游戏</th>
+    <th>最新游戏</th>
+    <th>热门游戏</th>
+    <th>操作</th>
+   </tr>
+
+
+   <foreach name="list" item="v" key="k" >
+   <tr>
+    <td>
+     <span>
+     <input type="checkbox" class="middle children-checkbox" name="ids[]" value="{$v['game_id']}"/>
+     <div  style="text-align:center" >{$k + 1}</div>
+     </span>
+    </td>
+    <td class="center pic-area"><img src="__Uploads__/gameIcon/thumb/{$v['game_thumbicon']}" class="thumbnail"/></td>
+    <td class="td-name">
+      <span class="ellipsis td-name block" style="text-align: center">{$v['game_name']}</span>
+    </td>
+    <td class="center">
+     <span>
+      <i></i>
+      <em>{$v['game_recommend']|str_repeat='<img src="__AdminPublic__/images/star.png " width="20" height="20"/>',###}</em>
+     </span>
+    </td>
+    <td class="center">
+     <span>
+      <i></i>
+      <em>{$v['game_type']}</em>
+     </span>
+    </td>
+    <td class="center">
+     <span>
+      <em>{$v['game_played']}</em>
+      <i>℃ </i>
+     </span>
+    </td>
+    <td class="center">
+       <?php
+       if(  strstr($v['game_attribute'],'superme')  ) {
+         echo '<img src="__AdminPublic__/images/yes.gif"/>';
+        }else{
+          echo  '<img src="__AdminPublic__/images/no.gif"/>';
+       }?>
+    </td>
+    <td class="center">
+      <?php
+        if(  strstr($v['game_attribute'],'new')  ) {
+          echo '<img src="__AdminPublic__/images/yes.gif"/>';
+         }else{
+            echo  '<img src="__AdminPublic__/images/no.gif"/>';
+      }?>
+    </td>
+    <td class="center">
+     <?php
+       if(  strstr($v['game_attribute'],'ho')  ) {
+         echo '<img src="__AdminPublic__/images/yes.gif"/>';
+        }else{
+           echo  '<img src="__AdminPublic__/images/no.gif"/>';
+      }?>
+    </td>
+    <td class="center">
+     <a href="{$v['game_url']}" title="查看" target="_blank"><img src="__AdminPublic__/images/icon_view.gif"/></a>
+     <a href="{:U('editGame')}?id={$v['game_id']}" title="编辑"><img src="__AdminPublic__/images/icon_edit.gif"/></a>
+     <a href="{:U('deleteGame',"id=$v[game_id]")}" title="删除" onclick="return del(this)"><img src="__AdminPublic__/images/icon_drop.gif"/></a>
+    </td>
+   </tr>
+   </foreach>
+
+
+  </table>
+  <!-- BatchOperation -->
+  <div style="overflow:hidden;">
+      <!-- Operation -->
+	  <div class="BatchOperation fl">
+	   <input type="checkbox" id="del"/>
+	   <label for="del" class="btnStyle middle">全选</label>
+       <input type="button" value="批量删除" class="btnStyle" onclick="del_all(this)"/>
+	  </div>
+	  <!-- turn page -->
+	  <div class="turnPage center fr">
+	   <!--<a>第一页</a>-->
+	   <!--<a>1</a>-->
+	   <!--<a>最后一页</a>-->
+       {$page}
+      </div>
+  </div>
+
+ </div>
+</body>
+<script>
+    // 删除询问框
+ function del(obj)
+    {
+       layer.confirm('是否确认删除？', {
+           btn: ['是', '否'] //按钮
+       }, function () {
+           layer.msg('已删除', {icon: 1});
+           location = obj.href;
+       }, function () {
+           layer.msg('已取消删除', {
+               time: 2000, //2s后自动关闭
+               //btn: ['明白了', '知道了']
+           });
+       });
+       return false;
+    }
+
+    //全选反选
+ $('#del').click(function(){
+     if(this.checked){
+         $(':checkbox').prop('checked',true);
+     }else {
+         $(':checkbox').prop('checked',false);
+     }
+ });
+   //ajax批量删除
+function del_all(obj)
+{
+    layer.confirm('是否确认删除？', {
+        btn: ['是', '否'] //按钮
+    }, function () {
+        //layer.msg('已删除', {icon: 1});
+        var ids = '';
+        $('.children-checkbox').each(function(){
+            if ( $(this).is(':checked') ){
+                ids += ','+$(this).val(); //逐个获取id值
+            }
+        });
+        ids = ids.substring(1); //对ids进行处理，除去第一个，号
+        if( ids.length == 0 ){ //判断是否有选择删除对象
+            layer.msg('请先选择要删除的对象');
+        }else{
+            $.ajax({
+                'type' : 'post',
+                'url'  : "{:U('Game/deleteAll')}",
+                'data' : {
+                    'ids':ids,
+                } ,
+                'dataType':'json',
+                success:function(data){
+                  if ( data.err == null ){
+                      layer.msg('删除成功');
+                      //location.reload();
+
+                      $(":checked").parent().parent().parent(":gt(0):not(:last)").remove();
+                  }else{
+                      layer.msg("删除失败");
+                  }
+                },
+                error:function(XMLHttpRequest, textStatus){
+                    layer.msg("页面请求错误，请检查重试或联系管理员！\n" + textStatus);
+                }
+            });
+        }
+    }, function () {
+        layer.msg('已取消删除', {
+            time: 2000, //2s后自动关闭
+            //btn: ['明白了', '知道了']
+        });
+    });
+    return false;
+}
+
+</script>
+</html>
