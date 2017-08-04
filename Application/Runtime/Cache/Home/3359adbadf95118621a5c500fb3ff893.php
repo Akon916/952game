@@ -9,15 +9,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>飞扬天下</title>
-    <link rel="stylesheet" href="/Public/css/reset.css"/>
-    <link rel="stylesheet" href="/Public/css/footer.css"/>
-    <link rel="stylesheet" href="/Public/css/register.css"/>
+    <link rel="stylesheet" href="/Public/Home/css/reset.css"/>
+    <link rel="stylesheet" href="/Public/Home/css/footer.css"/>
+    <link rel="stylesheet" href="/Public/Home/css/register.css"/>
 </head>
 <body>
 <header id="header">
     <div id="header_all">
         <div id="header_left">
-            <a href="../index.html"><img src="/Public/image/header_02.png" alt=""/></a>
+            <a href="../index.html"><img src="/Public/Home/image/header_02.png" alt=""/></a>
             <span>用户注册</span>
         </div>
         <div id="header_right">
@@ -97,10 +97,10 @@
 
     </div>
 </section>
-    <?php include '/Public/footer.html'?>
+    <?php include '/Public/Home/footer.html'?>
 </body>
-<script src="/Public/js/jquery.js"></script>
-<script src="/Public/js/register.js"></script>
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/register.js"></script>
 <script>
     //页面加载完后自动执行
     $(function(){

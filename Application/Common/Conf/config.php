@@ -8,12 +8,19 @@ return array(
     'DEFAULT_ACTION'        =>  'index',    // 默认操作名称
 
     // 显示页面Trace信息'
-    'SHOW_PAGE_TRACE' =>false,
+    'SHOW_PAGE_TRACE'   =>  false,
 
     //模板替换常量
-    'TMPL_PARSE_STRING'  =>array(
+    'TMPL_PARSE_STRING'  => array(
         '__Uploads__'   => '/Uploads',  //上传文件夹
-        '__Public__'    => '/Public',   //public文件夹
+        '__PUBLIC__'    => '/Public',   //public文件夹
+    ),
+
+    //允许使用的模块
+    'MODULE_ALLOW_LIST'=>array(
+        'Home',
+        'Admin'
+        //'   Common  '
     ),
 
     //数据库设置

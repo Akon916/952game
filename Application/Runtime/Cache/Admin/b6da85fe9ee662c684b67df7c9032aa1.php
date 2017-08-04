@@ -3,9 +3,9 @@
 <head>
 <title>游戏列表</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Application/Admin/Public/css/adminStyle.css" rel="stylesheet" type="text/css" />
-<script src="/Application/Admin/Public/js/jquery.js"></script>
- <script src="/Application/Admin/Public/js/public.js"></script>
+<link href="/Public/Admin/css/adminStyle.css" rel="stylesheet" type="text/css" />
+<script src="/Public/Admin/js/jquery.js"></script>
+ <script src="/Public/Admin/js/public.js"></script>
  <script src="/Public/Vendors/layer/layer.js"></script>
  <style>.current  {  display: inline-block;  border: 1px #8ca3c0 solid;  padding: 5px 10px;  cursor: pointer;  background: #96aecd;  color: #555555;  }</style>
 </head>
@@ -54,7 +54,7 @@
     <td class="center">
      <span>
       <i></i>
-      <em><?php echo (str_repeat('<img src="/Application/Admin/Public/images/star.png " width="20" height="20"/>',$v['game_recommend'])); ?></em>
+      <em><?php echo (str_repeat('<img src="/Public/Admin/images/star.png " width="20" height="20"/>',$v['game_recommend'])); ?></em>
      </span>
     </td>
     <td class="center">
@@ -71,20 +71,20 @@
     </td>
     <td class="center">
        <?php
- if( strstr($v['game_attribute'],'superme') ) { echo '<img src="/Application/Admin/Public/images/yes.gif"/>'; }else{ echo '<img src="/Application/Admin/Public/images/no.gif"/>'; }?>
+ if( strstr($v['game_attribute'],'superme') ) { echo '<img src="/Public/Admin/images/yes.gif"/>'; }else{ echo '<img src="/Public/Admin/images/no.gif"/>'; }?>
     </td>
     <td class="center">
       <?php
- if( strstr($v['game_attribute'],'new') ) { echo '<img src="/Application/Admin/Public/images/yes.gif"/>'; }else{ echo '<img src="/Application/Admin/Public/images/no.gif"/>'; }?>
+ if( strstr($v['game_attribute'],'new') ) { echo '<img src="/Public/Admin/images/yes.gif"/>'; }else{ echo '<img src="/Public/Admin/images/no.gif"/>'; }?>
     </td>
     <td class="center">
      <?php
- if( strstr($v['game_attribute'],'ho') ) { echo '<img src="/Application/Admin/Public/images/yes.gif"/>'; }else{ echo '<img src="/Application/Admin/Public/images/no.gif"/>'; }?>
+ if( strstr($v['game_attribute'],'ho') ) { echo '<img src="/Public/Admin/images/yes.gif"/>'; }else{ echo '<img src="/Public/Admin/images/no.gif"/>'; }?>
     </td>
     <td class="center">
-     <a href="<?php echo ($v['game_url']); ?>" title="查看" target="_blank"><img src="/Application/Admin/Public/images/icon_view.gif"/></a>
-     <a href="<?php echo U('editGame');?>?id=<?php echo ($v['game_id']); ?>" title="编辑"><img src="/Application/Admin/Public/images/icon_edit.gif"/></a>
-     <a href="<?php echo U('deleteGame',"id=$v[game_id]");?>" title="删除" onclick="return del(this)"><img src="/Application/Admin/Public/images/icon_drop.gif"/></a>
+     <a href="<?php echo ($v['game_url']); ?>" title="查看" target="_blank"><img src="/Public/Admin/images/icon_view.gif"/></a>
+     <a href="<?php echo U('editGame');?>?id=<?php echo ($v['game_id']); ?>" title="编辑"><img src="/Public/Admin/images/icon_edit.gif"/></a>
+     <a href="<?php echo U('deleteGame',"id=$v[game_id]");?>" title="删除" onclick="return del(this)"><img src="/Public/Admin/images/icon_drop.gif"/></a>
     </td>
    </tr><?php endforeach; endif; ?>
 
