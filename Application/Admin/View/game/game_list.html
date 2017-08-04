@@ -3,10 +3,10 @@
 <head>
 <title>游戏列表</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="__AdminPublic__/css/adminStyle.css" rel="stylesheet" type="text/css" />
-<script src="__AdminPublic__/js/jquery.js"></script>
- <script src="__AdminPublic__/js/public.js"></script>
- <script src="__Public__/Vendors/layer/layer.js"></script>
+<link href="__PUBLIC__/Admin/css/adminStyle.css" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__/Admin/js/jquery.js"></script>
+ <script src="__PUBLIC__/Admin/js/public.js"></script>
+ <script src="__PUBLIC__/Vendors/layer/layer.js"></script>
  <style>.current  {  display: inline-block;  border: 1px #8ca3c0 solid;  padding: 5px 10px;  cursor: pointer;  background: #96aecd;  color: #555555;  }</style>
 </head>
 <body>
@@ -55,7 +55,7 @@
     <td class="center">
      <span>
       <i></i>
-      <em>{$v['game_recommend']|str_repeat='<img src="__AdminPublic__/images/star.png " width="20" height="20"/>',###}</em>
+      <em>{$v['game_recommend']|str_repeat='<img src="__PUBLIC__/Admin/images/star.png " width="20" height="20"/>',###}</em>
      </span>
     </td>
     <td class="center">
@@ -73,31 +73,31 @@
     <td class="center">
        <?php
        if(  strstr($v['game_attribute'],'superme')  ) {
-         echo '<img src="__AdminPublic__/images/yes.gif"/>';
+         echo '<img src="__PUBLIC__/Admin/images/yes.gif"/>';
         }else{
-          echo  '<img src="__AdminPublic__/images/no.gif"/>';
+          echo  '<img src="__PUBLIC__/Admin/images/no.gif"/>';
        }?>
     </td>
     <td class="center">
       <?php
         if(  strstr($v['game_attribute'],'new')  ) {
-          echo '<img src="__AdminPublic__/images/yes.gif"/>';
+          echo '<img src="__PUBLIC__/Admin/images/yes.gif"/>';
          }else{
-            echo  '<img src="__AdminPublic__/images/no.gif"/>';
+            echo  '<img src="__PUBLIC__/Admin/images/no.gif"/>';
       }?>
     </td>
     <td class="center">
      <?php
        if(  strstr($v['game_attribute'],'ho')  ) {
-         echo '<img src="__AdminPublic__/images/yes.gif"/>';
+         echo '<img src="__PUBLIC__/Admin/images/yes.gif"/>';
         }else{
-           echo  '<img src="__AdminPublic__/images/no.gif"/>';
+           echo  '<img src="__PUBLIC__/Admin/images/no.gif"/>';
       }?>
     </td>
     <td class="center">
-     <a href="{$v['game_url']}" title="查看" target="_blank"><img src="__AdminPublic__/images/icon_view.gif"/></a>
-     <a href="{:U('editGame')}?id={$v['game_id']}" title="编辑"><img src="__AdminPublic__/images/icon_edit.gif"/></a>
-     <a href="{:U('deleteGame',"id=$v[game_id]")}" title="删除" onclick="return del(this)"><img src="__AdminPublic__/images/icon_drop.gif"/></a>
+     <a href="{$v['game_url']}" title="查看" target="_blank"><img src="__PUBLIC__/Admin/images/icon_view.gif"/></a>
+     <a href="{:U('editGame')}?id={$v['game_id']}" title="编辑"><img src="__PUBLIC__/Admin/images/icon_edit.gif"/></a>
+     <a href="{:U('deleteGame',"id=$v[game_id]")}" title="删除" onclick="return del(this)"><img src="__PUBLIC__/Admin/images/icon_drop.gif"/></a>
     </td>
    </tr>
    </foreach>

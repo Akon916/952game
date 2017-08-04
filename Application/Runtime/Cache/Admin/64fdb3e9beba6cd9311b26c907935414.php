@@ -3,8 +3,8 @@
 <head>
 <title>游戏列表</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Application/Admin/Public/css/adminStyle.css" rel="stylesheet" type="text/css" />
- <link rel="stylesheet" href="/Application/Admin/Public/css/iconfont.css"/>
+<link href="/Public/Admin/css/adminStyle.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="/Public/Admin/css/iconfont.css"/>
 
  <style>
   #d1{
@@ -130,8 +130,8 @@
   </form>
  </div>
 </body>
-<script src="/Application/Admin/Public/js/jquery-1.8.3.min.js"></script>
-<script src="/Application/Admin/Public/js/xx.js"></script>
+<script src="/Public/Admin/js/jquery-1.8.3.min.js"></script>
+<script src="/Public/Admin/js/xx.js"></script>
 <script>
 
     $(function() {

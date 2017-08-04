@@ -3,10 +3,10 @@
 <head>
 <title>后台管理中心起始页面</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Application/Admin/Public/css/adminStyle.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/css/adminStyle.css" rel="stylesheet" type="text/css" />
 <style>html,body{width:100%;height:100%;}</style>
-<script src="/Application/Admin/Public/js/jquery.js"></script>
-<script src="/Application/Admin/Public/js/public.js"></script>
+<script src="/Public/Admin/js/jquery.js"></script>
+<script src="/Public/Admin/js/public.js"></script>
 </head>
 <body>
 <div class="wrap start-page">

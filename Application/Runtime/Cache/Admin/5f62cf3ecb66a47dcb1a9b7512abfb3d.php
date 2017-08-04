@@ -3,9 +3,9 @@
 <head>
 <title>左侧导航</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Application/Admin/Public/css/adminStyle.css" rel="stylesheet" type="text/css" />
-<script src="/Application/Admin/Public/js/jquery.js"></script>
-<script src="/Application/Admin/Public/js/public.js"></script>
+<link href="/Public/Admin/css/adminStyle.css" rel="stylesheet" type="text/css" />
+<script src="/Public/Admin/js/jquery.js"></script>
+<script src="/Public/Admin/js/public.js"></script>
 </head>
 <body style="background:#313131">
 <div class="menu-list">

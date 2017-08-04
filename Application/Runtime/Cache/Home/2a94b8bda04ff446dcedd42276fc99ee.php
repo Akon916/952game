@@ -9,9 +9,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>飞扬测试</title>
-    <link rel="stylesheet" href="/Public/css/reset.css"/>
-    <link rel="stylesheet" href="/Public/css/index.css"/>
-    <link rel="stylesheet" href="/Public/css/animate.css"/>
+    <link rel="stylesheet" href="/Public/Home/css/reset.css"/>
+    <link rel="stylesheet" href="/Public/Home/css/index.css"/>
+    <link rel="stylesheet" href="/Public/Home/css/animate.css"/>
 </head>
 <body>
 <header id="header">
@@ -39,14 +39,14 @@
         <div id="header_box_four">
             <div class="header_box_four_one">所有游戏</div>
             <div class="header_box_four_two" >
-                <img src="/Public/image/xiaobiao.png" style="width: 15px; height: 15px;" alt=""/>
+                <img src="/Public/Home/image/xiaobiao.png" style="width: 15px; height: 15px;" alt=""/>
             </div>
             <div class="header_box_four_three">
                 <div class="header_box_four_three_em"></div>
                 <div class="header_box_four_three_tran">
                     <table>
                         <tr>
-                            <td><a href="">大战神 <img src="/Public/image/hot.png" style="width: 25px; height:auto;" alt=""/></a></td>
+                            <td><a href="">大战神 <img src="/Public/Home/image/hot.png" style="width: 25px; height:auto;" alt=""/></a></td>
                             <td><a href="">主宰</a></td>
                             <td><a href="">风云无双</a></td>
                             <td><a href="">三国令</a></td>
@@ -85,7 +85,7 @@
 <nav id="nav">
     <div id="nav_top">
         <div class="nav_pic" >
-            <img src="/Public/image/header_02.png" alt="飞扬天下"/>
+            <img src="/Public/Home/image/header_02.png" alt="飞扬天下"/>
         </div>
         <ul id="nav_tab">
             <li class="animated bounceInLeft tar_hover"><a id="first_head" href="index.html">首页</a></li>
@@ -97,7 +97,7 @@
         </ul>
         <div id="search">
             <input type="search" id="search_btn"/>
-            <img id="search_pic" src="/Public/image/search.png" style="width: 25px; height: 25px;" alt=""/>
+            <img id="search_pic" src="/Public/Home/image/search.png" style="width: 25px; height: 25px;" alt=""/>
         </div>
     </div>
 </nav>
@@ -118,9 +118,9 @@
                 </div>
                 <div class="login_five">
                     <ul>
-                        <li><a href="#">QQ<img src="/Public/image/QQ.png" style="width: 20px;height: 20px;" alt=""/></a></li>
-                        <li><a href="#">微信<img src="/Public/image/weixin.png" style="width: 20px;height: 20px;" alt=""/></a></li>
-                        <li><a href="#">微博<img src="/Public/image/weibo.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">QQ<img src="/Public/Home/image/QQ.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微信<img src="/Public/Home/image/weixin.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微博<img src="/Public/Home/image/weibo.png" style="width: 20px;height: 20px;" alt=""/></a></li>
                     </ul>
                     <a class="login_register" href="<?php echo U('user/index');?>">注册账号</a>
                 </div>
@@ -129,7 +129,7 @@
         <div id="person_frame">
             <div>
                 <div>
-                    <img src="/Public/image/weixin.png" style="width: 80px;height: 80px" alt=""/>
+                    <img src="/Public/Home/image/weixin.png" style="width: 80px;height: 80px" alt=""/>
                 </div>
                 <div>
                     <div>
@@ -156,9 +156,9 @@
         </div>
         <div class="bd">
             <ul>
-                <li><a href="#" target="_blank"><img src="/Public/image/bannerBig.jpg" /></a></li>
-                <li><a href="#" target="_blank"><img src="/Public/image/bannerBig2.jpg" /></a></li>
-                <li><a href="#" target="_blank"><img src="/Public/image/bannerBig.jpg" /></a></li>
+                <li><a href="#" target="_blank"><img src="/Public/Home/image/bannerBig.jpg" /></a></li>
+                <li><a href="#" target="_blank"><img src="/Public/Home/image/bannerBig2.jpg" /></a></li>
+                <li><a href="#" target="_blank"><img src="/Public/Home/image/bannerBig.jpg" /></a></li>
             </ul>
         </div>
     </div>
@@ -170,14 +170,14 @@
                 <legend>精品推荐</legend>
                 <div id="section_boutique_all_top">
                     <div id="section_boutique_switch">》》热门游戏</div>
-                    <div><img src="/Public/image/next.png" style="width: 20px;height: 20px;" alt=""/>换一批</div>
+                    <div><img src="/Public/Home/image/next.png" style="width: 20px;height: 20px;" alt=""/>换一批</div>
                 </div>
                 <div class="section_boutique_all_down" id="section_boutique_part_one">
                     <div class="section_boutique_all_down_cld">
-                         <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                         <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                          <div>
                              <h4>大战神</h4>
-                             <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                             <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                              <span>动作，冒险</span>
                              <span>5万人玩过</span>
                          </div>
@@ -187,10 +187,10 @@
                          </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -200,10 +200,10 @@
                         </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -213,10 +213,10 @@
                         </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -226,10 +226,10 @@
                         </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -239,10 +239,10 @@
                         </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -254,10 +254,10 @@
                 </div>
                 <div class="section_boutique_all_down" id="section_boutique_part_two">
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神2</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -267,10 +267,10 @@
                         </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神2</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -280,10 +280,10 @@
                         </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神2</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -293,10 +293,10 @@
                         </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神2</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -306,10 +306,10 @@
                         </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神2</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -319,10 +319,10 @@
                         </div>
                     </div>
                     <div class="section_boutique_all_down_cld">
-                        <div><img src="/Public/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
+                        <div><img src="/Public/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                         <div>
                             <h4>大战神2</h4>
-                            <img src="/Public/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                            <img src="/Public/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
                             <span>动作，冒险</span>
                             <span>5万人玩过</span>
                         </div>
@@ -345,7 +345,7 @@
             <div id="section_newGame_one_down">
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -355,7 +355,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -365,7 +365,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -375,7 +375,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -385,7 +385,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -395,7 +395,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -405,7 +405,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -415,7 +415,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -425,7 +425,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -435,7 +435,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -445,7 +445,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -455,7 +455,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -497,12 +497,12 @@
             <div id="section_hot_all_down">
                 <div class="section_hot_all_down_many">
                     <div class="section_hot_all_main">
-                        <img src="/Public/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
+                        <img src="/Public/Home/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
                         <div class="section_hot_icon">
                             <ul>
-                                <li><a href="#"><img src="/Public/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
-                                <li><a href="#"><img src="/Public/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
-                                <li><a href="#"><img src="/Public/image/enter.png" style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/enter.png" style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
                             </ul>
                         </div>
                     </div>
@@ -510,12 +510,12 @@
                 </div>
                 <div class="section_hot_all_down_many">
                     <div class="section_hot_all_main">
-                        <img src="/Public/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
+                        <img src="/Public/Home/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
                         <div class="section_hot_icon">
                             <ul>
-                                <li><a href="#"><img src="/Public/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
-                                <li><a href="#"><img src="/Public/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
-                                <li><a href="#"><img src="/Public/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
                             </ul>
                         </div>
                     </div>
@@ -523,12 +523,12 @@
                 </div>
                 <div class="section_hot_all_down_many">
                     <div class="section_hot_all_main">
-                        <img src="/Public/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
+                        <img src="/Public/Home/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
                         <div class="section_hot_icon">
                             <ul>
-                                <li><a href="#"><img src="/Public/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
-                                <li><a href="#"><img src="/Public/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
-                                <li><a href="#"><img src="/Public/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
                             </ul>
                         </div>
                     </div>
@@ -536,12 +536,12 @@
                 </div>
                 <div class="section_hot_all_down_many">
                     <div class="section_hot_all_main">
-                        <img src="/Public/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
+                        <img src="/Public/Home/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
                         <div class="section_hot_icon">
                             <ul>
-                                <li><a href="#"><img src="/Public/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
-                                <li><a href="#"><img src="/Public/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
-                                <li><a href="#"><img src="/Public/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
                             </ul>
                         </div>
                     </div>
@@ -549,12 +549,12 @@
                 </div>
                 <div class="section_hot_all_down_many">
                     <div class="section_hot_all_main">
-                        <img src="/Public/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
+                        <img src="/Public/Home/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
                         <div class="section_hot_icon">
                             <ul>
-                                <li><a href="#"><img src="/Public/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
-                                <li><a href="#"><img src="/Public/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
-                                <li><a href="#"><img src="/Public/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
                             </ul>
                         </div>
                     </div>
@@ -562,12 +562,12 @@
                 </div>
                 <div class="section_hot_all_down_many">
                     <div class="section_hot_all_main">
-                        <img src="/Public/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
+                        <img src="/Public/Home/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
                         <div class="section_hot_icon">
                             <ul>
-                                <li><a href="#"><img src="/Public/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
-                                <li><a href="#"><img src="/Public/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
-                                <li><a href="#"><img src="/Public/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
                             </ul>
                         </div>
                     </div>
@@ -575,12 +575,12 @@
                 </div>
                 <div class="section_hot_all_down_many">
                     <div class="section_hot_all_main">
-                        <img src="/Public/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
+                        <img src="/Public/Home/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
                         <div class="section_hot_icon">
                             <ul>
-                                <li><a href="#"><img src="/Public/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
-                                <li><a href="#"><img src="/Public/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
-                                <li><a href="#"><img src="/Public/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
                             </ul>
                         </div>
                     </div>
@@ -588,12 +588,12 @@
                 </div>
                 <div class="section_hot_all_down_many">
                     <div class="section_hot_all_main">
-                        <img src="/Public/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
+                        <img src="/Public/Home/image/tangmen.jpg" style="width: 280px; height:115px;" alt=""/>
                         <div class="section_hot_icon">
                             <ul>
-                                <li><a href="#"><img src="/Public/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
-                                <li><a href="#"><img src="/Public/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
-                                <li><a href="#"><img src="/Public/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/libao.png" style="width: 20px;height: 20px;" alt=""/>礼包</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/guan.png" style="width: 20px;height: 20px;" alt=""/>官网</a></li>
+                                <li><a href="#"><img src="/Public/Home/image/enter.png"style="width: 20px;height: 20px;" alt=""/>进入游戏</a></li>
                             </ul>
                         </div>
                     </div>
@@ -612,7 +612,7 @@
             <div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -622,7 +622,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -632,7 +632,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -642,7 +642,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -652,7 +652,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -662,7 +662,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -672,7 +672,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -682,7 +682,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -692,7 +692,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -702,7 +702,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -712,7 +712,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -722,7 +722,7 @@
                 </div>
                 <div class="section_newGame_one_down_size">
                     <div>
-                        <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                        <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                     </div>
                     <div>
                         <span>大战神</span>
@@ -745,7 +745,7 @@
                  <div class="section_stand_alone_pst">
                     <div class="section_newGame_one_down_size">
                         <div>
-                            <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                            <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                         </div>
                         <div>
                             <span>大战神</span>
@@ -755,7 +755,7 @@
                     </div>
                     <div class="section_newGame_one_down_jdu">
                         <div>
-                            <img src="/Public/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
+                            <img src="/Public/Home/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
                         </div>
                         <div>
                             剩余30%
@@ -768,7 +768,7 @@
                  <div class="section_stand_alone_pst">
                         <div class="section_newGame_one_down_size">
                             <div>
-                                <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                                <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                             </div>
                             <div>
                                 <span>大战神</span>
@@ -778,7 +778,7 @@
                         </div>
                         <div class="section_newGame_one_down_jdu">
                             <div>
-                                <img src="/Public/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
+                                <img src="/Public/Home/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
                             </div>
                             <div>
                                 剩余30%
@@ -791,7 +791,7 @@
                 <div class="section_stand_alone_pst">
                     <div class="section_newGame_one_down_size">
                         <div>
-                            <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                            <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                         </div>
                         <div>
                             <span>大战神</span>
@@ -801,7 +801,7 @@
                     </div>
                     <div class="section_newGame_one_down_jdu">
                         <div>
-                            <img src="/Public/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
+                            <img src="/Public/Home/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
                         </div>
                         <div>
                             剩余30%
@@ -814,7 +814,7 @@
                 <div class="section_stand_alone_pst">
                     <div class="section_newGame_one_down_size">
                         <div>
-                            <img src="/Public/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
+                            <img src="/Public/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
                         </div>
                         <div>
                             <span>大战神</span>
@@ -824,7 +824,7 @@
                     </div>
                     <div class="section_newGame_one_down_jdu">
                         <div>
-                            <img src="/Public/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
+                            <img src="/Public/Home/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
                         </div>
                         <div>
                             剩余30%
@@ -845,7 +845,7 @@
                 <div class="section_point_all_down_content">
                     <div class="section_point_cope">
                         <div class="section_point_cope_rel">
-                            <img src="/Public/image/jifen.jpg" alt=""/>
+                            <img src="/Public/Home/image/jifen.jpg" alt=""/>
                             <div class="section_point_cope_pst">
                                <span>参与人数:560人</span>
                                 <a href="#"><span>立即试玩</span></a>
@@ -859,7 +859,7 @@
                     </div>
                     <div class="section_point_cope">
                         <div class="section_point_cope_rel">
-                            <img src="/Public/image/jifen.jpg" alt=""/>
+                            <img src="/Public/Home/image/jifen.jpg" alt=""/>
                             <div class="section_point_cope_pst">
                                 <span>参与人数:560人</span>
                                 <a href="#"><span>立即试玩</span></a>
@@ -873,7 +873,7 @@
                     </div>
                     <div class="section_point_cope">
                         <div class="section_point_cope_rel">
-                            <img src="/Public/image/jifen.jpg" alt=""/>
+                            <img src="/Public/Home/image/jifen.jpg" alt=""/>
                             <div class="section_point_cope_pst">
                                 <span>参与人数:560人</span>
                                 <a href="#"><span>立即试玩</span></a>
@@ -887,7 +887,7 @@
                     </div>
                     <div class="section_point_cope">
                         <div class="section_point_cope_rel">
-                            <img src="/Public/image/jifen.jpg" alt=""/>
+                            <img src="/Public/Home/image/jifen.jpg" alt=""/>
                             <div class="section_point_cope_pst">
                                 <span>参与人数:560人</span>
                                 <a href="#"><span>立即试玩</span></a>
@@ -901,8 +901,8 @@
                     </div>
                 </div>
                 <div class="section_point_all_down_dct">
-                    <img src="/Public/image/jiantuo1.png" alt=""/>
-                    <img src="/Public/image/jiantuo3.png" alt=""/>
+                    <img src="/Public/Home/image/jiantuo1.png" alt=""/>
+                    <img src="/Public/Home/image/jiantuo3.png" alt=""/>
                 </div>
             </div>
         </fieldset>
@@ -949,9 +949,9 @@
                 </div>
                 <div class="login_five">
                     <ul>
-                        <li><a href="#">QQ<img src="/Public/image/QQ.png" style="width: 20px;height: 20px;" alt=""/></a></li>
-                        <li><a href="#">微信<img src="/Public/image/weixin.png" style="width: 20px;height: 20px;" alt=""/></a></li>
-                        <li><a href="#">微博<img src="/Public/image/weibo.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">QQ<img src="/Public/Home/image/QQ.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微信<img src="/Public/Home/image/weixin.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微博<img src="/Public/Home/image/weibo.png" style="width: 20px;height: 20px;" alt=""/></a></li>
                     </ul>
                     <a class="login_register" href="{：U('user/register')}">注册账号</a>
                 </div>
@@ -985,9 +985,9 @@
 </footer>
 
 </body>
-<script src="/Public/js/jquery.js"></script>
-<script src="/Public/js/jquery.SuperSlide.2.1.1.js"></script>
-<script src="/Public/js/index.js"></script>
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="/Public/Home/js/index.js"></script>
 <script>
 </script>
 </html>

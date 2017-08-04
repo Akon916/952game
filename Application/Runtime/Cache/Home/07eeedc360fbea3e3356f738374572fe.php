@@ -9,15 +9,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>飞扬天下</title>
-    <link rel="stylesheet" href="/Public/css/reset.css"/>
-    <link rel="stylesheet" href="/Public/css/footer.css"/>
-    <link rel="stylesheet" href="/Public/css/aloneLogin.css"/>
+    <link rel="stylesheet" href="/Public/Home/css/reset.css"/>
+    <link rel="stylesheet" href="/Public/Home/css/footer.css"/>
+    <link rel="stylesheet" href="/Public/Home/css/aloneLogin.css"/>
 </head>
 <body>
 <header id="header">
    <div id="header_all">
        <div>
-           <a href="../index.html"><img src="/Public/image/header_02.png" alt=""/></a>
+           <a href="../index.html"><img src="/Public/Home/image/header_02.png" alt=""/></a>
            <span>用户登录</span>
        </div>
        <div>
@@ -57,16 +57,16 @@
                  </div>
              </form>
              <div id="third_part">
-                 <a href=""><img src="/Public/image/QQ.png" alt=""/></a>
-                 <a href=""><img src="/Public/image/weixin.png" alt=""/></a>
-                 <a href=""><img src="/Public/image/weibo.png" alt=""/></a>
+                 <a href=""><img src="/Public/Home/image/QQ.png" alt=""/></a>
+                 <a href=""><img src="/Public/Home/image/weixin.png" alt=""/></a>
+                 <a href=""><img src="/Public/Home/image/weibo.png" alt=""/></a>
                  <a href="register.html">注册账号</a>
              </div>
          </div>
      </div>
 </section>
-    <?php include '/Public/footer.html' ?>
+    <?php include '/Public/Home/footer.html' ?>
 </body>
-<script src="/Public/js/jquery-1.8.3.min.js"></script>
-<script src="/Public/js/aloneLogin.js"></script>
+<script src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+<script src="/Public/Home/js/aloneLogin.js"></script>
 </html>
