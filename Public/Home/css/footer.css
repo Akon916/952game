@@ -29,3 +29,14 @@
     display: block;
     line-height: 30px;
 }
+
+/*²à±ßµ¼º½Ìõ*/
+#gooey-v{
+    height: 510px;
+    width: 100px;
+    position: fixed;
+    top: 700px;
+    left: 50%;
+    margin-left: 600px;
+    z-index: 1000;
+}

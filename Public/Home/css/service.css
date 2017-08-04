@@ -16,21 +16,17 @@
 #section{
     width: 100%;
     height: 1300px;
+    margin-top: 40px;
     background: url("../image/service_bg.jpg") no-repeat;
     background-size: 100% auto;
-}
-#nav_modal{
-    width: 100%;
-    height: 70px;
-    background: rgba(0,0,0,.2);
 }
 #main{
     width: 1200px;
     height: 900px;
     margin: 0 auto;
+    padding-top: 350px;
 }
 #main_all{
-    margin-top: 200px;
     width: 100%;
     height: 1000px;
     padding:0 20px;

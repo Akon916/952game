@@ -49,6 +49,7 @@ $("#login_all").click(function(){
 $('#close_login').click(function(){
     $("#login_second").css('display','none');
 });
+
 //顶部弹出登录界面
 var ident='_identify';
 var GC=decodeURI(getCookie(ident));//先获取cookie
@@ -99,9 +100,17 @@ $(function(){
                     if(res=='true'){
                         var id=encodeURI($('#name_text').val());
                         if($('#w_name').attr('checked')=='checked'){//写入cookie
-                            setCookie_o(ident,id)
+                            if(navigator.cookieEnabled==true){//验证cookie是否被禁用
+                                setCookie_o(ident,id)
+                            }else{
+                                alert("对不起，您的浏览器的Cookie功能被禁用，请开启")
+                            }
                         }else{
-                            setCookie_t(ident,id)
+                            if(navigator.cookieEnabled==true){
+                                setCookie_t(ident,id)
+                            }else{
+                                alert("对不起，您的浏览器的Cookie功能被禁用，请开启")
+                            }
                         }
                         GC=decodeURI(getCookie(ident));
                         checkLogin(GC,ident);//获取cookie后执行的内容
@@ -261,4 +270,66 @@ function replaceIllegalStr(str) {
     }
     return str.trim();
 }
+//侧边导航栏控件gooey插件
+$("#gooey-v").gooeymenu({
+    bgColor: "#C0BEBF",
+    contentColor: "white",
+    style: "vertical",
+    horizontal: {
+        menuItemPosition: "glue"
+    },
+    vertical: {
+        menuItemPosition: "spaced",
+        direction: "up"
+    },
+    circle: {
+        radius: 90
+    },
+    margin: "small",
+    size: 60,
+    bounce: true,
+    bounceLength: "small",
+    transitionStep: 100,
+    hover: "#e56606"
+});
+//点击回到头部
+$(".return_top").click(function(e){
+    e.preventDefault();
+    $('body,html').animate({scrollTop:0},500);
+});
+
+
+$(function(){
+    var ua = navigator.userAgent;
+    ua = ua.toLowerCase();
+    var match = /(webkit)[ \/]([\w.]+)/.exec(ua) ||
+        /(opera)(?:.*version)?[ \/]([\w.]+)/.exec(ua) ||
+        /(msie) ([\w.]+)/.exec(ua) ||
+        !/compatible/.test(ua) && /(mozilla)(?:.*? rv:([\w.]+))?/.exec(ua) || [];
+
+//如果需要获取浏览器版本号：match[2]
+
+    switch(match[1]){
+        case "msie": //ie
+            if (parseInt(match[2]) === 6){ //ie6
+               location.href="version.html";
+            }
+            else if (parseInt(match[2]) === 7) { //ie7
+                location.href="version.html";
+            }
+            else if (parseInt(match[2]) === 8){ //ie8
+            //$("#ieShow").css("display",'block')
+            }
+            else if(parseInt(match[2]) === 9){
+            }
+            break;
+        case "webkit": //safari or chrome
+            break;
+        case "opera": //opera
+            break;
+        case "mozilla": //Firefox
+            break;
+        default:
+    }
+});
 
