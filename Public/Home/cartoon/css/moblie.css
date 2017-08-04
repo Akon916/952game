@@ -1,0 +1,225 @@
+html{
+    font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+body{
+    background: #F7F7F7;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+}
+a:hover{
+    color: #36A9E2;
+}
+fieldset{
+    margin:0;
+    border-radius: 4px;
+    border:1px solid #cccccc;
+}
+img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+input,button{
+    border:0px;
+    outline:none
+}
+ul,li{
+    list-style: none;
+}
+legend{
+    color: #B3B3B3;
+}
+
+#header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 0px 30px #888888;
+}
+#header_all{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+#header_all>a{
+    display: block;
+    height:65px;
+    width: 140px;
+    padding-top: 7px;
+    float: left;
+}
+#header_all>ul,#header_all>ul>li{
+    display: block;
+    float: left;
+}
+#header_all>ul>li{
+    width: 55px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+#header_all>ul>li>a:hover{
+    color: #e56606;
+}
+#section{
+    width: 100%;
+    height: 900px;
+    background: url("../../image/login_bg.jpg") top center;
+}
+#register_lg{
+    width: 450px;
+    height: 510px;
+    border-radius: 5px;
+    background: rgba(0,0,0,.2);
+    position: absolute;
+    right: 13%;
+    top: 30%;
+}
+#register_lg_all{
+    padding: 35px;
+}
+#register_lg_all>div:nth-child(1){
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dashed #B3B3B3;
+}
+#register_lg_all>div:nth-child(1)>span{
+    font-size: 22px;
+    color: #e56606;
+    display: block;
+    float: left;
+}
+#register_lg_all>div:nth-child(1)>a{
+    font-size: 14px;
+    color: #B3B3B3;
+    display: block;
+    float: right;
+}
+#register_lg_all>div:nth-child(2){
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+#register_f{
+    height: 310px;
+    width:100%;
+    box-sizing: border-box;
+    border-bottom: 1px dashed #CCCCCC;
+}
+#register_f>div{
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+}
+#register_f>div:nth-child(1)>input{
+    border:1px solid #CCCCCC;
+    border-radius: 4px;
+    width: 350px;
+    height: 35px;
+}
+#register_f>div:nth-child(2)>input{
+    display: block;
+    float: left;
+    width: 150px;
+    height: 35px;
+    border:1px solid #CCCCCC;
+    border-radius: 4px;
+}
+#register_code{
+    float: left;
+    width: 100px;
+    height: 35px;
+    border:1px solid #CCCCCC;
+    border-radius: 4px;
+    line-height: 35px;
+    background: #B3B3B3;
+    margin-left: 10px;
+}
+#register_f>div:nth-child(2)>span{
+    display: block;
+    width: 100%;
+    height: 20px;
+    clear: both;
+}
+#register_f>div:nth-child(3)>input{
+    width: 350px;
+    height: 35px;
+    border:1px solid #CCCCCC;
+    border-radius: 4px;
+}
+#register_f>div:nth-child(4)>input{
+    width: 350px;
+    height: 35px;
+    border:1px solid #CCCCCC;
+    border-radius: 4px;
+}
+#register_f>div:nth-child(5){
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+#register_f>div:nth-child(5)>a{
+    color: #e56606;
+}
+#register_f>div:nth-child(5)>div{
+    float: right;
+}
+#register_f>div:nth-child(5)>div>a{
+    color: #e56606;
+}
+#register_f>div:nth-child(5)>div>span{
+    color: #ffffff;
+}
+#register_f>div:nth-child(6){
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+}
+#register_f>div:nth-child(6)>input{
+    width: 250px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background: #e56606;
+    color: #ffffff;
+    border-radius: 2px;
+}
+#one_log{
+    width: 100%;
+    height:100px;
+}
+#one_log>h3{
+    text-align:center;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+}
+#one_log>div{
+    width: 100%;
+    height: 60px;
+}
+#one_log>div>a{
+    display: block;
+    float: left;
+    width: 40px;
+    height: auto;
+    margin: 5px 0 0 68px;
+}
+#register_f>div>span{
+    color: red;
+    display: none;
+}
+#register_f>div:nth-child(2)>span{
+  display: none;
+}
+#footer{
+    margin: 0 0 80px 0;
+    background: none;
+}

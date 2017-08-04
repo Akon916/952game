@@ -1,11 +1,18 @@
+
+$(document).ready(function(){
+    $("#footer").load("../data/footer.html")
+});
+
 $(function(){
     var inp1=false,inp2=false,inp3=false,inp4=false,inp5=false,inp6=false,inp7=false,inp8=false;
     // 验证用户名
     $('#username').focus(function(){
         $(this).parent().next().html('4到14个字符（数字、字母、下划线）').css('color','#000000');
     }).blur(function(){
-        if($(this).val().length >= 4 && $(this).val().length <=14 && $(this).val()!='' && $(this).val().match(/^[\u4E00-\u9FA5A-Za-z0-9_]+$/) && $(this).val().match(/^[^\u4e00-\u9fa5]{0,}$/)
-            )
+        if($(this).val().length >= 4 && $(this).val().length <=14 && $(this).val()!=''
+            && $(this).val().match(/^[\u4E00-\u9FA5A-Za-z0-9_]+$/)
+            && $(this).val().match(/^[^\u4e00-\u9fa5]{0,}$/)
+        )
        {
             if( $(this).val().match(/[^~></;\x22]+/)){
                 $(this).parent().next().html('* 输入成功').css('color','green');
@@ -33,7 +40,7 @@ $(function(){
     $('#repass').focus(function(){
         $(this).parent().next().text('输入的确认密码要和上面的密码一致').css('color','#000000');
     }).blur(function(){
-        if($(this).val().length >= 6 && $(this).val().length <=16 && $(this).val()!='' && $(this).val() == $('#password').val()){
+        if($(this).val().length >= 6 && $(this).val().length <=16 && $(this).val()!='' && $(this).val() == $('input[name="password"]').val()){
             if( $(this).val().match(/[^~></;\x22]+/)) {
                 $(this).parent().next().text('* 输入成功').css('color', 'green');
                 inp3 = true;

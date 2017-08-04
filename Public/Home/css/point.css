@@ -50,9 +50,10 @@ legend{
 }
 #main{
     width: 100%;
-    height: 1780px;;
+    height: 1900px;;
     background: url("../image/shop_bg.jpg") no-repeat;
     background-size: 100% auto;
+    margin-top: 40px;
 }
 #main_top_bck{
     width:100%;
@@ -69,6 +70,7 @@ legend{
     height: 1470px;
     background: #F7F7F7;
     padding: 0 23px;
+    border-radius: 6px;
 }
 #main_lf{
     width: 285px;
@@ -77,6 +79,10 @@ legend{
 }
 
 /*左登录*/
+#main_one{
+    width: 285px;
+    height:350px;
+}
 .login{
     width: 285px;
     height:350px;
@@ -85,11 +91,21 @@ legend{
 }
 .login_pad{
     padding: 20px;
+    position: relative;
 }
 .login_one{
     width: 100%;
     height: 50px;
     line-height: 50px;
+}
+#notice_one{
+    position: absolute;
+    top: 63px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 30px;
+    text-align: center;
 }
 .login_one>span{
     font-size: 20px;
@@ -157,45 +173,55 @@ legend{
 }
 
 #person_frame{
-    width: 300px;
+    width: 286px;
     height:350px;
     border-radius: 5px;
-    background:#ffffff;
-    position: relative;
-    top:0;
-    left: 0;
+    background: rgba(255,255,255,.8);
     display: none;
 }
 #person_frame>div:nth-child(1){
     padding: 10px;
 }
-#person_frame>div>div:nth-child(1){
+#person_frame>div:nth-child(1)>div:nth-child(1){
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
     float: left;
+    overflow: hidden;
 }
-#person_frame>div>div:nth-child(2){
-    width: 170px;
+#person_frame>div:nth-child(1)>div:nth-child(2){
+    width: 155px;
     height: 100px;
     margin: 10px 20px 0 0;
     float: right;
 }
 #person_frame_login{
     color: #36A9E2;
-    font-size: 18px;
+    font-size: 15px;
 }
-#person_frame_down{
-    margin-top: 20px;
+#person_frame_ptNum{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #888888;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
-#person_frame_down>span{
+#person_frame_ptNum>span{
+    color: #888888;
+}
+#person_frame_down>span,#person_frame_down>a{
     display: block;
     float: left;
-    width: 75px;
+    width: 60px;
     height: 30px;
-    background: #ffffff;
+    background: rgba(255,255,255,.8);
     text-align: center;
     line-height: 30px;
-    border: 1px solid #B3B3B3;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 13px;
     cursor: pointer;
 }
 #person_frame_close{
@@ -203,7 +229,7 @@ legend{
 }
 #person_frame>div:nth-child(2){
     width: 95%;
-    height: 200px;
+    height: 40px;
     padding: 10px;
     margin-top: 70px;
 }
@@ -213,6 +239,47 @@ legend{
     line-height: 40px;
     height: 40px;
     border-bottom: 2px solid #36A9E2;
+}
+#played_game{
+    width: 100%;
+    height: 185px;
+    overflow: hidden;
+}
+.avo_line{
+    width: 100%;
+    height: 40px;
+    padding: 4px 0 0 10px;
+    box-sizing: border-box;
+    border-top: 1px dashed #DDDDDD;
+}
+.avo_line:hover{
+    background: #ededed;
+    color: #0695d7;
+}
+.avo_line:nth-child(1){
+    background: #ededed;
+}
+.avo_line>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.avo_line>a>img{
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+.avo_line>a>span{
+    display: block;
+    float: left;
+    margin: 10px 0 0 30px;
+    color: #3c3c3c;
+    font-size: 12px;
+}
+.avo_lineCol{
+    color: #0695d7!important;
 }
 
 #main_two{
@@ -443,6 +510,50 @@ legend{
     width: 848px;
     height: 100%;
     float: right;
+}
+#main_rg_package{
+    width: 100%;
+    height: 215px;
+    margin: 20px 0;
+    background: #ffffff;
+}
+#main_rg_package_top{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #E5B79B;
+}
+#main_rg_package_top>div{
+    float: left;
+    width: 150px;
+    height: 100%;
+    border-bottom: 2px solid #e56606;
+}
+#main_rg_package_top>div>span:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e56606;
+}
+#main_rg_package_top>div>span:nth-child(2) {
+    margin-left: 10px;
+    font-size: 18px;
+}
+#main_rg_package_top>a{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    color: #888888;
+    font-size: 13px;
+}
+#main_rg_package_down{
+    clear:both;
+    width: 100%;
+    height: 164px;
+}
+#main_rg_package_down>ul{
+    width: 100%;
+    height: 100%;
 }
 #main_rg_one{
     width: 100%;

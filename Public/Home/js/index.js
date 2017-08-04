@@ -25,25 +25,21 @@ jQuery(".slideBox").slide({
 $("#section_boutique_switch").click(function(){
   var hiden= $("#section_boutique_part_one");
   var shown= $("#section_boutique_part_two");
-    if(num==1){hiden.attr('class','animated slideOutRight');
-        hiden.css('display','none');
-
+    if(num==1){
         shown.css('display','block');
-        shown.attr('class','animated slideInLeft');
+        hiden.css('display','none');
+        shown.attr("class",'animated fadeInRight');
         $("#section_boutique_switch").html('《《 精彩推荐');
         num=-1;return
     }
-    if(num==-1){hiden.attr('class','animated slideInRight');
-        hiden.css('display','block');
-
+    if(num==-1){
         shown.css('display','none');
-        shown.attr('class','animated slideOutLeft');
+        hiden.css('display','block');
+        hiden.attr("class",'animated fadeInLeft');
         $("#section_boutique_switch").html('》》热门游戏');
         num=1;return
     }
-
 });
-
 
 //登录界面
 var ident='_identify';
@@ -95,9 +91,17 @@ $(function(){
                     if(res=='true'){
                         var id=encodeURI($('#name_text_one').val());
                         if($('#re_name').attr('checked')=='checked'){//写入cookie
+                            if(navigator.cookieEnabled==true){//判断cookie是否被禁用
                             setCookie_o(ident,id)
+                            }else{
+                                alert("对不起，您的浏览器的Cookie功能被禁用，请开启")
+                            }
                         }else{
-                            setCookie_t(ident,id)
+                            if(navigator.cookieEnabled==true) {
+                                setCookie_t(ident, id)
+                            }else{
+                                alert("对不起，您的浏览器的Cookie功能被禁用，请开启")
+                            }
                         }
                         GC=decodeURI(getCookie(ident));
                         checkLogin(GC,ident);//获取cookie后执行的内容
@@ -164,3 +168,61 @@ function delCookie(ident){//为了删除指定名称的cookie，可以将其过�
     document.cookie = ident + "="+ getCookie(ident) + ";expires=" + exp.toGMTString();
     window.location.reload();
 }
+
+//精品推荐，好评星数
+var html='';var starIndex=4;
+function star(starIndex){
+    switch (starIndex<=5){
+        case starIndex==0:
+            for(var i=0;i<5;i++){
+                html+="<em class='praise_rel_t'></em>";
+            }
+            $(".praise_pst").append(html);
+            break;
+        case starIndex==1:
+            html="<em class='praise_rel_o'></em>";
+            for(var i=0;i<4;i++){
+                html+="<em class='praise_rel_t'></em>";
+            }
+            $(".praise_pst").append(html);
+            break;
+        case starIndex==2:
+            html="<em class='praise_rel_o'></em><em class='praise_rel_o'></em>";
+            for(var i=0;i<3;i++){
+                html+="<em class='praise_rel_t'></em>";
+            }
+            $(".praise_pst").append(html);
+            break;
+        case starIndex==3:
+            html="<em class='praise_rel_o'></em><em class='praise_rel_o'></em><em class='praise_rel_o'></em>";
+            for(var i=0;i<2;i++){
+                html+="<em class='praise_rel_t'></em>";
+            }
+            $(".praise_pst").append(html);
+            break;
+        case starIndex==4:
+            for(var i=0;i<4;i++){
+                html+="<em class='praise_rel_o'></em>";
+            }
+            html+="<em class='praise_rel_t'></em>";
+            $(".praise_pst").append(html);
+            break;
+        case starIndex==5:
+            for(var i=0;i<5;i++){
+                html+="<em class='praise_rel_o'></em>";
+            }
+            $(".praise_pst").append(html);
+            break;
+    }
+}star(starIndex);
+
+//试玩赚积分点击滑动
+jQuery(".picScroll-left").slide({
+    titCell:".hd ul",
+    mainCell:".bd ul",
+    autoPage:true,
+    effect:"left",
+    scroll:1,
+    vis:6,
+    trigger:"click"
+});

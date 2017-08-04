@@ -6119,7 +6119,7 @@ function defaultDisplay( nodeName ) {
 			// Reset CSS: box-sizing; display; margin; border
 			div.style.cssText =
 				// Support: Firefox<29, Android 2.3
-				// Vendors-prefix box-sizing
+				// Vendor-prefix box-sizing
 				"-webkit-box-sizing:content-box;-moz-box-sizing:content-box;" +
 				"box-sizing:content-box;display:block;margin:0;border:0;" +
 				"padding:1px;width:1px;zoom:1";
@@ -6313,7 +6313,7 @@ function addGetHookIf( conditionFn, hookFn ) {
 	support.clearCloneStyle = div.style.backgroundClip === "content-box";
 
 	// Support: Firefox<29, Android 2.3
-	// Vendors-prefix box-sizing
+	// Vendor-prefix box-sizing
 	support.boxSizing = style.boxSizing === "" || style.MozBoxSizing === "" ||
 		style.WebkitBoxSizing === "";
 
@@ -6366,7 +6366,7 @@ function addGetHookIf( conditionFn, hookFn ) {
 
 		div.style.cssText =
 			// Support: Firefox<29, Android 2.3
-			// Vendors-prefix box-sizing
+			// Vendor-prefix box-sizing
 			"-webkit-box-sizing:border-box;-moz-box-sizing:border-box;" +
 			"box-sizing:border-box;display:block;margin-top:1%;top:1%;" +
 			"border:1px;padding:1px;width:4px;position:absolute";
@@ -6391,7 +6391,7 @@ function addGetHookIf( conditionFn, hookFn ) {
 			// Reset CSS: box-sizing; display; margin; border; padding
 			contents.style.cssText = div.style.cssText =
 				// Support: Firefox<29, Android 2.3
-				// Vendors-prefix box-sizing
+				// Vendor-prefix box-sizing
 				"-webkit-box-sizing:content-box;-moz-box-sizing:content-box;" +
 				"box-sizing:content-box;display:block;margin:0;border:0;padding:0";
 			contents.style.marginRight = contents.style.width = "0";
@@ -10295,7 +10295,7 @@ jQuery.fn.andSelf = jQuery.fn.addBack;
 
 
 
-// RegisterController.class as a named AMD module, since jQuery can be concatenated with other
+// Register as a named AMD module, since jQuery can be concatenated with other
 // files that may use define, but not via a proper concatenation script that
 // understands anonymous AMD modules. A named AMD is safest and most robust
 // way to register. Lowercase jquery is used because AMD module names are

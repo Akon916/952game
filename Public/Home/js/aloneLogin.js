@@ -1,3 +1,8 @@
+//加载页头
+$(document).ready(function(){
+    $('#footer').load('../data/footer.html')
+});
+
 $(function(){
     var inp1=false,inp2=false;
     // 验证用户名
@@ -8,25 +13,9 @@ $(function(){
         {
             if( $(this).val().match(/[^~></;\x22]+/)){
                  var uname=encodeURI( $(this).val());
-                    $.ajax({
-                        type:'POST',
-                        url:'login',    //  home/user/login
-                        async:true,
-                        data:{login_name:uname},
-                        success:function(res){
-                            if( res == 'true' ){
-                                $("#username").next().html('* 用户名输入正确').css('color','green');
-                                 inp1=true;
-                            }else{
-                                $("#username").next().html('* 用户名不正确').css('color','green');
-                            }
-                        },
-                        error:function(){
-                            alert('内容请求出现问题！')
-                        }
-                    })
+                 trueName(uname);
                 //$(this).next().html('* 用户名输入正确').css('color','green');
-               // inp1=true;
+                inp1=true;
             }
         }else{
             $(this).next().text('* 用户名输入有误').css('color','red');
@@ -38,8 +27,8 @@ $(function(){
     }).blur(function(){
         if($(this).val().length >= 6 && $(this).val().length <=16 && $(this).val()!=''){
             if( $(this).val().match(/[^~></;\x22]+/)) {
-                //$(this).next().text('* 密码长度正确').css('color', 'green');
-                 inp2 = true;
+                $(this).next().text('* 密码长度正确').css('color', 'green');
+
             }
         }else{
             $(this).next().text('密码应该为6-16位之间').css('color','red');
@@ -54,5 +43,25 @@ $(function(){
         }
     });
 });
-
-
+function trueName(uname){
+    $.ajax({
+        type:'POST',
+        url:'1.php',
+        async:true,
+        dateType:'json',
+        data:{login_name:uname},
+        success:function(res){
+            console.log(res);
+            //if(res==true){
+            //    $("#username").next().html('* 用户名输入正确').css('color','green');
+            //    return inp1 = true;
+            //}else{
+            //    $("#username").next().html('* 用户名不正确').css('color','green');
+            //}
+            return inp1 = true;
+        },
+        error:function(){
+            alert('内容请求出现问题！')
+        }
+    })
+}

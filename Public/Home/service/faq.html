@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>客服中心</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="css/faq.css"/>
+</head>
+<body>
+<header id="header">
+    <div id="header_box">
+        <div id="header_box_one">
+            <a href="../index.html">H5网页游戏</a>
+            <span>|</span>
+            <a href="../game.html">H5小游戏</a>
+        </div>
+        <div id="header_box_two">
+            <a href="javascript:void(0);" onclick="SetHome(this,window.location.href)">设为首页</a>
+            <span>|</span>
+            <a href="javascript:void(0);" onclick="toDesktop(window.location.href,document.title)">放在桌面</a>
+            <span>|</span>
+            <a href="javascript:void(0);" id="collect" onclick="AddFavorite(window.location.href,document.title)" >设为收藏</a>
+        </div>
+        <div id="header_box_three">
+            <div class="header_box_three_bor">
+                <a href="#" id="login_all">登录</a>
+                <a href="#" id="sign_out">退出</a>
+            </div>
+            <div class="header_box_three_bor">
+                <a href="../login/register.html"> 注册</a>
+            </div>
+        </div>
+        <div id="header_box_four">
+            <div class="header_box_four_one">所有游戏</div>
+            <div class="header_box_four_two" >
+                <img src="../image/xiaobiao.png" style="width: 15px; height: 15px;" alt=""/>
+            </div>
+            <div class="header_box_four_three">
+                <div class="header_box_four_three_em"></div>
+                <div class="header_box_four_three_tran">
+                    <table>
+                        <tr>
+                            <td><a href="">大战神 <img src="../image/hot.png" style="width: 25px; height:auto;" alt=""/></a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">更多»</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="section">
+    <nav id="nav">
+        <div id="nav_top">
+            <div class="nav_pic" >
+                <a href="../index.html">
+                    <img src="../image/header_02.png" alt="飞扬天下"/>
+                </a>
+            </div>
+            <ul id="nav_tab">
+                <li class="animated bounceInLeft tar_hover"><a href="../index.html">首页</a></li>
+                <li class="animated bounceInLeft tar_hover"><a href="../cartoon/cartoon.html">漫画专题</a></li>
+                <li class="animated bounceInLeft tar_hover"><a href="../point.html">积分商城</a></li>
+                <li class="animated bounceInRight tar_hover"><a href="../forum.html">玩家论坛</a></li>
+                <li class="animated bounceInRight tar_hover"><a href="../recharge.html">充值中心</a></li>
+                <li class="animated bounceInRight tar_hover"><a href="../service.html">客服中心</a></li>
+            </ul>
+            <div id="search">
+                <input type="search" id="search_btn"/>
+                <img id="search_pic" src="../image/search.png" style="width: 25px; height: 25px;" alt=""/>
+            </div>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="main_all">
+            <div id="main_lf">
+                <div id="main_lf_top">
+                    快速通道
+                </div>
+                <div id="main_lf_down">
+                    <ul class="service_line">
+                        <li>
+                            <a href="../person/user.html">
+                                <span></span>
+                                <span>用户资料修改</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../person/password.html">
+                                <span></span>
+                                <span>账号密码修改</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../person/payhistory.html">
+                                <span></span>
+                                <span>充值记录查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../person/space.html">
+                                <span></span>
+                                <span>修改绑定邮箱</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../person/space.html">
+                                <span></span>
+                                <span>修改手机绑定</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../person/space.html">
+                                <span></span>
+                                <span>二级密码设置</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../person/idcard.html">
+                                <span></span>
+                                <span>防沉迷设置</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../person/coins.html">
+                                <span></span>
+                                <span>金币账户</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../service.html" target="_self">
+                                <span></span>
+                                <span>客服中心</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="problemsubmit.html" target="_self">
+                                <span></span>
+                                <span>问题提交</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="problem.html" target="_self">
+                                <span></span>
+                                <span>结果查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="lostpass.html" target="_self">
+                                <span></span>
+                                <span>密码找回</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_self">
+                                <span></span>
+                                <span>账号申诉</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main_rg">
+                <div id="main_rg_top">常见问题</div>
+                <div id="main_rg_dw">
+                    <div id="main_part_one">
+                        <span>问：物品奖品怎么兑换</span>
+                        <div>
+                            <span>物品奖品怎么兑换</span>
+                        </div>
+                    </div>
+                    <div id="main_part_two">
+                        <span>管理者答复 : </span>
+                        <div>
+                            <span>在积分商城页面中，在实物奖品兑换页面，消耗您的积分，就可以兑换您喜欢的实物道具奖品了。
+                                兑换成功后，请您在兑换页面，提交您的奖品邮寄地址和个人信息，我们将会在一周内，寄出您兑换的奖品！
+                                届时，请您务必保持电话畅通，以方便快递员联系上您。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="login_second">
+    <div id="login_second_all">
+        <div id="login_second_content">
+            <div>
+                <span>登录飞扬天下网</span>
+                <span id="close_login">×</span>
+            </div>
+            <div class="login_pad" id="login_pad">
+                <div class="login_two">账号 &nbsp; <input type="text" id="name_text" placeholder="用户名/手机号"/></div>
+                <div class="login_two">密码 &nbsp; <input type="password" id="name_pass" placeholder="密码"/></div>
+                <div class="login_three">
+                    <input type="checkbox" value="1"/>下次自动登录
+                    <a href="#">忘记密码</a>
+                </div>
+                <div class="login_four" id="login_enter">
+                    <button>登录</button>
+                </div>
+                <div class="login_five">
+                    <ul>
+                        <li><a href="#">QQ<img src="../image/QQ.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微信<img src="../image/weixin.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微博<img src="../image/weibo.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                    </ul>
+                    <a class="login_register" href="#">注册账号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+</body>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/login.js"></script>
+<script src="js/faq.js"></script>
+</html>

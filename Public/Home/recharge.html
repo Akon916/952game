@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>充值中心</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/recharge.css"/>
+</head>
+<body>
+<header id="header">
+    <div id="header_box">
+        <div id="header_box_one">
+            <a href="index.html">H5网页游戏</a>
+            <span>|</span>
+            <a href="game.html">H5小游戏</a>
+        </div>
+        <div id="header_box_two">
+            <a href="javascript:void(0);" onclick="SetHome(this,window.location.href)">设为首页</a>
+            <span>|</span>
+            <a href="javascript:void(0);" onclick="toDesktop(window.location.href,document.title)">放在桌面</a>
+            <span>|</span>
+            <a href="javascript:void(0);" id="collect" onclick="AddFavorite(window.location.href,document.title)" >设为收藏</a>
+        </div>
+        <div id="header_box_three">
+            <div class="header_box_three_bor">
+                <a href="#" id="login_all">登录</a>
+                <a href="#" id="sign_out">退出</a>
+            </div>
+            <div class="header_box_three_bor">
+                <a href="login/register.html"> 注册</a>
+            </div>
+        </div>
+        <div id="header_box_four">
+            <div class="header_box_four_one">所有游戏</div>
+            <div class="header_box_four_two" >
+                <img src="image/xiaobiao.png" style="width: 15px; height: 15px;" alt=""/>
+            </div>
+            <div class="header_box_four_three">
+                <div class="header_box_four_three_em"></div>
+                <div class="header_box_four_three_tran">
+                    <table>
+                        <tr>
+                            <td><a href="">大战神 <img src="image/hot.png" style="width: 25px; height:auto;" alt=""/></a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">更多»</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="section">
+     <div id="banner">
+          <div id="banner_all">
+              <a href="index.html">
+                  <img src="image/header_02.png" alt=""/>
+              </a>
+              <span>|</span>
+              <span>充值中心</span>
+          </div>
+          <div id="recharge">
+              <div id="recharge_lf">
+                  <h2>| 选择充值方式</h2>
+                  <ul>
+                      <li>
+                          <span></span>
+                          <div>网上银行充值</div>
+                      </li>
+                      <li>
+                          <span></span>
+                          <div>支付宝充值</div>
+                      </li>
+                      <li>
+                          <span></span>
+                          <div>微信充值</div>
+                      </li>
+                      <li>
+                          <span></span>
+                          <div>移动卡充值</div>
+                      </li>
+                      <li>
+                          <span></span>
+                          <div>联通卡充值</div>
+                      </li>
+                      <li>
+                          <span></span>
+                          <div>电信卡充值</div>
+                      </li>
+                      <li>
+                          <span></span>
+                          <div>盛大卡充值</div>
+                      </li>
+                  </ul>
+              </div>
+              <div id="recharge_rg">
+                  <div style="display:block">
+                      <form action="" class="pay_f">
+                          <div>
+                              <span></span>
+                              <span>充值账号 : </span>
+                              <input type="text"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <input type="button" value="游戏币"/>
+                              <input type="button" value="阅读币"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>选择游戏 : </span>
+                              <div>
+                                  <span>1. 选择输入的游戏</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                              <div>
+                                  <span>2. 选择游戏服务器</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <div>
+                                  <ul class="pay_mon_line">
+                                      <li>10元</li>
+                                      <li>20元</li>
+                                      <li>50元</li>
+                                      <li>100元</li>
+                                      <li>200元</li>
+                                      <li>500元</li>
+                                      <li>1000元</li>
+                                      <li>2000元</li>
+                                      <li>5000元</li>
+                                      <li>10000元</li>
+                                      <li>20000元</li>
+                                      <li>50000元</li>
+                                      <li class="pay_custom">
+                                          <div>
+                                              <input type="number"/>
+                                              <span>元</span>
+                                          </div>
+                                          <span>请填写5~50000的整数</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>选择银行 : </span>
+                              <div>
+                                  <ul class="bank_line">
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div>
+                              <button>立即充值</button>
+                          </div>
+                      </form>
+                  </div>
+                  <div style="display:none">
+                      <form action="" class="pay_f">
+                          <div>
+                              <span></span>
+                              <span>充值账号 : </span>
+                              <input type="text"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <input type="button" value="游戏币"/>
+                              <input type="button" value="阅读币"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>选择游戏 : </span>
+                              <div>
+                                  <span>1. 选择输入的游戏</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                              <div>
+                                  <span>2. 选择游戏服务器</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <div>
+                                  <ul class="pay_mon_line">
+                                      <li>10元</li>
+                                      <li>20元</li>
+                                      <li>50元</li>
+                                      <li>100元</li>
+                                      <li>200元</li>
+                                      <li>500元</li>
+                                      <li>1000元</li>
+                                      <li>2000元</li>
+                                      <li>5000元</li>
+                                      <li>10000元</li>
+                                      <li>20000元</li>
+                                      <li>50000元</li>
+                                      <li class="pay_custom">
+                                          <div>
+                                              <input type="number"/>
+                                              <span>元</span>
+                                          </div>
+                                          <span>请填写5~50000的整数</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div>
+                              <button>立即充值</button>
+                          </div>
+                      </form>
+                  </div>
+                  <div style="display:none">
+                      <form action="" class="pay_f">
+                          <div>
+                              <span></span>
+                              <span>充值账号 : </span>
+                              <input type="text"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <input type="button" value="游戏币"/>
+                              <input type="button" value="阅读币"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>选择游戏 : </span>
+                              <div>
+                                  <span>1. 选择输入的游戏</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                              <div>
+                                  <span>2. 选择游戏服务器</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <div>
+                                  <ul class="pay_mon_line">
+                                      <li>10元</li>
+                                      <li>20元</li>
+                                      <li>50元</li>
+                                      <li>100元</li>
+                                      <li>200元</li>
+                                      <li>500元</li>
+                                      <li>1000元</li>
+                                      <li>2000元</li>
+                                      <li>5000元</li>
+                                      <li>10000元</li>
+                                      <li>20000元</li>
+                                      <li>50000元</li>
+                                      <li class="pay_custom">
+                                          <div>
+                                              <input type="number"/>
+                                              <span>元</span>
+                                          </div>
+                                          <span>请填写5~50000的整数</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div>
+                              <button>立即充值</button>
+                          </div>
+                      </form>
+                  </div>
+                  <div style="display:none">
+                      <form action="" class="pay_f">
+                          <div>
+                              <span></span>
+                              <span>充值账号 : </span>
+                              <input type="text"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <input type="button" value="游戏币"/>
+                              <input type="button" value="阅读币"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>选择游戏 : </span>
+                              <div>
+                                  <span>1. 选择输入的游戏</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                              <div>
+                                  <span>2. 选择游戏服务器</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <div>
+                                  <ul class="pay_mon_line">
+                                      <li>10元</li>
+                                      <li>20元</li>
+                                      <li>50元</li>
+                                      <li>100元</li>
+                                      <li>200元</li>
+                                      <li>500元</li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div>
+                              <button>立即充值</button>
+                          </div>
+                      </form>
+                  </div>
+                  <div style="display:none">
+                      <form action="" class="pay_f">
+                          <div>
+                              <span></span>
+                              <span>充值账号 : </span>
+                              <input type="text"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <input type="button" value="游戏币"/>
+                              <input type="button" value="阅读币"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>选择游戏 : </span>
+                              <div>
+                                  <span>1. 选择输入的游戏</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                              <div>
+                                  <span>2. 选择游戏服务器</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <div>
+                                  <ul class="pay_mon_line">
+                                      <li>10元</li>
+                                      <li>20元</li>
+                                      <li>50元</li>
+                                      <li>100元</li>
+                                      <li>200元</li>
+                                      <li>500元</li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div>
+                              <button>立即充值</button>
+                          </div>
+                      </form>
+                  </div>
+                  <div style="display:none">
+                      <form action="" class="pay_f">
+                          <div>
+                              <span></span>
+                              <span>充值账号 : </span>
+                              <input type="text"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <input type="button" value="游戏币"/>
+                              <input type="button" value="阅读币"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>选择游戏 : </span>
+                              <div>
+                                  <span>1. 选择输入的游戏</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                              <div>
+                                  <span>2. 选择游戏服务器</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <div>
+                                  <ul class="pay_mon_line">
+                                      <li>10元</li>
+                                      <li>20元</li>
+                                      <li>50元</li>
+                                      <li>100元</li>
+                                      <li>200元</li>
+                                      <li>500元</li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div>
+                              <button>立即充值</button>
+                          </div>
+                      </form>
+                  </div>
+                  <div style="display:none">
+                      <form action="" class="pay_f">
+                          <div>
+                              <span></span>
+                              <span>充值账号 : </span>
+                              <input type="text"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <input type="button" value="游戏币"/>
+                              <input type="button" value="阅读币"/>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>选择游戏 : </span>
+                              <div>
+                                  <span>1. 选择输入的游戏</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                              <div>
+                                  <span>2. 选择游戏服务器</span>
+                                  <div>
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <span></span>
+                              <span>充值类型 : </span>
+                              <div>
+                                  <ul class="pay_mon_line">
+                                      <li>10元</li>
+                                      <li>20元</li>
+                                      <li>50元</li>
+                                      <li>100元</li>
+                                      <li>200元</li>
+                                      <li>500元</li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div>
+                              <button>立即充值</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+     </div>
+</section>
+<div id="login_second">
+    <div id="login_second_all">
+        <div id="login_second_content">
+            <div>
+                <span>登录飞扬天下网</span>
+                <span id="close_login">×</span>
+            </div>
+            <div class="login_pad" id="login_pad">
+                <div class="login_two">账号 &nbsp; <input type="text" id="name_text" placeholder="用户名/手机号"/></div>
+                <div class="login_two">密码 &nbsp; <input type="password" id="name_pass" placeholder="密码"/></div>
+                <div class="login_three">
+                    <input type="checkbox" value="1"/>下次自动登录
+                    <a href="#">忘记密码</a>
+                </div>
+                <div class="login_four" id="login_enter">
+                    <button>登录</button>
+                </div>
+                <div class="login_five">
+                    <ul>
+                        <li><a href="#">QQ<img src="image/QQ.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微信<img src="image/weixin.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微博<img src="image/weibo.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                    </ul>
+                    <a class="login_register" href="#">注册账号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/login.js"></script>
+<script src="js/recharge.js"></script>
+</html>

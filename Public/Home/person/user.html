@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="css/user.css"/>
+</head>
+<body>
+<header id="header">
+    <div id="header_box">
+        <div id="header_box_one">
+            <a href="../index.html">H5网页游戏</a>
+            <span>|</span>
+            <a href="../game.html">H5小游戏</a>
+        </div>
+        <div id="header_box_two">
+            <a href="javascript:void(0);" onclick="SetHome(this,window.location.href)">设为首页</a>
+            <span>|</span>
+            <a href="javascript:void(0);" onclick="toDesktop(window.location.href,document.title)">放在桌面</a>
+            <span>|</span>
+            <a href="javascript:void(0);" id="collect" onclick="AddFavorite(window.location.href,document.title)" >设为收藏</a>
+        </div>
+        <div id="header_box_three">
+            <div class="header_box_three_bor">
+                <a href="#" id="login_all">登录</a>
+                <a href="#" id="sign_out">退出</a>
+            </div>
+            <div class="header_box_three_bor">
+                <a href="detail/register.html"> 注册</a>
+            </div>
+        </div>
+        <div id="header_box_four">
+            <div class="header_box_four_one">所有游戏</div>
+            <div class="header_box_four_two" >
+                <img src="../image/xiaobiao.png" style="width: 15px; height: 15px;" alt=""/>
+            </div>
+            <div class="header_box_four_three">
+                <div class="header_box_four_three_em"></div>
+                <div class="header_box_four_three_tran">
+                    <table>
+                        <tr>
+                            <td><a href="">大战神 <img src="../image/hot.png" style="width: 25px; height:auto;" alt=""/></a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">三国令</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="">大战神</a></td>
+                            <td><a href="">主宰</a></td>
+                            <td><a href="">风云无双</a></td>
+                            <td><a href="">更多»</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="section">
+    <nav id="nav">
+        <div id="nav_top">
+            <div class="nav_pic" >
+                <a href="../index.html">
+                    <img src="../image/header_02.png" alt="飞扬天下"/>
+                </a>
+            </div>
+            <ul id="nav_tab">
+                <li class="animated bounceInLeft tar_hover"><a href="../index.html">首页</a></li>
+                <li class="animated bounceInLeft tar_hover"><a href="../cartoon/cartoon.html">漫画专题</a></li>
+                <li class="animated bounceInLeft tar_hover"><a href="../point.html">积分商城</a></li>
+                <li class="animated bounceInRight tar_hover"><a href="../forum.html">玩家论坛</a></li>
+                <li class="animated bounceInRight tar_hover"><a href="../recharge.html">充值中心</a></li>
+                <li class="animated bounceInRight tar_hover"><a href="../service.html">客服充值</a></li>
+            </ul>
+            <div id="search">
+                <input type="search" id="search_btn"/>
+                <img id="search_pic" src="../image/search.png" style="width: 25px; height: 25px;" alt=""/>
+            </div>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="main_lf">
+            <div id="main_lf_top">
+                <div id="part_one">
+                    <span>|</span>
+                    <h2>飞扬通行证</h2>
+                </div>
+                <div id="part_two">
+                    <a href="user.html">
+                        <img src="../image/avatar.jpg" alt=""/>
+                    </a>
+                    <div>
+                         <a href="user.html">zbc123</a>
+                         <span>积分：30</span>
+                         <div>
+                             <span>签到领积分</span>
+                             <span>[ 退出 ]</span>
+                         </div>
+                    </div>
+                </div>
+                <div id="part_three">
+                    <div id="part_three_top">
+                        <span>你可能感兴趣于:</span>
+                    </div>
+                    <div id="part_three_down">
+                        <div class="avo_line">
+                            <a href="">
+                                <img src="../image/list_wly.png" alt=""/>
+                                <span>卧龙吟</span>
+                                <span>最新区服</span>
+                                <span>开始游戏</span>
+                            </a>
+                        </div>
+                        <div class="avo_line">
+                            <a href="">
+                                <img src="../image/list_wly.png" alt=""/>
+                                <span>卧龙吟</span>
+                                <span>最新区服</span>
+                                <span>开始游戏</span>
+                            </a>
+                        </div>
+                        <div class="avo_line">
+                            <a href="">
+                                <img src="../image/list_wly.png" alt=""/>
+                                <span>卧龙吟</span>
+                                <span>最新区服</span>
+                                <span>开始游戏</span>
+                            </a>
+                        </div>
+                        <div class="avo_line">
+                            <a href="">
+                                <img src="../image/list_wly.png" alt=""/>
+                                <span>卧龙吟</span>
+                                <span>最新区服</span>
+                                <span>开始游戏</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main_lf_down">
+                <div id="second_one">
+                    <span>|</span>
+                    <h2>快速通道</h2>
+                </div>
+                <div id="second_two">
+                    <ul>
+                        <li class="change_line">
+                            <a href="user.html" target="_self">
+                                <span></span>
+                                <span>个人中心</span>
+                            </a>
+                        </li>
+                        <li class="change_line">
+                            <a href="password.html" target="_self">
+                                <span></span>
+                                <span>修改密码</span>
+                            </a>
+                        </li>
+                        <li class="change_line">
+                            <a href="space.html" target="_self">
+                                <span></span>
+                                <span>安全中心</span>
+                            </a>
+                        </li>
+                        <li class="change_line">
+                            <a href="idcard.html" target="_self">
+                                <span></span>
+                                <span>防沉迷设置</span>
+                            </a>
+                        </li>
+                        <li class="change_line">
+                            <a href="payhistory.html" target="_self">
+                                <span></span>
+                                <span>充值历史</span>
+                            </a>
+                        </li>
+                        <li class="change_line">
+                            <a href="coins.html" target="_self">
+                                <span></span>
+                                <span>账户中心</span>
+                            </a>
+                        </li>
+                        <li class="change_line">
+                            <a href="../service.html" target="_self">
+                                <span></span>
+                                <span>我要提问</span>
+                            </a>
+                        </li>
+                        <li class="change_line">
+                            <a href="../service.html" target="_self">
+                                <span></span>
+                                <span>我的问题</span>
+                            </a>
+                        </li>
+                        <li class="change_line">
+                            <a href="connect.html" target="_self">
+                                <span></span>
+                                <span>第三方账户绑定</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main_rg">
+            <div id="main_rg_tp">
+                <span>|</span>
+                <h2>我的账号</h2>
+            </div>
+            <div id="main_rg_dw">
+                <div id="rg_part_one">
+                    <a href="user.html">
+                        <img src="../image/noavatar_middle.gif" alt=""/>
+                    </a>
+                    <div id="rg_part_one_rg">
+                        <div>
+                            <span>您好:</span>
+                            <span>[ asdaasd123 ]</span>
+                        </div>
+                        <div>
+                            <span>账户余额: 0元</span>
+                            <div>
+                                <span>充值</span>
+                                <span>充值历史</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rg_part_two">
+                    <div id="rg_part_two_tp">
+                        <span>|</span>
+                        <h2>我的账号</h2>
+                    </div>
+                    <div id="rg_part_two_dw">
+                        <div class="dw_line">
+                            <span></span>
+                            <span>密保邮箱：未绑定</span>
+                            <a href="">绑定邮箱</a>
+                            <span>用于忘记密码或帐号被盗时快速重置密码</span>
+                        </div>
+                        <div class="dw_line">
+                            <span></span>
+                            <span>手机号码：未绑定</span>
+                            <a href="">绑定手机</a>
+                            <span>用于密码修改时短信提示和密码遗失时重置密码</span>
+                        </div>
+                        <div class="dw_line">
+                            <span></span>
+                            <span>证件信息：未绑定</span>
+                            <a href="">绑定证件</a>
+                            <span>用于帐号防沉迷认证和密码遗失时重置密码</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="rg_part_three">
+                    <div id="rg_part_three_tp">
+                    <span>|</span>
+                    <h2>基本资料</h2>
+                    </div>
+                    <form action="">
+                        <div id="base_data">
+                            <div class="data_line">
+                                <div class="line_one">昵&nbsp;&nbsp;&nbsp;称</div>
+                                <div class="line_two">立即查看</div>
+                            </div>
+                            <div class="data_line">
+                                <div class="line_one">性&nbsp;&nbsp;&nbsp;别</div>
+                                <div class="line_two">立即查看</div>
+                            </div>
+                            <div class="data_line">
+                                <div class="line_one">受教育程度</div>
+                                <div class="line_two">立即查看</div>
+                            </div>
+                            <div class="data_line">
+                                <div class="line_one">所&nbsp;在&nbsp;地</div>
+                                <div class="line_two">立即查看</div>
+                            </div>
+                            <div class="data_line">
+                                <div class="line_one">职&nbsp;&nbsp;&nbsp;业</div>
+                                <div class="line_two">立即查看</div>
+                            </div>
+                            <div class="data_line">
+                                <div class="line_one">收&nbsp;&nbsp;&nbsp;入</div>
+                                <div class="line_two">立即查看</div>
+                            </div>
+                            <div class="data_line">
+                                <div class="line_one">Q&nbsp;&nbsp;&nbsp;Q</div>
+                                <div class="line_two">立即查看</div>
+                            </div>
+                            <div class="data_line">
+                                <div class="line_one">电&nbsp;&nbsp;&nbsp;话</div>
+                                <div class="line_two">立即查看</div>
+                            </div>
+                        </div>
+                        <div id="data_submit">
+                            <input type="submit" value="提交个人资料"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="login_second">
+    <div id="login_second_all">
+        <div id="login_second_content">
+            <div>
+                <span>登录飞扬天下网</span>
+                <span id="close_login">×</span>
+            </div>
+            <div class="login_pad" id="login_pad">
+                <div class="login_two">账号 &nbsp; <input type="text" id="name_text" placeholder="用户名/手机号"/></div>
+                <div class="login_two">密码 &nbsp; <input type="password" id="name_pass" placeholder="密码"/></div>
+                <div class="login_three">
+                    <input type="checkbox" value="1"/>下次自动登录
+                    <a href="#">忘记密码</a>
+                </div>
+                <div class="login_four" id="login_enter">
+                    <button>登录</button>
+                </div>
+                <div class="login_five">
+                    <ul>
+                        <li><a href="#">QQ<img src="../image/QQ.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微信<img src="../image/weixin.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                        <li><a href="#">微博<img src="../image/weibo.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                    </ul>
+                    <a class="login_register" href="#">注册账号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+</body>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/login.js"></script>
+<script src="js/user.js"></script>
+</html>
