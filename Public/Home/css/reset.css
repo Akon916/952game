@@ -84,3 +84,7 @@ hr {
 input, select {
     vertical-align:middle;
 }
+.ac_results li {
+    height: 30px;
+    line-height: 30px!important;
+}

@@ -297,6 +297,14 @@ $(".return_top").click(function(e){
     e.preventDefault();
     $('body,html').animate({scrollTop:0},500);
 });
+//未登录点击侧边栏进不去个人中心
+$(".enter_person").click(function(){
+    if(GC==""){
+     alert("请您先进行登录操作");
+    }else{
+        location.href=$(this).attr("href");
+    }
+});
 
 
 $(function(){
