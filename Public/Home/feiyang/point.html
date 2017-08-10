@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>飞扬天下积分</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/point.css"/>
+    <link rel="stylesheet" href="css/jquery.autocomplete.css"/>
+    <link rel="stylesheet" href="css/gooey.min.css"/>
+</head>
+<body>
+<?php include 'data/header.html'?>
+<div id="main">
+    <div id="main_top_bck"></div>
+    <div id="main_content">
+        <div id="main_all">
+            <div id="main_lf">
+                <div id="main_one">
+                    <div class="login">
+                          <div class="login_pad">
+                              <div class="login_one"><span>账号登录</span></div>
+                              <span id="notice_one"></span>
+                              <div class="login_two">账号 &nbsp; <input type="text" id="name_text_one" autocomplete="off" placeholder="用户名/手机号"/></div>
+                              <div class="login_two">密码 &nbsp; <input type="password" id="name_pass_one" placeholder="密码"/></div>
+                              <div class="login_three">
+                                  <input type="checkbox" value="1" id="re_name"/>下次自动登录
+                                  <a href="#">忘记密码</a>
+                              </div>
+                              <div class="login_four" id="login_enter_one">
+                                  <button>登录</button>
+                              </div>
+                              <div class="login_five">
+                                  <ul>
+                                      <li><a href="#">QQ<img src="image/QQ.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                                      <li><a href="#">微信<img src="image/weixin.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                                      <li><a href="#">微博<img src="image/weibo.png" style="width: 20px;height: 20px;" alt=""/></a></li>
+                                  </ul>
+                                  <a class="login_register" href="#">注册账号</a>
+                              </div>
+                          </div>
+                    </div>
+                    <div id="person_frame">
+                        <div>
+                            <div>
+                                <img src="image/avatar.jpg" style="width: 80px;height: 80px" alt=""/>
+                            </div>
+                            <div>
+                                <div>
+                                    <span id="person_frame_login"></span>
+                                </div>
+                                <div id="person_frame_ptNum">积分: <span>150</span></div>
+                                <div id="person_frame_down">
+                                    <a href="person/user.html">个人中心</a>
+                                    <span id="person_frame_close" class="sign_out">[ 退出 ]</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span>参与的游戏</span>
+                        </div>
+                        <div id="played_game">
+                            <div class="avo_line">
+                                <a href="">
+                                    <img src="image/list_wly.png" alt=""/>
+                                    <span>卧龙吟</span>
+                                    <span>最新区服</span>
+                                    <span>开始游戏</span>
+                                </a>
+                            </div>
+                            <div class="avo_line">
+                                <a href="">
+                                    <img src="image/list_wly.png" alt=""/>
+                                    <span>卧龙吟</span>
+                                    <span>最新区服</span>
+                                    <span>开始游戏</span>
+                                </a>
+                            </div>
+                            <div class="avo_line">
+                                <a href="">
+                                    <img src="image/list_wly.png" alt=""/>
+                                    <span>卧龙吟</span>
+                                    <span>最新区服</span>
+                                    <span>开始游戏</span>
+                                </a>
+                            </div>
+                            <div class="avo_line">
+                                <a href="">
+                                    <img src="image/list_wly.png" alt=""/>
+                                    <span>卧龙吟</span>
+                                    <span>最新区服</span>
+                                    <span>开始游戏</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_two">
+                    <div id="main_draw_top">
+                        <span>|</span>
+                        <span>抽奖动态</span>
+                    </div>
+                    <div id="main_draw_down">
+                        <div class="main_draw_down_txt">
+                            <ul class="infoList">
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了卧龙吟礼包</span><span class="date"></span></li>
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了九阳神公礼包</span><span class="date"></span></li>
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了葵花巴泊典礼包</span><span class="date"></span></li>
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了李莲英礼包</span><span class="date"></span></li>
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了大话东游礼包</span><span class="date"></span></li>
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了大大大多无礼包</span><span class="date"></span></li>
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了奥迪礼包</span><span class="date"></span></li>
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了出租车礼包</span><span class="date"></span></li>
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了初中生礼包</span><span class="date"></span></li>
+                                <li><span>玩家</span><span>13******789</span><span class="date">抽中了支持自动车礼包</span><span class="date"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_three">
+                    <div id="main_three_top">
+                        <span>|</span>
+                        <span>兑换排名</span>
+                    </div>
+                    <div id="main_three_down">
+                         <div>
+                             <span>排名</span>
+                             <span>商品</span>
+                             <span>数量</span>
+                         </div>
+                         <div id="main_three_down_slide">
+                            <div class="main_slide_rel">
+                                <span>1</span>
+                                <span>卧龙吟感恩礼包</span>
+                                <span>1358个</span>
+                            </div>
+                            <div class="main_slide_pst">
+                                <div>
+                                    <a href=""><img src="image/ico_wly.jpg" alt=""/></a>
+                                </div>
+                                <div>
+                                    <a href="">木叶传说新春礼包</a>
+                                    <span>还剩263个</span>
+                                </div>
+                                <div>
+                                    <a href="">马上领取</a>
+                                </div>
+                            </div>
+                             <div class="main_slide_rel">
+                                 <span>2</span>
+                                 <span>木叶传说新春礼包</span>
+                                 <span>1358个</span>
+                             </div>
+                             <div class="main_slide_pst">
+                                 <div>
+                                     <a href=""><img src="image/ico_wly.jpg" alt=""/></a>
+                                 </div>
+                                 <div>
+                                     <a href="">木叶传说新春礼包</a>
+                                     <span>还剩263个</span>
+                                 </div>
+                                 <div>
+                                     <a href="">马上领取</a>
+                                 </div>
+                             </div>
+                             <div class="main_slide_rel">
+                             <span>3</span>
+                             <span>葵花宝带初级礼包</span>
+                             <span>1358个</span>
+                         </div>
+                             <div class="main_slide_pst">
+                                 <div>
+                                     <a href=""><img src="image/ico_wly.jpg" alt=""/></a>
+                                 </div>
+                                 <div>
+                                     <a href="">木叶传说新春礼包</a>
+                                     <span>还剩263个</span>
+                                 </div>
+                                 <div>
+                                     <a href="">马上领取</a>
+                                 </div>
+                             </div>
+                             <div class="main_slide_rel">
+                                 <span>4</span>
+                                 <span>斗罗三国新春礼包</span>
+                                 <span>1358个</span>
+                             </div>
+                             <div class="main_slide_pst">
+                                 <div>
+                                     <a href=""><img src="image/ico_wly.jpg" alt=""/></a>
+                                 </div>
+                                 <div>
+                                     <a href="">木叶传说新春礼包</a>
+                                     <span>还剩263个</span>
+                                 </div>
+                                 <div>
+                                     <a href="">马上领取</a>
+                                 </div>
+                             </div>
+                             <div class="main_slide_rel">
+                                 <span>5</span>
+                                 <span>斗罗三国新春礼包</span>
+                                 <span>1358个</span>
+                             </div>
+                             <div class="main_slide_pst">
+                                 <div>
+                                     <a href=""><img src="image/ico_wly.jpg" alt=""/></a>
+                                 </div>
+                                 <div>
+                                     <a href="">木叶传说新春礼包</a>
+                                     <span>还剩263个</span>
+                                 </div>
+                                 <div>
+                                     <a href="">马上领取</a>
+                                 </div>
+                             </div>
+                             <div class="main_slide_rel">
+                                 <span>6</span>
+                                 <span>斗罗三国新春礼包</span>
+                                 <span>1358个</span>
+                             </div>
+                             <div class="main_slide_pst">
+                                 <div>
+                                     <a href=""><img src="image/ico_wly.jpg" alt=""/></a>
+                                 </div>
+                                 <div>
+                                     <a href="">木叶传说新春礼包</a>
+                                     <span>还剩263个</span>
+                                 </div>
+                                 <div>
+                                     <a href="">马上领取</a>
+                                 </div>
+                             </div>
+                             <div class="main_slide_rel">
+                                 <span>7</span>
+                                 <span>斗罗三国新春礼包</span>
+                                 <span>1358个</span>
+                             </div>
+                             <div class="main_slide_pst">
+                                 <div>
+                                     <a href=""><img src="image/ico_wly.jpg" alt=""/></a>
+                                 </div>
+                                 <div>
+                                     <a href="">木叶传说新春礼包</a>
+                                     <span>还剩263个</span>
+                                 </div>
+                                 <div>
+                                     <a href="">马上领取</a>
+                                 </div>
+                             </div>
+                             <div class="main_slide_rel">
+                                 <span>8</span>
+                                 <span>斗罗三国新春礼包</span>
+                                 <span>1358个</span>
+                             </div>
+                             <div class="main_slide_pst">
+                                 <div>
+                                     <a href=""><img src="image/ico_wly.jpg" alt=""/></a>
+                                 </div>
+                                 <div>
+                                     <a href="">木叶传说新春礼包</a>
+                                     <span>还剩263个</span>
+                                 </div>
+                                 <div>
+                                     <a href="">马上领取</a>
+                                 </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div id="main_four">
+                    <div id="main_four_top">
+                        <span>|</span>
+                        <span>常见问题</span>
+                        <a href=""><span>更多+</span></a>
+                    </div>
+                    <div id="main_four_down">
+                        <ul>
+                            <li><a href="">1. 如何获取积分！</a></li>
+                            <li><a href="">2. 什么是积分！</a></li>
+                            <li><a href="">3. 游戏礼包怎么用！</a></li>
+                            <li><a href="">4. 物品奖品怎么兑换！</a></li>
+                            <li><a href="">5. 积分可以原来做什么！</a></li>
+                            <li><a href="">6. 充值的积分怎么获取！</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+            <div id="main_rg">
+                <div id="main_rg_package">
+                    <div id="main_rg_package_top">
+                        <div>
+                            <span>|</span>
+                            <span>兑换礼品</span>
+                        </div>
+                        <a href="">更多+</a>
+                    </div>
+                    <div id="main_rg_package_down">
+                        <ul>
+                            <li class="two_down_game_try">
+                                <div class="game_try_rel">
+                                    <img src="image/5848ab85eb5c7.png" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>还剩:&nbsp;40件</span>
+                                        <a href="">兑换礼包</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>影泰智能VR一体机</span>
+                                    </div>
+                                    <div>
+                                        <span>40000</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try">
+                                <div class="game_try_rel">
+                                    <img src="image/5848ab85eb5c7.png" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>还剩:&nbsp;40件</span>
+                                        <a href="">兑换礼包</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>影泰智能VR一体机</span>
+                                    </div>
+                                    <div>
+                                        <span>40000</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try end_mar">
+                                <div class="game_try_rel">
+                                    <img src="image/5848ab85eb5c7.png" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>还剩:&nbsp;40件</span>
+                                        <a href="">兑换礼包</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>影泰智能VR一体机</span>
+                                    </div>
+                                    <div>
+                                        <span>40000</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="main_rg_one">
+                    <div id="main_rg_one_top">
+                        <div>
+                            <span>|</span>
+                            <span>任务赚积分</span>
+                        </div>
+                    </div>
+                    <div id="main_rg_one_down">
+                        <ul>
+                            <li class="one_down_style">
+                                <span></span>
+                                <span>飞扬会员用户</span>
+                                <div>
+                                    <span>+100</span>
+                                    <span>积分</span>
+                                </div>
+                                <a href="javascript:void(0)" onclick="return false">已完成</a>
+                            </li>
+                            <li class="one_down_style">
+                                <span></span>
+                                <span>首次充值</span>
+                                <div>
+                                    <span>+150</span>
+                                    <span>积分</span>
+                                </div>
+                                <a href="recharge.html" onclick="return false">未完成</a>
+                            </li>
+                            <li class="one_down_style">
+                                <span></span>
+                                <span>游戏体验</span>
+                                <div>
+                                    <span>+50</span>
+                                    <span>积分</span>
+                                </div>
+                                <a href="game.html" onclick="return false">已完成</a>
+                            </li>
+                            <li class="one_down_style">
+                                <span></span>
+                                <span>绑定身份信息</span>
+                                <div>
+                                    <span>+50</span>
+                                    <span>积分</span>
+                                </div>
+                                <a href="person/user.html" onclick="return false">未完成</a>
+                            </li>
+                            <li class="one_down_style">
+                                <span></span>
+                                <span>绑定密保邮箱</span>
+                                <div>
+                                    <span>+50</span>
+                                    <span>积分</span>
+                                </div>
+                                <a href="person/space.html" onclick="return false">未完成</a>
+                            </li>
+                            <li class="one_down_style">
+                                <span></span>
+                                <span>完善个人资料</span>
+                                <div>
+                                    <span>+50</span>
+                                    <span>积分</span>
+                                </div>
+                                <a href="person/user.html" onclick="return false">未完成</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="main_rg_two">
+                     <div id="main_rg_two_top">
+                         <div>
+                             <span>|</span>
+                             <span>游戏赚积分</span>
+                         </div>
+                     </div>
+                     <div id="main_rg_two_down">
+                          <ul>
+                              <li class="two_down_game_try">
+                                  <div class="game_try_rel">
+                                      <img src="image/sw_mycs.jpg" alt=""/>
+                                      <div class="game_try_pst">
+                                          <span>参与人数:&nbsp;365人</span>
+                                          <a href="">立即试玩</a>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <div>
+                                          <span>木叶传说</span>
+                                          <span>963区</span>
+                                      </div>
+                                      <div>
+                                          <span>奖</span>
+                                          <span>26530</span>
+                                          <span>积分</span>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="two_down_game_try">
+                                  <div class="game_try_rel">
+                                      <img src="image/sw_k.jpg" alt=""/>
+                                      <div class="game_try_pst">
+                                          <span>参与人数:&nbsp;305人</span>
+                                          <a href="">立即试玩</a>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <div>
+                                          <span>葵花宝典</span>
+                                          <span>263区</span>
+                                      </div>
+                                      <div>
+                                          <span>奖</span>
+                                          <span>26530</span>
+                                          <span>积分</span>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="two_down_game_try end_mar">
+                                  <div class="game_try_rel">
+                                      <img src="image/sw_mycs.jpg" alt=""/>
+                                      <div class="game_try_pst">
+                                          <span>参与人数:&nbsp;365人</span>
+                                          <a href="">立即试玩</a>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <div>
+                                          <span>木叶传说</span>
+                                          <span>963区</span>
+                                      </div>
+                                      <div>
+                                          <span>奖</span>
+                                          <span>26530</span>
+                                          <span>积分</span>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="two_down_game_try">
+                                  <div class="game_try_rel">
+                                      <img src="image/sw_mycs.jpg" alt=""/>
+                                      <div class="game_try_pst">
+                                          <span>参与人数:&nbsp;365人</span>
+                                          <a href="">立即试玩</a>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <div>
+                                          <span>木叶传说</span>
+                                          <span>963区</span>
+                                      </div>
+                                      <div>
+                                          <span>奖</span>
+                                          <span>26530</span>
+                                          <span>积分</span>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="two_down_game_try">
+                                  <div class="game_try_rel">
+                                      <img src="image/sw_k.jpg" alt=""/>
+                                      <div class="game_try_pst">
+                                          <span>参与人数:&nbsp;305人</span>
+                                          <a href="">立即试玩</a>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <div>
+                                          <span>葵花宝典</span>
+                                          <span>263区</span>
+                                      </div>
+                                      <div>
+                                          <span>奖</span>
+                                          <span>26530</span>
+                                          <span>积分</span>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="two_down_game_try end_mar">
+                                  <div class="game_try_rel">
+                                      <img src="image/sw_mycs.jpg" alt=""/>
+                                      <div class="game_try_pst">
+                                          <span>参与人数:&nbsp;365人</span>
+                                          <a href="">立即试玩</a>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <div>
+                                          <span>木叶传说</span>
+                                          <span>963区</span>
+                                      </div>
+                                      <div>
+                                          <span>奖</span>
+                                          <span>26530</span>
+                                          <span>积分</span>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                     </div>
+                </div>
+                <div id="main_rg_three">
+                    <div id="main_rg_three_tp">
+                        <div>
+                            <span>|</span>
+                            <span>游戏礼包</span>
+                        </div>
+                    </div>
+                    <div id="main_rg_three_dw">
+                        <ul>
+                            <li class="two_down_game_try">
+                                <div class="game_try_rel">
+                                    <img src="image/57bd5bad51a00.jpg" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>参与人数:&nbsp;365人</span>
+                                        <a href="">立即试玩</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>卧龙吟</span>
+                                        <span>初级礼包</span>
+                                    </div>
+                                    <div>
+                                        <span>奖</span>
+                                        <span>26530</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try">
+                                <div class="game_try_rel">
+                                    <img src="image/57ea6b587acb5.jpg" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>参与人数:&nbsp;305人</span>
+                                        <a href="">立即试玩</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>村长征战</span>
+                                        <span>感恩礼包</span>
+                                    </div>
+                                    <div>
+                                        <span>奖</span>
+                                        <span>26530</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try end_mar">
+                                <div class="game_try_rel">
+                                    <img src="image/56eb6b1837a3d.jpg" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>参与人数:&nbsp;365人</span>
+                                        <a href="">立即试玩</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>九阳绝学</span>
+                                        <span>千玺礼包</span>
+                                    </div>
+                                    <div>
+                                        <span>奖</span>
+                                        <span>26530</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try">
+                                <div class="game_try_rel">
+                                    <img src="image/57bd5bad51a00.jpg" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>参与人数:&nbsp;365人</span>
+                                        <a href="">立即试玩</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>卧龙吟</span>
+                                        <span>初级礼包</span>
+                                    </div>
+                                    <div>
+                                        <span>奖</span>
+                                        <span>26530</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try">
+                                <div class="game_try_rel">
+                                    <img src="image/57ea6b587acb5.jpg" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>参与人数:&nbsp;305人</span>
+                                        <a href="">立即试玩</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>村长征战</span>
+                                        <span>感恩礼包</span>
+                                    </div>
+                                    <div>
+                                        <span>奖</span>
+                                        <span>26530</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try end_mar">
+                                <div class="game_try_rel">
+                                    <img src="image/56eb6b1837a3d.jpg" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>参与人数:&nbsp;365人</span>
+                                        <a href="">立即试玩</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>九阳绝学</span>
+                                        <span>千玺礼包</span>
+                                    </div>
+                                    <div>
+                                        <span>奖</span>
+                                        <span>26530</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try">
+                                <div class="game_try_rel">
+                                    <img src="image/57bd5bad51a00.jpg" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>参与人数:&nbsp;365人</span>
+                                        <a href="">立即试玩</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>卧龙吟</span>
+                                        <span>初级礼包</span>
+                                    </div>
+                                    <div>
+                                        <span>奖</span>
+                                        <span>26530</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try">
+                                <div class="game_try_rel">
+                                    <img src="image/57ea6b587acb5.jpg" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>参与人数:&nbsp;305人</span>
+                                        <a href="">立即试玩</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>村长征战</span>
+                                        <span>感恩礼包</span>
+                                    </div>
+                                    <div>
+                                        <span>奖</span>
+                                        <span>26530</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="two_down_game_try end_mar">
+                                <div class="game_try_rel">
+                                    <img src="image/56eb6b1837a3d.jpg" alt=""/>
+                                    <div class="game_try_pst">
+                                        <span>参与人数:&nbsp;365人</span>
+                                        <a href="">立即试玩</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>九阳绝学</span>
+                                        <span>千玺礼包</span>
+                                    </div>
+                                    <div>
+                                        <span>奖</span>
+                                        <span>26530</span>
+                                        <span>积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<?php include 'data/footer.html'?>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/jquery.autocomplete.js"></script>
+<script src="js/gooey.min.js"></script>
+<script src="js/point.js"></script>
+<script src="js/common.js"></script>
+</html>
