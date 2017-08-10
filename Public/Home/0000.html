@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="cartoon/common/css/reset.css"/>
+</head>
+<style type="text/css">
+    /* css 重置 */
+    *{margin:0; padding:0; list-style:none; }
+    body{ background:#fff; font:normal 12px/22px 宋体;  }
+    img{ border:0;  }
+    a{ text-decoration:none; color:#333;  }
+    a:hover{ color:#1974A1;  }
+
+    /* 本例子css */
+    .txtMarquee-left{ width:450px;  position:relative;background: #f7f7f7; border-radius: 8px; }
+    .txtMarquee-left .slide_bd{ padding:5px; }
+    .txtMarquee-left .slide_bd .tempWrap{ width:425px !important; }/* 用 !important覆盖SuperSlide自动生成的宽度，这样就可以手动控制可视宽度。 */
+    .txtMarquee-left .slide_bd ul{ overflow:hidden; zoom:1; }
+    .txtMarquee-left .slide_bd ul li{ margin-right:20px;  float:left; height:24px; line-height:24px;  text-align:left; _display:inline; width:auto !important;  }/* 用 width:auto !important 覆盖SuperSlide自动生成的宽度，解决文字不衔接问题 */
+    .txtMarquee-left .slide_bd ul li a:nth-child(1){ color:#FFA5B6; }
+    .txtMarquee-left .slide_bd ul li a:nth-child(2){ color:#999; }
+</style>
+<body>
+<div class="txtMarquee-left">
+    <div class="slide_bd">
+        <ul class="infoList">
+            <li><a href="http://www.SuperSlide2.com" target="_blank">【星之奇遇密语】</a><a href="">少女和他的神奇后宫</a></li>
+            <li><a href="http://www.SuperSlide2.com" target="_blank">【不嫁总裁男仆】</a><a href="">跟白富美的一夜情</a></li>
+            <li><a href="http://www.SuperSlide2.com" target="_blank">【驭灵师】</a><a href="">漫画家在冒险中留下最惊险一幕</a></li>
+            <li><a href="http://www.SuperSlide2.com" target="_blank">【王爷不好婚】</a><a href="">俩个混蛋的爱恨情仇</a></li>
+            <li><a href="http://www.SuperSlide2.com" target="_blank">【星之奇遇密语】</a><a href="">跟白富美的一夜情</a></li>
+            <li><a href="http://www.SuperSlide2.com" target="_blank">【驭灵师】</a><a href="">女友坚持警局完婚不抛弃</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="cartoon/common/js/jquery-1.8.3.min.js"></script>
+<script src="cartoon/common/js/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+    jQuery(".txtMarquee-left").slide({mainCell:".slide_bd ul",autoPlay:true,effect:"leftMarquee",vis:2,interTime:50});
+</script>
+</html>
