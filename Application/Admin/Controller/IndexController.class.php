@@ -12,6 +12,8 @@ class IndexController extends Controller {
     }
 
     public function top() {
+        $admin_info = getAdminInfo(session(MODULE_NAME.'_id'));//从session中获取admin_id并查询信息
+        $this->assign('admin_info',$admin_info);
         $this->display();
     }
 

@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>添加管理员</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="__PUBLIC__/Admin/css/adminStyle.css" rel="stylesheet" type="text/css" />
+    <script type="application/javascript" src="__PUBLIC__/Admin/js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="page-title">
+        <span class="modular fl"><i class="user"></i><em>添加管理员</em></span>
+    </div>
+    <form action="{:U('admin/admin/register')}" method="post" onsubmit="return formValidator()">
+        <table class="noborder">
+            <tr>
+                <td width="15%" style="text-align:right;">管理员账号：</td>
+                <td>
+                    <input type="text" class="textBox length-middle" name="name" id="name" onblur="checkName()"/>
+                    <div id="error1" style="display:inline;color:red;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;">管理员姓名：</td>
+                <td>
+                    <input type="text" class="textBox length-middle" name="username" id="username" onblur="checkUsername()"/>
+                    <div id="error2" style="display:inline;color:red;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;">管理员邮箱：</td>
+                <td>
+                    <input type="text" class="textBox length-middle" name="email" id="email" onblur="checkEmail()"/>
+                    <div id="error3" style="display:inline;color:red;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;">管理员密码：</td>
+                <td>
+                    <input type="password" class="textBox length-middle" name="password" id="password1" onblur="checkPassword()"/>
+                    <div id="error5" style="display:inline;color:red;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;">确认密码：</td>
+                <td>
+                    <input type="password" class="textBox length-middle" onblur="checkPassword()" id="password2"/>
+                    <div id="error4" style="display:inline;color:red;"></div>
+                </td>
+            </tr>
+            <tr>
+                <input type="hidden" name="add_time" value="">
+                <td style="text-align:right;"></td>
+                <td><input type="submit" class="tdBtn" id="submit" value="添加"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+<script type="application/javascript">
+    //验证密码是否为空且两次密码是否一致
+    function checkPassword() {
+        if ( $('#password1').val()=='' ){
+            $('#error5').html('密码不能为空');
+        }else{
+            $('#error5').html(' ');
+        }
+        if ( $('#password1').val() != $('#password2').val() ) {
+            $('#error4').html('密码不一致');
+            return false;
+        }else{
+            $('#error4').html(' ');
+            return true;
+        }
+    }
+    //验证邮箱是否正确
+    function checkEmail() {
+        var pattern = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+        var email = $('#email').val();
+        if ( email == '' ){
+            $('#error3').html('邮箱不能为空');
+            return false;
+        }else if( !pattern.test(email) ){
+            $('#error3').html('格式不正确');
+            return false;
+        }else{
+            $('#error3').html(' ');
+            return true;
+        }
+    }
+    //验证姓名是否为空
+    function checkUsername() {
+        if ( $('#username').val()== '' ){
+            $('#error2').html('姓名不能为空');
+            return false;
+        }else{
+            $('#error2').html(' ');
+            return true;
+        }
+    }
+    //验证账号是否为空
+    function checkName() {
+        if ( $('#name').val()=='' ){
+            $('#error1').html('账号不能为空');
+            return false;
+        }else if ( $('#name').val()!='' ) {
+            var name = $('#name').val();
+            $.ajax({
+                url:"{:U('admin/admin/check')}",
+                data:{name:name},
+                type:'post',
+                dataType:'json',
+                success:function(data){
+                    if (data.msg == 'true'){
+                        $('#error1').html('账号已存在');
+                        return false;
+                    }else{
+                        $('#error1').html(' ');
+                        return true;
+                    }
+                },
+            });
+        }
+    }
+    //验证表单条件是否全满足
+    function formValidator() {
+//        $('div:gt(1)').each(function check() {
+//            return true;
+//        });
+//        if (checkPassword()&&checkUsername()&&checkEmail()&&checkName()){
+//            return true;
+//        }else{
+//            //$('div:gt(1)').html('不能为空');
+//            return false;
+//        }
+        return true;
+    }
+
+</script>
+</html>
