@@ -4,13 +4,24 @@ jQuery("#section_three_down").slide({
     effect:"fade",
     autoPlay:false
 });
-
+//登录头像的放大效果
+$("#person_show").mouseenter(function(){
+    $(this).addClass("person_show");
+    $("#person_center_pst").animate({height:"220px"},200)
+});
+$("#person_center_pst"). mouseleave(function(){
+    $("#person_show").removeClass("person_show");
+    $("#person_center_pst").animate({height:"0px"},200)
+});
 //登录
 $('#entry_lg').click(function(){
    $("#login_modal").css('display','block')
 });
-$('#login_cls').click(function(){
-    $("#login_modal").css('display','none')
+$('#login_book').click(function(){
+    $("#login_second").css('display','block')
+});
+$('#close_login').click(function(){
+    $("#login_second").css('display','none')
 });
 
 //侧边导航
@@ -117,5 +128,39 @@ $("#section_four_dw_left_m>ul").on("mouseover","li",function(){
     divs.eq(index).show();
 });
 
-
+//底层弹出漫画效果
+$('#cartoon_close').click(function(){
+  $("#cartoon_bottom").animate({height:"0px",opacity:"0"},500)
+    setCookie(num_toggle,close_cartoon)
+});
+//用cookie判断是否关闭过底层漫画页面，重新打开浏览器弹出，刷新不弹出
+var num_toggle='cartoon_toggle';
+var close_cartoon="close";
+var GC=getCookie(num_toggle);//先获取cookie
+checkLogin(GC,num_toggle); //判断cookie用户名是否存在
+//写入cookie
+function setCookie(num_toggle,close_cartoon) {
+    var exp = new Date();
+    exp.setTime(exp.getTime());// + Days*24*60*60*1000
+    document.cookie = num_toggle + "="+  close_cartoon ;//+ ";expires=" + exp.toGMTString();//
+}
+/* 获取指定cookie */
+function getCookie(num_toggle){
+    var strCookie = document.cookie;
+    var arrCookie = strCookie.split(";");
+    for (var i = 0; i < arrCookie.length; i++) {
+        var arr = arrCookie[i].split("=");
+        if (arr[0] == num_toggle)
+            return arr[1];
+    }
+    return "";
+}
+/* 读取cookie识别登录状态 */
+function checkLogin(num_toggle) {
+    if (GC ==close_cartoon) {
+        $("#cartoon_bottom").css("display","none")
+    }else{
+        return false
+    }
+}
 

@@ -2,7 +2,7 @@
     width: 100%;
     height: 150px;
     margin: 0 0 0 0 ;
-    background:rgba(0,0,0,.2);
+    background-color: #090909;
 }
 #footer_detail{
     width: 1200px;
@@ -18,13 +18,16 @@
     float: left;
     margin:0 2px;
 }
+#footer_detail>ul>li>a{
+    color: #868686;
+}
 #footer_detail>div{
     margin-top: 40px;
 }
 #footer_detail>div>span{
     display: block;
     line-height: 30px;
-    color: #3c3c3c;
+    color: #868686;
     font-size: 13px;
 }
 

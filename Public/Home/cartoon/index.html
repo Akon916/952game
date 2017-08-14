@@ -28,17 +28,149 @@
             <button id="header_search"></button>
         </div>
         <div>
-            <span id="entry_lg">登录</span>
-            <a href="" id="login_name"></a>
-            <a href="#" id="sign_out" class="sign_out">.退出</a>
-            <span>|</span>
-            <span><a href="login/register.html">注册</a></span>
+            <!--<span id="entry_lg">登录</span>-->
+            <!--<span>|</span>-->
+            <!--<span><a href="login/register.html">注册</a></span>-->
+            <a href="">
+                <img src="images/touxiang.png" id="person_show" alt=""/>
+            </a>
+            <div id="person_center_pst">
+                <div id="person_name">getian</div>
+                <div id="person_point">
+                    <a href="">钻石: <span>0</span></a>
+                    <a href="">金币: <span>1000</span></a>
+                </div>
+                <div id="person_vip"><a href="">开通VIP</a></div>
+                <div id="person_SignOut">退出</div>
+            </div>
         </div>
         <div>
             <ul>
-                <li>消息</li>
-                <li>书架</li>
-                <li>历史</li>
+                <li class="header_msg_rel">
+                    <a href="">消息</a>
+                    <ul class="header_msg_pst">
+                        <li>
+                            <a href="">
+                                <span>评论</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>反馈</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>私信</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header_msg_pst" style="display: none">
+                        <li>
+                            <a href="">
+                                <span>评论</span>
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>反馈</span>
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>私信</span>
+                                <span>1</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header_msg_rel">
+                    <a href="">书架</a>
+                    <div class="header_book_pst" style="display: none">
+                         <div>
+                             <span>收藏你喜欢的漫画，一起追</span>
+                             <span id="login_book">立即登录</span>
+                         </div>
+                    </div>
+                    <div class="header_book_pst">
+                        <img src="images/nodata-2.png" alt=""/>
+                        <span>空荡荡的...赶紧去收藏</span>
+                    </div>
+                    <ul class="header_book_pst_two" style="display: none">
+                         <li class="book_style">
+                             <a href="">
+                                 <img src="images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                             </a>
+                             <div>
+                                 <a href="">救命，我还不想死！</a>
+                                 <span> 更新至: <a href="">32话</a></span>
+                             </div>
+                         </li>
+                         <li class="book_style">
+                            <a href="">
+                                <img src="images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                            </a>
+                            <div>
+                                <a href="">救命，我还不想死！</a>
+                                <span> 更新至: <a href="">32话</a></span>
+                            </div>
+                         </li>
+                         <li class="book_style">
+                            <a href="">
+                                <img src="images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                            </a>
+                            <div>
+                                <a href="">救命，我还不想死！</a>
+                                <span> 更新至: <a href="">32话</a></span>
+                            </div>
+                         </li>
+                         <li class="cle_book">
+                            <a href="">全部收藏(5)</a>
+                         </li>
+                    </ul>
+                </li>
+                <li class="header_msg_rel">
+                    <a href="">历史</a>
+                    <div class="header_his_pst">
+                        <div>
+                            <span>还没有看过任何漫画，赶紧去 <a href="">挑选</a>吧...</span>
+                        </div>
+                    </div>
+                    <ul class="header_book_pst_two" style="display: none">
+                        <li class="book_style">
+                            <a href="">
+                                <img src="images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                            </a>
+                            <div>
+                                <a href="">救命，我还不想死！</a>
+                                <span> 更新至: <a href="">32话</a></span>
+                            </div>
+                        </li>
+                        <li class="book_style">
+                            <a href="">
+                                <img src="images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                            </a>
+                            <div>
+                                <a href="">救命，我还不想死！</a>
+                                <span> 更新至: <a href="">32话</a></span>
+                            </div>
+                        </li>
+                        <li class="book_style">
+                            <a href="">
+                                <img src="images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                            </a>
+                            <div>
+                                <a href="">救命，我还不想死！</a>
+                                <span> 更新至: <a href="">32话</a></span>
+                            </div>
+                        </li>
+                        <li class="cle_book">
+                            <a href="">历史收藏(5)</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -371,6 +503,7 @@
             <div id="section_two_left">
                 <div id="section_two_left_top">
                     <span>热门漫画</span>
+                    <span></span>
                     <div id="section_two_left_top_slide">
                         <div class="txtMarquee-left">
                             <div class="slide_bd">
@@ -793,7 +926,9 @@
         </div>
         <div id="section_three">
             <div id="section_three_top">
-                独家漫画
+                <span>独家漫画</span>
+                <span></span>
+                <a href="">查看独家排行榜</a>
             </div>
             <div id="section_three_down">
                 <div class="picFocus_main">
@@ -902,7 +1037,9 @@
         <!--新作上升-->
         <div id="section_four">
             <div id="section_four_tp">
-                 新作上升
+                <span>新作上升</span>
+                <span></span>
+                <a href="">查看新作排行榜</a>
             </div>
             <div id="section_four_dw">
                 <div id="section_four_dw_left">
@@ -1555,6 +1692,11 @@
             <li class="side_line">热门分类</li>
             <li class="side_line">返回顶部</li>
         </ul>
+        <div class="side_rel">
+            <a href="" class="side_pst">
+                <img src="images/pic%252F2016%252F05%252F09%252Ff21c88c2e53e40b2b46e66d02432d2ba.png" alt=""/>
+            </a>
+        </div>
 </div>
 <div id="login_second">
     <div id="login_second_all">
@@ -1588,6 +1730,13 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<!--底层弹出动画-->
+<div id="cartoon_bottom">
+    <div>
+        <span id="cartoon_show"></span>
+        <span id="cartoon_close"></span>
     </div>
 </div>
 <?php include 'common/footer.html'?>
