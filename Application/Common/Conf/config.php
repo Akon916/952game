@@ -1,14 +1,14 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-    'URL_MODULE'        =>  2,              //URL模式
-    'SESSION_AUTO_START'=>  true,           //session是否自动开启
-    'DEFAULT_MODULE'        =>  'Admin',     // 默认模块
-    'DEFAULT_CONTROLLER'    =>  'Index',    // 默认控制器名称
-    'DEFAULT_ACTION'        =>  'index',    // 默认操作名称
+    'URL_MODULE'            =>  2,              //URL模式     0普通模式，1 PathInfo模式，2 rewrite模式， 3兼容模式
+    'SESSION_AUTO_START'    =>  true,           //session是否自动开启
+    // 'DEFAULT_MODULE'        =>  'Admin',     // 默认模块
+    //'DEFAULT_CONTROLLER'     =>  'Index',    // 默认控制器名称
+    // 'DEFAULT_ACTION'        =>  'index',    // 默认操作名称
 
     // 显示页面Trace信息'
-    'SHOW_PAGE_TRACE'   =>  false,
+    'SHOW_PAGE_TRACE'   =>  true,
 
     //模板替换常量
     'TMPL_PARSE_STRING'  => array(
@@ -20,7 +20,6 @@ return array(
     'MODULE_ALLOW_LIST'=>array(
         'Home',
         'Admin'
-        //'   Common  '
     ),
 
     //数据库设置
@@ -38,6 +37,6 @@ return array(
 
     'TMPL_DENY_PHP'         =>  false,      // 默认模板引擎是否禁用PHP原生代码
 
-    'URL_HTML_SUFFIX'       =>  '',          //伪静态设置
+    'URL_HTML_SUFFIX'       =>  '.html',          //伪静态设置
 
 );

@@ -67,7 +67,7 @@ class AdminController extends Controller
                     $admin = M('admin')->where($map)->find();   //根据账户名去数据库查询信息
                     if ( password_verify($data['password'],$admin['password']) ){ //验证密码是否正确
                         session(MODULE_NAME.'_id',$admin['id']);//用session保存管理员id
-                        //session(MODULE_NAME.'_name',$admin['name']);//用session保存管理员名
+                        session(MODULE_NAME.'_name',$admin['name']);//用session保存管理员名
                         $url = session(MODULE_NAME.'from_url') ? : U('Admin/Index/index'); //若有登录前地址，则登录后回跳，否则跳往后台首页
                         exit(json_encode(array('status'=>1,'url'=>$url)));
                     }else{

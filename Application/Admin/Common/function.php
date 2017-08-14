@@ -10,6 +10,6 @@
 /*
  * 根据id返回admin信息
  */
-function getAdminInfo($admin_id = 0){
-     return  M('admin')->where("id = $admin_id")->find();
+function getAdminInfo( $id = 0 ){
+    return M('admin')->where("id=$id")->find();
 }
