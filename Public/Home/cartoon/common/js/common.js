@@ -4,10 +4,15 @@ $("#person_show").mouseover(function(){
     $(this).addClass("person_show");
     $("#person_center_pst").animate({height:"220px"},200)
 });
-$("#person_center_pst"). mouseleave(function(){
+$("#person_center_pst").mouseleave(function(){
     $("#person_show").removeClass("person_show");
     $("#person_center_pst").animate({height:"0px"},200)
 });
+$("#person_msg").mouseover(function(){
+    $("#person_show").removeClass("person_show");
+    $("#person_center_pst").animate({height:"0px"},200)
+});
+
 //登录
 $('#entry_lg').click(function(){
     $("#login_second").css('display','block')

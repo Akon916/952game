@@ -1,6 +1,6 @@
 
 $(function(){
-    var inp1=false,inp2=false;
+    var inp1=false,inp2=false,inp3=false;
     // 验证用户名
     $('#username').blur(function(){
         if($(this).val().length >= 4 && $(this).val().length <=14 && $(this).val()!='' && $(this).val().match(/^[\u4E00-\u9FA5A-Za-z0-9_]+$/) )
@@ -24,9 +24,19 @@ $(function(){
             $(this).next().text('密码应该为6-16位之间').css('color','red');
         }
     });
+    //验证码
+    $('#er_code').blur(function(){
+        if($(this).val().length == 4 ){
+                inp2=true;
+        }else if($(this).val().length==""){
+           alert("验证码不能为空")
+        }else{
+            alert("验证码位数必须为4")
+        }
+    });
     //提交按钮,所有验证通过方可提交
     $('#submit').click(function(){
-        if(inp1 && inp2){
+        if(inp1 && inp2 && inp3){
             $('form').submit();
         }else{
             return false;

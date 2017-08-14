@@ -4,25 +4,6 @@ jQuery("#section_three_down").slide({
     effect:"fade",
     autoPlay:false
 });
-////登录头像的放大效果
-//$("#person_show").mouseenter(function(){
-//    $(this).addClass("person_show");
-//    $("#person_center_pst").animate({height:"220px"},200)
-//});
-//$("#person_center_pst"). mouseleave(function(){
-//    $("#person_show").removeClass("person_show");
-//    $("#person_center_pst").animate({height:"0px"},200)
-//});
-////登录
-//$('#entry_lg').click(function(){
-//   $("#login_modal").css('display','block')
-//});
-//$('#login_book').click(function(){
-//    $("#login_second").css('display','block')
-//});
-//$('#close_login').click(function(){
-//    $("#login_second").css('display','none')
-//});
 
 //侧边导航
 $(document).scroll(function(){
@@ -39,25 +20,25 @@ $(".side_line:eq(5)").click(function(){
 });
 $(document).scroll(function(){
     var sct=$(window).scrollTop();
-    if(sct>=0&&sct<440){
+    if(sct>=0&&sct<540){
         $(".side_line:eq(0)")
             .addClass('side_line_color')
             .siblings()
             .removeClass('side_line_color')
     }
-    if(sct>=440&&sct<1110){
+    if(sct>=540&&sct<1210){
         $(".side_line:eq(1)")
             .addClass('side_line_color')
             .siblings()
             .removeClass('side_line_color')
     }
-    if(sct>=1110&&sct<1600){
+    if(sct>=1210&&sct<1700){
         $(".side_line:eq(2)")
             .addClass('side_line_color')
             .siblings()
             .removeClass('side_line_color')
     }
-    if(sct>=1600&&sct<2400){
+    if(sct>=1700&&sct<2400){
         $(".side_line:eq(3)")
             .addClass('side_line_color')
             .siblings()
@@ -71,7 +52,7 @@ $(document).scroll(function(){
     }
 });
 $('#side_line').on('click','li',function(){
-    var arr=[0,440,1110,1600,2400];
+    var arr=[0,540,1210,1700,2400];
         var i=$(this).index();
     $('body,html').animate({scrollTop:arr[i]},300);
 });
