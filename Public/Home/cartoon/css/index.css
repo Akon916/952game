@@ -434,10 +434,15 @@ legend{
     display: block;
     width: 100%;
 }
+#nav_all>#nav_hover_rel{
+    width: 900px;
+    height: 100%;
+    float: left;
+}
 #nav_all>ul>li{
     display: block;
     float: left;
-    width: 135px;
+    width: 110px;
     height: 55px;
     line-height: 55px;
     text-align: center;
@@ -456,6 +461,29 @@ legend{
 #nav_all>ul>li>:hover{
     color: #43689E;
     font-weight: bold;
+}
+#nav_all_r{
+    float: right;
+    width: 130px;
+    height: 100%;
+}
+#nav_all_r>a{
+    display: block;
+    float: left;
+    width: 60px;
+    height: 100%;
+    line-height: 55px;
+    text-align: center;
+    font-weight: bold;
+}
+#nav_all_r>a:hover{
+    color: #BA6E35;
+}
+#nav_all_r>span{
+    display: block;
+    float: left;
+    height: 100%;
+    line-height: 55px;
 }
 #section{
     width: 100%;

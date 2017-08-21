@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title> CO7 漫画</title>
+    <link rel="shortcut icon" href="../images/20170814113613362_easyicon_net_32.ico"/>
+    <link rel="stylesheet" href="../common/css/footer.css"/>
+    <link rel="stylesheet" href="../common/css/reset.css"/>
+    <link rel="stylesheet" href="css/cpay.css"/>
+    <link rel="stylesheet" href="../common/icon/iconfont.css"/>
+</head>
+<body>
+<header id="header">
+    <div id="header_all">
+        <div>
+            <h3>CO7漫画</h3>
+            <span>|</span>
+            <h3>作者中心</h3>
+        </div>
+        <div>
+            <a href="../index.html">首页</a>
+            <a href="">新手指南</a>
+        </div>
+        <div>
+            <a href="autor.html"><img src="../images/touxiang.png" alt=""/></a>
+            <span class="font_hid">大神542542qwe</span>
+        </div>
+        <div>
+            <i class="iconfont">&#xe615;</i>
+        </div>
+    </div>
+</header>
+<section id="section">
+    <div id="section_all">
+        <div id="section_left">
+            <?php include 'book_common.html'?>
+            <div id="section_left_d">
+                <a href="">新手指南</a>
+                <a href="">作者福利</a>
+                <span>CO7漫画投诉或建议邮箱:co7qq.com</span>
+            </div>
+        </div>
+        <div id="section_right">
+            <div id="section_right_top">
+                <a href="autor.html">基本资料</a>
+                <span> > </span>
+                <span>绑定支付账号</span>
+            </div>
+            <div id="section_right_down">
+                <p>
+                    为了保障您的账户安全，姓名和身份证信息 <span>不可更改</span>。如需变更请联系编辑，<br/>我们将认真核实您的信息。
+                    以下各项均为 <span>＊必填</span>。
+                </p>
+                <form  method="post"   action="create.php">
+                    <div class="epay_list">
+                        <div>姓名 :</div>
+                        <div>
+                            <input type="text" id="username"/>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="epay_list">
+                        <div>身份证 :</div>
+                        <div>
+                            <input type="text" id="card"/>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="epay_list">
+                        <div>身份证照片 :</div>
+                        <div>
+                            <div class="id_pic">
+                                <input type="file" class="cla_file cla_file_one"/>
+                                <input  name="idCard_image[]" class="id_card" type="hidden"/>
+                                <img src="" alt=""/>
+                                <i class="iconfont">&#xe674;</i>
+                                <div> 正面</div>
+                            </div>
+                            <div class="id_pic">
+                                <input type="file" class="cla_file cla_file_two"/>
+                                <input  name="idCard_image[]" class="id_card" type="hidden"/>
+                                <img src="" alt=""/>
+                                <i class="iconfont">&#xe619;</i>
+                                <div> 反面</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                身份证上所有者信息需清晰可见，证件号需能看到
+                                照片内容真是有效，不得做任何修改
+                                支持jpg jpeg bmp gif格式照片，小于5M
+                            </p>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="epay_list">
+                        <div>银行卡账号 :</div>
+                        <div>
+                            <input type="text" id="bank"/>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" id="submit"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<?php include '../common/footer.html'?>
+</body>
+<script src="../common/js/jquery-1.8.3.min.js"></script>
+<script src="../common/js/tools.js"></script>
+<script src="js/cpay.js"></script>
+</html>

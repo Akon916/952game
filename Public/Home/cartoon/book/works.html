@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title> CO7 漫画</title>
+    <link rel="shortcut icon" href="../images/20170814113613362_easyicon_net_32.ico"/>
+    <link rel="stylesheet" href="../common/css/footer.css"/>
+    <link rel="stylesheet" href="../common/css/reset.css"/>
+    <link rel="stylesheet" href="css/works.css"/>
+    <link rel="stylesheet" href="../common/icon/iconfont.css"/>
+    <script src="../common/js/html5shiv.min.js"></script>
+</head>
+<body>
+<header id="header">
+    <div id="header_all">
+        <div>
+            <h3>CO7漫画</h3>
+            <span>|</span>
+            <h3>作者中心</h3>
+        </div>
+        <div>
+            <a href="../index.html">首页</a>
+            <a href="">新手指南</a>
+        </div>
+        <div>
+            <a href="autor.html"><img src="../images/touxiang.png" alt=""/></a>
+            <span class="font_hid">大神542542qwe</span>
+        </div>
+        <div>
+            <i class="iconfont">&#xe615;</i>
+        </div>
+    </div>
+</header>
+<section id="section">
+    <div id="section_all">
+        <div id="section_left">
+            <?php include 'book_common.html'?>
+            <div id="section_left_d">
+                <a href="">新手指南</a>
+                <a href="">作者福利</a>
+                <span>CO7漫画投诉或建议邮箱:co7qq.com</span>
+            </div>
+        </div>
+        <div id="section_right">
+            <div id="section_right_top">
+                <span>草稿箱</span>
+                <a href="">返回管理话</a>
+            </div>
+            <form id="section_right_down"  action="create.php" method="post">
+                <div class="w_list">
+                    <div>话编号 : </div>
+                    <div>
+                        <input type="text" id="serial"/>
+                        <span> <span>必填</span> 如（1、番外1）。最多4个字/8个字符。可填数字、字母、汉字或符号</span>
+                    </div>
+                </div>
+                <div class="w_list">
+                    <div>话名 : </div>
+                    <div>
+                        <input type="text" id="what_name"/>
+                        <span> 选填（如复仇），限20个汉字/40个字符</span>
+                    </div>
+                </div>
+                <div>
+                    <div>上传图片 : </div>
+                    <div class="pic-content">
+                        <div class="content_top">
+                            <span id="pic_fail">清除所有图片</span>
+                            <span id="pic_check">删除所选</span>
+                        </div>
+                        <div class="content_down" style="display: block">
+
+                            <!--<div class="works_list">-->
+                                <!--<div>-->
+                                    <!--<img src="../images/4fd1e71190ef76c63880f2499a16fdfaaf51670a.jpg" alt=""/>-->
+                                    <!--<span>4</span>-->
+                                    <!--<div class="zc_show">-->
+                                        <!--<input type="file"/>-->
+                                        <!--<input class="imgOne" name="imgOne" type="hidden"/>-->
+                                        <!--<span>替换</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div>-->
+                                    <!--<input type="checkbox"/>-->
+                                    <!--<span class="font_hid">asdadadadadadadadad</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <!--<div class="works_list upload_fail">-->
+                                <!--<div>-->
+                                    <!--<p>上传失败，图片尺寸不合适</p>-->
+                                    <!--<span>6</span>-->
+                                    <!--<div class="zc_show">-->
+                                        <!--<input type="file"/>-->
+                                        <!--<span>替换</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div>-->
+                                    <!--<input type="checkbox"/>-->
+                                    <!--<span class="font_hid">asdadadadadadadadad</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <div class="works_list add_list">
+                                <div>
+                                    <input type="file" id="upFile"/>
+                                    <i class="iconfont">&#xe600;</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_t">
+                        <span>图片宽度尺寸400-1800，高度4000内，大小1M内，支持jpg、png、gif</span>
+                        <span>已选取 <span id="pic_num" >0</span> 张</span>
+                    </div>
+                    <div class="content_d">
+                         <span id="prew_i">预览</span>
+                         <a href="manage.html">存草稿</a>
+                         <input type="submit" id="submit" value="发布"/>
+                    </div>
+                </div>
+                <!--预览-->
+                <div id="preview" style="display: none">
+                    <div id="preview_t">
+                        <h3>预览</h3>
+                    </div>
+                    <div id="preview_m">
+                        <!--<div class="prew_list">-->
+                        <!--<img src="../images/fenmian.jpg" alt=""/>-->
+                        <!--<span class="font_hid">1</span>-->
+                        <!--<span class="font_hid">初见</span>-->
+                        <!--</div>-->
+                    </div>
+                    <div id="preview_d">
+                        <input type="submit" id="submit_t" value="确认发布" />
+                        <span id="close">返回</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</section>
+<?php include '../common/footer.html'?>
+</body>
+<script src="../common/js/jquery-1.8.3.min.js"></script>
+<script src="../common/js/tools.js"></script>
+<script src="js/works.js"></script>
+</html>

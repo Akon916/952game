@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/book/create.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/autor.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/book.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/cpay.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/create.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/manage.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/message.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/update.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/works.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/js/book.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/js/cpay.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/js/create.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/js/manage.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/js/update.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/js/works.js" charset="UTF-8" />
+  </component>
+</project>
