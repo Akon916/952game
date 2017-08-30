@@ -77,7 +77,7 @@ $(function(){
         reader.onload = function(e) {
             var base64Img1= e.target.result;
 
-                    // --执行resize。
+                    // --执行resize。压缩
                     var _ir=ImageResizer({
                         resizeMode:"auto"
                         ,dataSource:base64Img1
