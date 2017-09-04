@@ -147,6 +147,10 @@ legend{
     padding: 20px 15px;
     box-sizing: border-box;
 }
+#section_left_cot{
+    width: 100%;
+    height: 650px;
+}
 .section_left_list{
     width: 100%;
     height: 60px;

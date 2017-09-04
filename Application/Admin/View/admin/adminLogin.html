@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>后台管理系统</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="nofollow"/>
+<link href="__PUBLIC__/Admin/css/adminStyle.css" rel="stylesheet" type="text/css" />
+<style>
+body{width:100%;height:100%;overflow:hidden;background:url(__PUBLIC__/Admin/images/pc_loginBg.jpg) no-repeat;background-size:cover;position:absolute;}
+</style>
+<script src="__PUBLIC__/Admin/js/jquery.js"></script>
+<script src="__PUBLIC__/Admin/js/Particleground.js"></script>
+<script src="__PUBLIC__/Vendors/layer/layer.js"></script>
+<script>
+$(document).ready(function() {
+  $('body').particleground({
+    dotColor:'green',
+    lineColor:'#c9ec6e'
+  });
+  $('.intro').css({
+    'margin-top': -($('.intro').height() /2)
+  });
+});
+</script>
+
+</head>
+<body>
+  <section class="loginform">
+   <h1>后台管理系统</h1>
+   <ul>
+    <form action="{:U('Admin/Admin/login')}" method="post">
+      <li>
+         <label>账号：</label>
+         <input type="text" class="textBox" placeholder="管理员账号" name="name"/>
+      </li>
+      <li>
+          <label>密码：</label>
+          <input type="password" class="textBox" placeholder="登陆密码" name="password"/>
+      </li>
+      <li>
+          <label>验证码：</label>
+          <input type="text" class="textBox" placeholder="验证码" name="verifyCode"/>
+          <img src="{:U('admin/admin/verify')}" onclick="this.src += '?'+ Math.random()">
+      </li>
+     <li>
+         <input type="button" value="立即登陆" onclick="checkLogin()"/>
+      </li>
+    </form>
+   </ul>
+  </section>
+</body>
+<script type="application/javascript">
+    //表单提交功能
+    function checkLogin(){
+        var name = $("input[name='name']").val();
+        var password = $("input[name='password']").val();
+        var verifyCode = $("input[name='verifyCode']").val();
+        if ( name==''||password=='' ){
+            layer.alert('账号密码不能为空',{icon:2});
+            return;
+        }
+        if ( verifyCode==''){
+            layer.alert('验证码不能为空',{icon:2});
+            return;
+        }
+        //ajax登录
+        $.ajax({
+            url:"{:U('Admin/Admin/login')}",
+            type:'post',
+            dataType:'json',
+            data:{'name':name,'password':password,'verifyCode':verifyCode},
+            success:function(res){
+                if (res.status==1){
+                    top.location.href   =   res.url;
+                }else{
+                    layer.alert(res.msg,{icon:2});
+                    $('img').click();
+                }
+            },
+            error:function(XMLHttpRequest,testStatus,errorThrown){
+                layer.alert('网络失败，刷新后重试',{icon:2});
+            }
+        });
+    }
+</script>
+</html>

@@ -209,7 +209,10 @@ $("#section_left_four_page").pagination({
 //$(document).click(function(){
 //    $("#section_all").css("height",$(document).height()-$("#main").height()-$("#header").height()+"px")
 //});
+<<<<<<< HEAD
+=======
 
 //吐槽轮播
 jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:25,trigger:"click"});
 
+>>>>>>> 427fd78f1a191f98ebefafca306d4e710e03e192

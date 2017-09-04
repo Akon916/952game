@@ -31,11 +31,11 @@ class UserController extends Controller{
                 //自动收集表单，创建数据
                 $user->create() ;
                 //密码MD5加密
-                $user->game_password = md5($this->game_password);
+                $user->password = password_hash($this->password);
                 //添加注册时间
-                $user->game_registerTime = date('Y-m-d H:i:s',time());
+                $user->registerTime = date('Y-m-d H:i:s',time());
                 //添加数据至数据库
-                if ( $user->add()) {
+                if (  $user->add($user) ) {
                     $this->success('注册成功！');
                 }else{
                     $this->error('注册失败！请重试');
@@ -55,7 +55,7 @@ class UserController extends Controller{
         //前端登录界面ajax查询是否存在用户名
         if (IS_AJAX) {
             //得到所有用户名
-            $users = M('user')->field('game_name')->find();
+            $users = M('user')->field('name')->find();
             //接受传递过来的登录用户名
             $user_name = $_POST['login_name'];
             //判断登录用户名是否在用户名数组里
@@ -74,12 +74,12 @@ class UserController extends Controller{
             $username = $_POST['name'];
             $password = $_POST['password'];
             //拼接查询条件
-            $map['game_name'] = $username;
-            $map['game_password'] = md5($password);
+            $map['name'] = $username;
+            //$map['game_password'] = md5($password);
             //取数据库查询，密码与用户名是否匹配
-            $user = M('user')->where($map)->select();
+            $hash = M('user')->where($map)->getField('password');
             //
-            if ( $user ) {
+            if ( password_verify($password,$hash) ) {
                 $this->success('登陆成功',U('index/index'));
             }else{
                 $this->redirect('user/loginfail');

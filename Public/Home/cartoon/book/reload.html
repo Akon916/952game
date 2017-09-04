@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../common/css/reset.css"/>
     <link rel="stylesheet" href="css/create.css"/>
     <link rel="stylesheet" href="../common/icon/iconfont.css"/>
-    <script src="../common/js/html5shiv.min.js"></script>
 </head>
 <body>
 <header id="header">
@@ -44,7 +43,7 @@
         </div>
         <div id="section_right">
             <div id="section_right_top">
-                <span>发表漫画</span>
+                <span>修改作品</span>
             </div>
             <form id="section_right_down" action="create.php" method="post">
                 <div class="cre_list">
@@ -68,7 +67,7 @@
                             支持jpg，png，<br/>
                             大小500k以内 <br/>
                         </p>
-                        <span style="margin-left: 10px">* 封面必须填写</span>
+                        <span style="margin-left: 10px" class="pic_sel"></span>
                     </div>
                 </div>
                 <div>
@@ -134,7 +133,7 @@
                     </div>
                 </div>
                 <div>
-                <div>吐槽 :</div>
+                    <div>吐槽 :</div>
                     <div class="mar_lf">
                         <input type="radio" name="complaints" checked="checked" value=""/>允许吐槽
                         <input type="radio" name="complaints" value=""/>禁止吐槽
@@ -169,27 +168,27 @@
 </section>
 <!--图片剪裁遮罩层-->
 <div id="pic">
-     <div id="main">
-         <div id="main_top">
+    <div id="main">
+        <div id="main_top">
             <span>封面剪裁</span>
             <span id="close">×</span>
-         </div>
-         <div id="main_m">
-             <div id="main_m_lf">
-                 <img src="" alt=""/>
-             </div>
-             <div id="main_m_rg">
-                 <p>
-                     您上传的图片将自动生成300X420的尺寸，请注意图片是否清晰
-                 </p>
-                 <img src="" alt="."/>
-             </div>
-         </div>
-         <div id="main_m_d">
-             <span id="confirm_c">确认</span>
-             <span id="cancel">取消</span>
-         </div>
-     </div>
+        </div>
+        <div id="main_m">
+            <div id="main_m_lf">
+                <img src="" alt=""/>
+            </div>
+            <div id="main_m_rg">
+                <p>
+                    您上传的图片将自动生成300X420的尺寸，请注意图片是否清晰
+                </p>
+                <img src="" alt="."/>
+            </div>
+        </div>
+        <div id="main_m_d">
+            <span id="confirm_c">确认</span>
+            <span id="cancel">取消</span>
+        </div>
+    </div>
 </div>
 <?php include '../common/footer.html'?>
 </body>

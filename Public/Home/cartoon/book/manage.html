@@ -40,21 +40,189 @@
     <div id="section_all">
         <div id="section_left">
             <?php include 'book_common.html'?>
-            <div id="section_left_d">
-                <a href="">新手指南</a>
-                <a href="">作者福利</a>
-                <span>CO7漫画投诉或建议邮箱:co7qq.com</span>
-            </div>
         </div>
         <div id="section_right">
             <div id="section_right_top">
-                <span>草稿箱</span>
-                <a href="">返回管理话</a>
+                <h3>神游国度</h3>
+                <a href="">返回作品列表</a>
             </div>
             <div id="section_right_down">
+                <div id="section_down_one">
+                     <div id="section_down_one_lf">
+                         <p>作品ID：5033227676220158100</p>
+                         <p>状&nbsp;&nbsp;&nbsp;&nbsp;态：
+                             已发布&nbsp;&nbsp;
+                             <select class="" id="serial">
+                                 <option value="0" selected="">连载中</option>
+                                 <option value="1">完结</option>
+                             </select>
+                         </p>
+                         <p>点&nbsp;&nbsp;&nbsp;&nbsp;击：503</p>
+                         <p>收&nbsp;&nbsp;&nbsp;&nbsp;藏：0</p>
+                         <p>最新话：1 初见</p>
+                     </div>
+                     <div id="section_down_one_rg">
+                         <p><strong>漫画公告</strong></p>
+                         <p style="display: none">
+                             <span class="font_hid">
+                              请作者大大写下更新时间(ﾉ&gt;ω&lt;)ﾉ
+                             </span>
+                             <a href="javascript:void(0);" class="notive">添加公告</a>
+                         </p>
+                         <p>
+                             <span class="font_hid">
+                              这次我会一次性带来33章的更新，喜欢的朋友要多多支持
+                             </span>
+                             <a href="javascript:void(0)" class="notive">更换公告</a>
+                         </p>
+                     </div>
+                </div>
+                <div id="section_down_two">
+                    <a href="view.html">基本信息</a>
+                    <a href="manage.html">话管理</a>
+                    <a href="record.html">更新记录</a>
+                </div>
+                <div id="section_down_three">
+                    <div>
+                        <a href="works.html">新增话</a>
+                    </div>
+                    <ul class="articles" style="display: block;">
+                        <li>
+                            <div class="title-info">
+                                <span class="title">2</span>
+                                <a href="javascript:void(0)" class="iconfont m_same">&#xe669;</a>
+                            </div>
+                            <div class="num">
+                                <span>1P</span>
+                            </div>
+                            <div class="font_hid prompt">
+                                <span>审核过(已发布)</span>
+                            </div>
+                            <div class="act">
+                                <a href="">修改</a>
+                                <a href="javascript:void(0);">话调序</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="accordion">
+                        <div class="acc_title">
+                            <i class="iconfont" style="display: none">&#xe613;</i>
+                            <i class="iconfont">&#xe604;</i>
+                            <span >草稿箱</span>
+                        </div>
+                        <ul class="articles draft" style="display: block;">
+                            <li>
+                                <div class="title-info">
+                                    <span class="title">2</span>
+                                    <span>:</span>
+                                    <span>护肩</span>
+                                    <a href="javascript:void(0);" class="iconfont m_same">&#xe669;</a>
+                                </div>
+                                <div class="num">
+                                    <span>1P</span>
+                                </div>
+                                <div class="act">
+                                    <a href="">修改</a>
+                                    <a href="javascript:void(0);" class="modify_del">删除</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-info">
+                                    <span class="title">2</span>
+                                    <span>:</span>
+                                    <span>傻得很</span>
+                                    <a href="javascript:void(0);" class="iconfont m_same">&#xe669;</a>
+                                </div>
+                                <div class="num">
+                                    <span>1P</span>
+                                </div>
+                                <div class="act">
+                                    <a href="">修改</a>
+                                    <a href="javascript:void(0);" class="modify_del">删除</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div style="clear: both"></div>
+        <!--修改话名-->
+        <div class="modify" style="display: none">
+            <div class="modify_top">
+                <h3>修改</h3>
+                <span class="close_modify">×</span>
+            </div>
+            <form action="" class="form_modify">
+                    <div class="row">
+                        <div  class="name_lf">
+                            话编号 :
+                        </div>
+                        <div class="name_rg">
+                            <input type="text" class="inp_one" placeholder="必填，限4个字">
+                            <p class="error err_one"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div  class="name_lf">
+                            话名 :
+                        </div>
+                        <div class="name_rg">
+                            <input type="text" class="inp_two" placeholder="选填，限20个字">
+                            <p class="error err_two"></p>
+                        </div>
+                    </div>
+                    <div class="name_footer">
+                        <input type="submit" class="modify_sub" value="确认提交">
+                        <input type="button" class="close_btn" value="取消">
+                    </div>
+            </form>
+        </div>
+        <!--话删除-->
+        <form id="modify_del" style="display: none;">
+            <div class="modify_top">
+                <h3>删除提示</h3>
+                <span class="close_modify">×</span>
+            </div>
+            <div>
+                确认删除整个话！
+            </div>
+            <div>
+                <input type="submit" class="submit_del" value="删除">
+                <input type="button" class="close_btn" value="取消">
+            </div>
+        </form>
+        <!--更新通告-->
+        <form action="" id="update" style="display: none">
+            <div class="modify_top">
+                <h3>更新公告</h3>
+                <span class="close_modify">×</span>
+            </div>
+            <div>
+                <textarea name="" placeholder="建议告诉读者粉丝更新周期哟！定期更新最吸粉( º﹃º )" id="update_leg" cols="30" rows="8"></textarea>
+            </div>
+            <div>
+                <p>还可以输入 <span class="font_num">30</span>个字</p>
+            </div>
+            <div>
+                <input type="submit" id="update_sub"/>
+                <input type="button" class="close_btn" value="取消">
+            </div>
+        </form>
+        <!--选择发布状态-->
+        <form action="" id="select" style="display: none">
+            <div class="modify_top">
+                <h3>提示</h3>
+                <span class="close_modify">×</span>
+            </div>
+            <div>
+                确认将本书状态由连载中改为 <span id="sel_change">完结</span> 吗？
+            </div>
+            <div>
+                <input type="submit" class="submit_sel" value="删除">
+                <input type="button" class="close_btn" value="取消">
+            </div>
+        </form>
     </div>
 </section>
 <?php include '../common/footer.html'?>

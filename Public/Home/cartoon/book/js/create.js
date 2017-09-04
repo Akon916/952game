@@ -18,10 +18,12 @@ $(function(){
     $('#upFile').change(function(){
        if($(this).val()==""||$(this).val()==null){
           inp2=false;
+          $(".pic_sel").text("* 封面必须填写").css('color','#e4393c');
        }
         else {
            pic();
          inp2=true;
+         $(".pic_sel").text("");
       }
     });
     //验证题材
@@ -99,11 +101,11 @@ $(function(){
         var oFile = _upFile.files[0];
         //if (!rFilter.test(oFile.type)) { alert("You must select a valid image file!"); return; }
 
-        /*  if(oFile.size>5*1024*1024){
-         message(myCache.par.lang,{cn:"照片上传：文件不能超过5MB!请使用容量更小的照片。",en:"证书上传：文件不能超过100K!"})
+         if(oFile.size>0.5*1024*1024){
+         //message(myCache.par.lang,{cn:"照片上传：文件不能超过5MB!请使用容量更小的照片。",en:"证书上传：文件不能超过100K!"})
 
          return;
-         }*/
+         }
         if(!new RegExp("(jpg|jpeg|png)+","gi").test(oFile.type)){
             alert("照片上传：文件类型必须是JPG、JPEG、PNG");
             $("#upFile").val("");

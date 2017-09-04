@@ -147,6 +147,10 @@ legend{
     padding: 20px 15px;
     box-sizing: border-box;
 }
+#section_left_cot{
+    width: 100%;
+    height: 650px;
+}
 .section_left_list{
     width: 100%;
     height: 60px;
@@ -186,10 +190,6 @@ legend{
     position: absolute;
     left: 5px;
     bottom: 5px;
-}
-#section_left_cot{
-    width: 100%;
-    height: 650px;
 }
 #section_left_d>a,#section_left_d>span{
     display: block;
@@ -298,103 +298,38 @@ legend{
 #section_down_two>a:hover{
     color: #222222;
 }
-#section_down_two>a:nth-child(2){
+#section_down_two>a:nth-child(3){
     background: none;
     border-bottom:3px solid #e4393c;
 }
 #section_down_three{
     width: 100%;
     overflow: hidden;
-    margin-bottom: 210px;
+    margin-bottom: 250px;
 }
-#section_down_three>div:nth-child(1){
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-    text-align: right;
+#section_down_three>table{
+    background: #eee;
+    border: solid 1px #ededed;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 700px;
 }
-#section_down_three>div:nth-child(1)>a{
-    margin-right: 10px;
-    color: #0592D9;
+#section_down_three>table>thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
 }
-#accordion{
-    width: 100%;
-    overflow: hidden;
-    margin-top: 10px;
+.mh-table th, .mh-table td {
+    text-align: center;
+    border: 1px solid #ededed;
 }
-#accordion>div:nth-child(1){
-    background-color: #fcf7e2;
-    width: 100%;
-    height: 40px;
-    text-indent: 10px;
-    line-height: 40px;
-}
-#accordion>div:nth-child(1)>i,#accordion>div:nth-child(1)>span{
-    cursor: default;
-}
-.articles{
-    width: 100%;
-}
-.articles>li{
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 10px;
-    box-sizing: border-box;
-    border-bottom:1px solid  #eeeeee;
-}
-.articles>li>div{
-    float: left;
-}
-.acc_title>i{
-    display: block;
-    float: left;
-}
-.title-info{
-    width: 375px;
-    height: 50px;
-}
-.title-info>a{
-    color: #0592D9;
-    font-size: 20px;
-}
-.num{
-    width: 55px;
-    height: 50px;
-}
-.act{
-    float: right!important;
-    width: 120px;
-    height: 50px;
-    text-align: right;
-}
-.act>a{
-    margin: 0 10px;
-    font-size: 13px;
-    color: #0592D9;
-}
-.prompt{
-    width: 100px;
-    height: 50px;
-}
-.prompt>span{
-    font-size: 13px;
-    color: #222222;
-}
-#section_down_three>.articles>li{
-    background: #f7f7f7;
+table tr th, table tr td {
+    padding: 10px 15px;
+    color: #222;
+    text-align: left;
 }
 
-/*修改话名*/
-.modify{
-    width: 400px;
-    height: 300px;
-    background: #FFFFFF;
-    box-shadow: 0 2px 8px rgba(55,55,55,.22);
-    position: absolute;
-    top: 200px;
-    left: 300px;
-}
 .modify_top{
     width: 100%;
     height: 40px;
@@ -411,103 +346,6 @@ legend{
     font-size: 20px;
     font-weight: bold;
     cursor: default;
-}
-.modify>form{
-    width: 100%;
-    height: 250px;
-    padding: 20px 10px;
-    box-sizing: border-box;
-}
-.row{
-    width: 100%;
-    height: 55px;
-    line-height: 55px;
-    margin-bottom: 20px;
-}
-.name_lf{
-    width: 55px;
-    height: 100%;
-    float: left;
-    text-align: right;
-}
-.name_rg{
-    float: left;
-    margin-left: 10px;
-}
-.inp_one{
-    width: 100px;
-    height: 35px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding-left: 5px;
-    box-sizing: border-box;
-}
-.inp_two{
-    width: 200px;
-    height: 35px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding-left: 5px;
-    box-sizing: border-box;
-}
-.name_footer{
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    margin-top: 40px;
-}
-.name_footer>input{
-    width: 120px;
-    height: 35px;
-}
-.name_footer>input:nth-child(1){
-    margin-left: 50px;
-    background: #e4393c;
-    color: #FFFFFF;
-}
-.name_footer>input:nth-child(2){
-    margin-left: 20px;
-}
-.error{
-    line-height: 16px;
-    color: #e4393c;
-    font-size: 13px;
-}
-/*话删除*/
-#modify_del{
-    width: 400px;
-    height: 200px;
-    background: #FFFFFF;
-    box-shadow: 0 2px 8px rgba(55,55,55,.22);
-    position: absolute;
-    top: 300px;
-    left: 300px;
-}
-#modify_del>div:nth-child(2){
-    width: 100%;
-    height: 120px;
-    text-align: center;
-    line-height: 150px;
-}
-#modify_del>div:nth-child(3){
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-}
-#modify_del>div:nth-child(3)>input{
-    display: block;
-    float: left;
-    width: 100px;
-    height: 35px;
-    line-height: 35px;
-}
-#modify_del>div:nth-child(3)>input:nth-child(1){
-    margin-left: 90px;
-    background: #e4393c;
-    color: #FFFFFF;
-}
-#modify_del>div:nth-child(3)>input:nth-child(2){
-    margin-left: 20px;
 }
 
 /*更新公告*/

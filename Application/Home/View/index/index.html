@@ -10,6 +10,9 @@
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>飞扬测试</title>
     <link rel="stylesheet" href="__PUBLIC__/Home/css/reset.css"/>
+    <link rel="Stylesheet" href="__PUBLIC__/Home/css/jquery.autocomplete.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/gooey.min.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/percircle.css"/>
     <link rel="stylesheet" href="__PUBLIC__/Home/css/index.css"/>
     <link rel="stylesheet" href="__PUBLIC__/Home/css/animate.css"/>
 </head>
@@ -32,7 +35,8 @@
         <div id="header_box_three">
             <div class="header_box_three_bor">
                 <a href="#" id="login_all">登录</a>
-                <a href="#" id="sign_out">退出</a>
+                <a href="" id="login_name"></a>
+                <a href="#" id="sign_out" class="sign_out">.退出</a>
             </div>
             <div class="header_box_three_bor"><a href="{:U('user/index')}">注册</a></div>
         </div>
@@ -80,6 +84,9 @@
                 </div>
             </div>
         </div>
+        <div id="header_box_five">
+              个人中心
+        </div>
     </div>
 </header>
 <nav id="nav">
@@ -96,8 +103,8 @@
             <li class="animated bounceInRight tar_hover"><a href="service.html">客服充值</a></li>
         </ul>
         <div id="search">
-            <input type="search" id="search_btn"/>
-            <img id="search_pic" src="__PUBLIC__/Home/image/search.png" style="width: 25px; height: 25px;" alt=""/>
+            <input type="text" id="search_btn" spellcheck="false" placeholder="请输入游戏的名字...">
+            <img id="search_pic"  style="width: 25px; height: 25px;" src="__PUBLIC__/Home/image/search.png" alt="">
         </div>
     </div>
 </nav>
@@ -105,16 +112,23 @@
 <div id="login_Re">
     <div id="login_Re_W">
         <div class="login">
-            <div class="login_pad">
-                <div class="login_one"><span>账号登录</span></div>
-                <div class="login_two">账号 &nbsp; <input type="text" id="name_text_one" placeholder="用户名/手机号"/></div>
-                <div class="login_two">密码 &nbsp; <input type="password" id="name_pass_one" placeholder="密码"/></div>
+            <div action=""  class="login_pad" id="login_first">
+                <div class="login_one">
+                    <span>账号登录</span>
+                </div>
+                <div class="login_two">
+                    <span id="notice_one"></span>
+                    账号 &nbsp; <input type="text" id="name_text_one" placeholder="用户名/手机号" autocomplete="off"/>
+                </div>
+                <div class="login_two">
+                    密码 &nbsp; <input type="password" id="name_pass_one" placeholder="密码" autocomplete="off"/>
+                </div>
                 <div class="login_three">
-                    <input type="checkbox" value="1"/>下次自动登录
+                    <input type="checkbox" value="1" id="re_name"/>下次自动登录
                     <a href="#">忘记密码</a>
                 </div>
-                <div class="login_four" id="login_enter_one">
-                    <button>登录</button>
+                <div class="login_four">
+                    <input type="submit" id="login_enter_one" />
                 </div>
                 <div class="login_five">
                     <ul>
@@ -129,20 +143,55 @@
         <div id="person_frame">
             <div>
                 <div>
-                    <img src="__PUBLIC__/Home/image/weixin.png" style="width: 80px;height: 80px" alt=""/>
+                    <img src="__PUBLIC__/Home/image/avatar.jpg" style="width: 80px;height: 80px" alt=""/>
                 </div>
                 <div>
                     <div>
                         <span id="person_frame_login"></span>
                     </div>
+                    <div id="person_frame_ptNum">积分: <span>150</span></div>
                     <div id="person_frame_down">
-                        <span>个人中心</span>
-                        <span id="person_frame_close">[ 退出 ]</span>
+                        <a href="person/user.html">个人中心</a>
+                        <span id="person_frame_close" class="sign_out">[ 退出 ]</span>
                     </div>
                 </div>
             </div>
             <div>
                 <span>参与的游戏</span>
+            </div>
+            <div id="played_game">
+                <div class="avo_line">
+                    <a href="">
+                        <img src="__PUBLIC__/Home/image/list_wly.png" alt=""/>
+                        <span>卧龙吟</span>
+                        <span>最新区服</span>
+                        <span>开始游戏</span>
+                    </a>
+                </div>
+                <div class="avo_line">
+                    <a href="">
+                        <img src="__PUBLIC__/Home/image/list_wly.png" alt=""/>
+                        <span>卧龙吟</span>
+                        <span>最新区服</span>
+                        <span>开始游戏</span>
+                    </a>
+                </div>
+                <div class="avo_line">
+                    <a href="">
+                        <img src="__PUBLIC__/Home/image/list_wly.png" alt=""/>
+                        <span>卧龙吟</span>
+                        <span>最新区服</span>
+                        <span>开始游戏</span>
+                    </a>
+                </div>
+                <div class="avo_line">
+                    <a href="">
+                        <img src="__PUBLIC__/Home/image/list_wly.png" alt=""/>
+                        <span>卧龙吟</span>
+                        <span>最新区服</span>
+                        <span>开始游戏</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -166,8 +215,8 @@
 <section id="section">
     <!--精彩推荐-->
     <div id="section_boutique">
-            <fieldset id="section_boutique_all">
-                <legend>精品推荐</legend>
+            <div id="section_boutique_all">
+                <div id="section_boutique_all_header">精品推荐</div>
                 <div id="section_boutique_all_top">
                     <div id="section_boutique_switch">》》热门游戏</div>
                     <div><img src="__PUBLIC__/Home/image/next.png" style="width: 20px;height: 20px;" alt=""/>换一批</div>
@@ -177,7 +226,8 @@
                          <div><img src="__PUBLIC__/Home/image/shendao.jpg" style="width: 100px; height:100px;border-radius:10px;" alt=""/></div>
                          <div>
                              <h4>大战神</h4>
-                             <img src="__PUBLIC__/Home/image/haoping.png" style="width: 80px; height: auto;" alt="好评"/>
+                             <div class="praise_pst" val="">
+                             </div>
                              <span>动作，冒险</span>
                              <span>5万人玩过</span>
                          </div>
@@ -332,15 +382,14 @@
                         </div>
                     </div>
                 </div>
-            </fieldset>
+            </div>
     </div>
     <!--最新游戏-->
     <div id="section_newGame">
-        <fieldset id="section_newGame_one">
-            <legend>最新游戏</legend>
+        <div id="section_newGame_one">
             <div id="section_newGame_one_top">
                 <span>最新游戏</span>
-                <span>More»</span>
+                <a href="#">更多+</a>
             </div>
             <div id="section_newGame_one_down">
                 <div class="section_newGame_one_down_size">
@@ -464,35 +513,33 @@
                     </div>
                 </div>
             </div>
-        </fieldset>
-        <fieldset id="section_newGame_two">
-            <legend>新闻资讯</legend>
+        </div>
+        <div id="section_newGame_two">
             <div id="section_newGame_two_top">
                 <span>新闻资讯</span>
-                <span>More»</span>
+                <a href="#">更多+</a>
             </div>
             <div id="section_newGame_two_down">
                 <ul>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
-                    <li><span>◆</span><a href="#">752g《剑侠情缘》4月20日更新维护公告</a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
+                    <li><span>◆</span><a href="#">752g《剑侠情缘》<span class="newGame_time">4月20日更新维护公告</span></a></li>
                 </ul>
             </div>
-        </fieldset>
+        </div>
     </div>
     <div id="section_hot">
-        <fieldset id="section_hot_all">
-            <legend>热门游戏</legend>
+        <div id="section_hot_all">
             <div>
                 <span>热门游戏</span>
-                <span>More»</span>
+                <a href="">更多+</a>
             </div>
             <div id="section_hot_all_down">
                 <div class="section_hot_all_down_many">
@@ -600,143 +647,46 @@
                     <div>风云无双</div>
                 </div>
             </div>
-        </fieldset>
+        </div>
     </div>
     <div id="section_stand_alone">
-        <fieldset id="section_stand_alone_one">
-            <legend>热门单机</legend>
+        <div id="section_stand_alone_one">
             <div class="section_stand_alone_one_top">
                 <span>热门单机</span>
-                <span>more»</span>
+                <a href="game.html">更多+</a>
             </div>
-            <div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
+            <div class="section_stand_alone_one_down">
+                 <div class="alone_one_back">
+                     <a href="">
+                         <h3>访问《追杀魔兽》</h3>
+                     </a>
+                 </div>
+                <div class="alone_one_back">
+                    <a href="">
+                        <h3>访问《追杀魔兽》</h3>
+                    </a>
                 </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
+                <div class="alone_one_back">
+                    <a href="">
+                        <h3>访问《追杀魔兽》</h3>
+                    </a>
                 </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
+                <div class="alone_one_back">
+                    <a href="">
+                        <h3>访问《追杀魔兽》</h3>
+                    </a>
                 </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
-                </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
-                </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
-                </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
-                </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
-                </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
-                </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
-                </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
-                </div>
-                <div class="section_newGame_one_down_size">
-                    <div>
-                        <img src="__PUBLIC__/Home/image/shendao.jpg" style="width:80px;height: 80px; border-radius: 10px;" alt=""/>
-                    </div>
-                    <div>
-                        <span>大战神</span>
-                        <span>6000人在玩</span>
-                        <span>开始游戏</span>
-                    </div>
+                <div class="alone_one_back">
+                    <a href="">
+                        <h3>访问《追杀魔兽》</h3>
+                    </a>
                 </div>
             </div>
-        </fieldset>
-        <fieldset id="section_stand_alone_two">
-            <legend>礼包领取</legend>
+        </div>
+        <div id="section_stand_alone_two">
             <div class="section_stand_alone_one_top">
                 <span>礼包领取</span>
-                <span>more»</span>
+                <a href="">更多+</a>
             </div>
             <div id="section_stand_alone_two_down">
                  <div class="section_stand_alone_rel">
@@ -754,8 +704,12 @@
                         </div>
                     </div>
                     <div class="section_newGame_one_down_jdu">
-                        <div>
-                            <img src="__PUBLIC__/Home/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
+                        <div class="c100 p30  dark small green sacircle">
+                            <span>30%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
                         </div>
                         <div>
                             剩余30%
@@ -777,8 +731,12 @@
                             </div>
                         </div>
                         <div class="section_newGame_one_down_jdu">
-                            <div>
-                                <img src="__PUBLIC__/Home/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
+                            <div class="c100 p30  dark small green sacircle">
+                                <span>30%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
                             </div>
                             <div>
                                 剩余30%
@@ -800,8 +758,12 @@
                         </div>
                     </div>
                     <div class="section_newGame_one_down_jdu">
-                        <div>
-                            <img src="__PUBLIC__/Home/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
+                        <div class="c100 p30  dark small green sacircle">
+                            <span>30%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
                         </div>
                         <div>
                             剩余30%
@@ -823,8 +785,12 @@
                         </div>
                     </div>
                     <div class="section_newGame_one_down_jdu">
-                        <div>
-                            <img src="__PUBLIC__/Home/image/jindu.png" style="width: 59px; height: 59px" alt=""/>
+                        <div class="c100 p30  dark small green sacircle">
+                            <span>30%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
                         </div>
                         <div>
                             剩余30%
@@ -832,84 +798,166 @@
                     </div>
                 </div>
             </div>
-        </fieldset>
+        </div>
     </div>
     <div id="section_point">
-        <fieldset id="section_point_all">
-            <legend>试玩赚积分</legend>
+        <div id="section_point_all">
             <div id="section_point_all_top">
                 <span>试玩赚积分</span>
-                <span>more»</span>
+                <a href="">更多+</a>
             </div>
-            <div id="section_point_all_down">
-                <div class="section_point_all_down_content">
-                    <div class="section_point_cope">
-                        <div class="section_point_cope_rel">
-                            <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
-                            <div class="section_point_cope_pst">
-                               <span>参与人数:560人</span>
-                                <a href="#"><span>立即试玩</span></a>
-                            </div>
-                        </div>
-                        <div class="d1">
-                            <span>大战神1区</span>
-                            <span>奖17675积分</span>
-                        </div>
-
+            <div class="section_point_all_down_content">
+                <div class="picScroll-left">
+                    <div class="hd">
+                        <a class="next"><img src="__PUBLIC__/Home/image/jiantuo3.png" alt=""/></a>
+                        <a class="prev"><img src="__PUBLIC__/Home/image/jiantuo1.png" alt=""/></a>
                     </div>
-                    <div class="section_point_cope">
-                        <div class="section_point_cope_rel">
-                            <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
-                            <div class="section_point_cope_pst">
-                                <span>参与人数:560人</span>
-                                <a href="#"><span>立即试玩</span></a>
-                            </div>
-                        </div>
-                        <div class="d1">
-                            <span>大战神1区</span>
-                            <span>奖17675积分</span>
-                        </div>
-
-                    </div>
-                    <div class="section_point_cope">
-                        <div class="section_point_cope_rel">
-                            <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
-                            <div class="section_point_cope_pst">
-                                <span>参与人数:560人</span>
-                                <a href="#"><span>立即试玩</span></a>
-                            </div>
-                        </div>
-                        <div class="d1">
-                            <span>大战神1区</span>
-                            <span>奖17675积分</span>
-                        </div>
-
-                    </div>
-                    <div class="section_point_cope">
-                        <div class="section_point_cope_rel">
-                            <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
-                            <div class="section_point_cope_pst">
-                                <span>参与人数:560人</span>
-                                <a href="#"><span>立即试玩</span></a>
-                            </div>
-                        </div>
-                        <div class="d1">
-                            <span>大战神1区</span>
-                            <span>奖17675积分</span>
-                        </div>
-
+                    <div class="bd">
+                        <ul class="picList">
+                            <li>
+                                <div class="section_point_cope">
+                                    <div class="section_point_cope_rel">
+                                        <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
+                                        <div class="section_point_cope_pst">
+                                            <span>参与人数:560人</span>
+                                            <a href="#"><span>立即试玩</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="d1">
+                                        <span>大战神1区</span>
+                                        <span>奖17675积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section_point_cope">
+                                    <div class="section_point_cope_rel">
+                                        <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
+                                        <div class="section_point_cope_pst">
+                                            <span>参与人数:560人</span>
+                                            <a href="#"><span>立即试玩</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="d1">
+                                        <span>大战神1区</span>
+                                        <span>奖17675积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section_point_cope">
+                                    <div class="section_point_cope_rel">
+                                        <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
+                                        <div class="section_point_cope_pst">
+                                            <span>参与人数:560人</span>
+                                            <a href="#"><span>立即试玩</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="d1">
+                                        <span>大战神1区</span>
+                                        <span>奖17675积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section_point_cope">
+                                    <div class="section_point_cope_rel">
+                                        <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
+                                        <div class="section_point_cope_pst">
+                                            <span>参与人数:560人</span>
+                                            <a href="#"><span>立即试玩</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="d1">
+                                        <span>大战神1区</span>
+                                        <span>奖17675积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section_point_cope">
+                                    <div class="section_point_cope_rel">
+                                        <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
+                                        <div class="section_point_cope_pst">
+                                            <span>参与人数:560人</span>
+                                            <a href="#"><span>立即试玩</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="d1">
+                                        <span>大战神1区</span>
+                                        <span>奖17675积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section_point_cope">
+                                    <div class="section_point_cope_rel">
+                                        <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
+                                        <div class="section_point_cope_pst">
+                                            <span>参与人数:560人</span>
+                                            <a href="#"><span>立即试玩</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="d1">
+                                        <span>大战神1区</span>
+                                        <span>奖17675积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section_point_cope">
+                                    <div class="section_point_cope_rel">
+                                        <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
+                                        <div class="section_point_cope_pst">
+                                            <span>参与人数:560人</span>
+                                            <a href="#"><span>立即试玩</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="d1">
+                                        <span>大战神1区</span>
+                                        <span>奖17675积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section_point_cope">
+                                    <div class="section_point_cope_rel">
+                                        <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
+                                        <div class="section_point_cope_pst">
+                                            <span>参与人数:560人</span>
+                                            <a href="#"><span>立即试玩</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="d1">
+                                        <span>大战神1区</span>
+                                        <span>奖17675积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section_point_cope">
+                                    <div class="section_point_cope_rel">
+                                        <img src="__PUBLIC__/Home/image/jifen.jpg" alt=""/>
+                                        <div class="section_point_cope_pst">
+                                            <span>参与人数:560人</span>
+                                            <a href="#"><span>立即试玩</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="d1">
+                                        <span>大战神1区</span>
+                                        <span>奖17675积分</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="section_point_all_down_dct">
-                    <img src="__PUBLIC__/Home/image/jiantuo1.png" alt=""/>
-                    <img src="__PUBLIC__/Home/image/jiantuo3.png" alt=""/>
-                </div>
             </div>
-        </fieldset>
+        </div>
     </div>
     <div id="section_link">
-        <fieldset id="section_link_all">
-             <legend>友情链接</legend>
+        <div id="section_link_all">
+             <h3>友情链接</h3>
             <ul>
                 <li><a href="">752g飞扬天下</a></li>
                 <li><a href="">752g飞扬天下</a></li>
@@ -924,7 +972,7 @@
                 <li><a href="">752g飞扬天下</a></li>
                 <li><a href="">752g飞扬天下</a></li>
             </ul>
-        </fieldset>
+        </div>
     </div>
 </section>
 <div id="nav_nar">
@@ -937,15 +985,20 @@
                 <span>登录飞扬天下网</span>
                 <span id="close_login">×</span>
             </div>
-            <div class="login_pad" id="login_pad">
-                <div class="login_two">账号 &nbsp; <input type="text" id="name_text" placeholder="用户名/手机号"/></div>
-                <div class="login_two">密码 &nbsp; <input type="password" id="name_pass" placeholder="密码"/></div>
+            <div action=""  class="login_pad" id="login_pad">
+                <div class="login_two">
+                    <span id="notice_three"></span>
+                    账号 &nbsp; <input type="text" id="name_text" placeholder="用户名/手机号" autocomplete="off"/>
+                </div>
+                <div class="login_two">
+                    密码 &nbsp; <input type="password" id="name_pass" placeholder="密码" autocomplete="off"/>
+                </div>
                 <div class="login_three">
-                    <input type="checkbox" value="1"/>下次自动登录
+                    <input type="checkbox" value="1" id="w_name" />下次自动登录
                     <a href="#">忘记密码</a>
                 </div>
-                <div class="login_four" id="login_enter">
-                    <button>登录</button>
+                <div class="login_four">
+                    <input type="submit" value="登录" id="login_enter_two"/>
                 </div>
                 <div class="login_five">
                     <ul>
@@ -953,7 +1006,7 @@
                         <li><a href="#">微信<img src="__PUBLIC__/Home/image/weixin.png" style="width: 20px;height: 20px;" alt=""/></a></li>
                         <li><a href="#">微博<img src="__PUBLIC__/Home/image/weibo.png" style="width: 20px;height: 20px;" alt=""/></a></li>
                     </ul>
-                    <a class="login_register" href="{：U('user/register')}">注册账号</a>
+                    <a class="login_register" href="login/register.html">注册账号</a>
                 </div>
             </div>
         </div>
@@ -981,13 +1034,27 @@
             <span>抵制不良网页游戏，拒绝盗版游戏。 注意自我保护，谨防受骗上当。 适度游戏益脑，沉迷游戏伤身。 合理安排时间，享受健康生活。</span>
         </div>
     </div>
-
+    <!--侧边导航条-->
+    <div id="gooey-v">
+        <input type="checkbox" class="menu-open" name="menu-open4" id="menu-open4"/>
+        <label class="open-button" for="menu-open4">
+            <span class="burger burger-1"></span>
+            <span class="burger burger-2"></span>
+            <span class="burger burger-3"></span>
+        </label>
+        <a href="" class="gooey-menu-item return_top"> <img src="__PUBLIC__/Home/image/fetop.png" style="vertical-align: middle;width: 32px;"  alt=""/> </a>
+        <a href="#" class="gooey-menu-item"> <img src="__PUBLIC__/Home/image/service.png" style="vertical-align: middle;width: 32px;"  alt=""/></a>
+        <a href="person/user.html" class="gooey-menu-item"> <img src="__PUBLIC__/Home/image/geperson.png" style="vertical-align: middle;width: 32px;"  alt=""/></a>
+    </div>
 </footer>
-
 </body>
-<script src="__PUBLIC__/Home/js/jquery.js"></script>
+<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
 <script src="__PUBLIC__/Home/js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="__PUBLIC__/Home/js/jquery.autocomplete.js"></script>
+<script src="__PUBLIC__/Home/js/gooey.min.js"></script>
+<script src="__PUBLIC__/Home/js/percircle.js"></script>
 <script src="__PUBLIC__/Home/js/index.js"></script>
+<script src="__PUBLIC__/Home/js/common.js"></script>
 <script>
 </script>
 </html>

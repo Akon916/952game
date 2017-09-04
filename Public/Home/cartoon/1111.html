@@ -1,47 +1,74 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>3</title>
-    <script>
-        function getFullPath(obj) {
-            if (obj) {
-                //Internet Explorer
-                if (window.navigator.userAgent.indexOf("MSIE") >= 1) {
-                    obj.select();
-                    return document.selection.createRange().text;
-                }
-                //Firefox
-                if (window.navigator.userAgent.indexOf("Firefox") >= 1) {
-                    if (obj.files) {
-                        return obj.files.item(0).getAsDataURL();
-                    }
-                    return obj.value;
-                }
-
-                //兼容chrome、火狐等，HTML5获取路径
-                if (typeof FileReader != "undefined") {
-                    var reader = new FileReader();
-                    reader.onload = function(e) {
-                        document.getElementById("pic").src = e.target.result + "";
-                    }
-                    reader.readAsDataURL(obj.files[0]);
-                } else if (browserVersion.indexOf("SAFARI") > -1) {
-                    alert("暂时不支持Safari浏览器!");
-                }
-
-            }
-        }
-        function showPic(obj) {
-            var fullPath = getFullPath(obj);
-            if (fullPath) {
-                document.getElementById("pic").src = fullPath + "";
-            }
-        }
-    </script>
+    <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0;
+    }
+    html, body {
+        height: 100%;
+    }
+    #btn{
+        width: 600px;
+
+        border: 1px solid red;
+        margin: 0 auto;
+    }
+    .page-wrap {
+        min-height: 100%;
+        /* equal to footer height */
+        margin-bottom: -142px;
+    }
+    .page-wrap:after {
+        content: "";
+        display: block;
+    }
+    .site-footer, .page-wrap:after {
+        height: 142px;
+    }
+    .site-footer {
+        background: orange;
+    }
+</style>
 <body>
-<input type="file" onchange="showPic(this)">
-<img src="" id="pic">
+<div id="btn">
+    <div class="page-wrap">
+
+
+
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡
+        Content!德哈卡活
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡
+        Content!德哈卡活
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
+        Content!德哈卡
+        Content!德哈卡活
+
+    </div>
+
+    <footer class="site-footer">
+        I'm the Sticky Footer.
+    </footer>
+
+</div>
+
 </body>
+<script src="common/js/jquery-1.8.3.min.js"></script>
+<script>
+
+</script>
 </html>
