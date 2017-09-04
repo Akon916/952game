@@ -213,3 +213,132 @@ legend{
 #section_right_top>h3{
     float: left;
 }
+#section_right_top>span{
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-left: 12px;
+}
+#section_right_top>a{
+    display: block;
+    float: right;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    background: #0592D9;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+.search{
+    margin: 16px 0;
+    width:100%;
+    height: 50px;
+    background: #f7f7f7;
+    line-height: 50px;
+}
+.search>div{
+    float: left;
+}
+.search>div>input{
+    border:1px solid #ddd;
+    border-radius: 3px;
+    height: 30px;
+    margin: 0 8px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    text-align:center
+}
+.key>input{
+    width: 320px;
+}
+#select-date>input:nth-child(2){
+    width: 90px;
+}
+#select-date>input:nth-child(3){
+    width: 90px;
+}
+#select-date>input:nth-child(4){
+    border: 0;
+    width: 66px;
+    background-color: #576475;
+    color: #fff;
+}
+
+.booklist .result table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table {
+    background: #fff;
+    margin-bottom: 1.42857rem;
+    border: solid 1px #ededed;
+    table-layout: auto;
+}
+.booklist .result table thead {
+    background-image: -moz-linear-gradient(-180deg,#fcfcfc 0%,#f8f8f8 100%);
+    background-image: -webkit-linear-gradient(-180deg,#fcfcfc 0%,#f8f8f8 100%);
+    background-image: -ms-linear-gradient(-180deg,#fcfcfc 0%,#f8f8f8 100%);
+    opacity: .5;
+}
+table thead {
+    background: #fff;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+ .result table th {
+    height: 40px;
+    font-size: 14px;
+    color: #b1b1b1;
+}
+ .result table th, .booklist .result table td {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #f5f5f5;
+    text-align: center;
+}
+ .result table td.bookinfo {
+     padding: 10px;
+     width: 262px;
+     height: 147px;
+     text-align: left;
+ }
+ .result table td.bookinfo a{
+    width: 90px;
+    height: 126px;
+    display: block;
+}
+ .result table td.bookinfo a img {
+    float: left;
+    width: 90px;
+    height: 100%;
+    margin-right: 14px;
+}
+.result table td.num {
+    font-size: 22px;
+    color: #09c;
+}
+ .result table td.oper a {
+    display: block;
+    margin: 0 auto 8px;
+    width: 72px;
+    height: 24px;
+    border-radius: 4px;
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+ .result table td.oper a.add {
+    border: 1px solid #576475;
+    color: #fff;
+    background-color: #576475;
+}
+ .result table td.oper a:last-child {
+    margin-bottom: 0;
+}
