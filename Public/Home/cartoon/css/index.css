@@ -1680,6 +1680,7 @@ legend{
     bottom:0px;
     z-index: 100;
     background: url("../images/bottom_qr_code_bg.png") no-repeat;
+    background-size: 100% 100% ;
 }
 #cartoon_bottom>div{
     width: 1200px;
