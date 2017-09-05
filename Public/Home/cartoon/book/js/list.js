@@ -26,43 +26,42 @@ function replaceIllegalStr(str) {
     return str.trim();
 }
 //双时间选择器（插件）
-var nowTemp = new Date();var date1,date2;
-var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-var checkin = $('#dpd1').fdatepicker({
-    format: 'yyyy-mm-dd',
-    startDate:-Infinity,
-    endDate:Infinity,
-    onRender: function (date) {
-        return date.valueOf() < now.valueOf() ? 'disabled' : '';
-    }
-
+var startDate = new Date();
+var endDate = new Date();
+$('#dpd1').fdatepicker({
+    format: 'yyyy/mm/dd'
+})
+    .on('changeDate', function (ev) {
+        if (ev.date.valueOf() > endDate.valueOf()) {
+            alert("您选取的时间顺序不对，请重新选择！");
+            $('#dpd2').val("");
+        } else {
+            startDate = new Date(ev.date);
+        }
+        $('#dpd1').fdatepicker('hide');
+    });
+$('#dpd2').fdatepicker({
+    format: 'yyyy/mm/dd'
 }).on('changeDate', function (ev) {
-     date1 = Date.parse($("#dpd1").val().replace(/-/g,"/"))/1000;
-    if (ev.date.valueOf() > checkout.date.valueOf()) {
-        var newDate = new Date(ev.date);
-        newDate.setDate(newDate.getDate() + 1);
-        checkout.update(newDate);
-
+    if(ev.date.valueOf() < startDate.valueOf()){
+        alert("您选取的时间顺序不对，请重新选择！");
+        $('#dpd2').val("");
+    }else{
+        endDate = new Date(ev.date);
     }
-    checkin.hide();
-    $('#dpd2')[0].focus();
-}).data('datepicker');
-var checkout = $('#dpd2').fdatepicker({
-    format: 'yyyy-mm-dd',
-    onRender: function (date) {
-        return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
-    }
-}).on('changeDate', function (ev) {
-     date2 = Date.parse($("#dpd2").val().replace(/-/g,"/"))/1000;
-    checkout.hide();
-
-}).data('datepicker');
+    $('#dpd2').fdatepicker('hide');
+});
 //搜索内容提交
 $("#sumbit").click(function(){
     var str=$("#autor_n").val();
     str=replaceIllegalStr(str);
+    var date1=$("#dpd1").val();
+    var date2=$("#dpd2").val();
+    date1 = new Date(Date.parse(date1.replace(/-/g, "/")));
+    date1 = date1.getTime()/1000;
+    date2 = new Date(Date.parse(date2.replace(/-/g, "/")));
+    date2 = date2.getTime()/1000;
     $("#dpd1").val(date1);
     $("#dpd2").val(date2);
     $("#autor_n").val(str);
-
 });

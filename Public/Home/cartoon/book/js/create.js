@@ -1,4 +1,11 @@
-
+//判断有没携带数据来判别发表还是修改
+$(document).ready(function(){
+    if($("#cartoon_name").val()!="" && $("#cartoon_name").val()!=null){
+        $("#section_right_top").children().text("修改作品")
+    }else{
+        $("#section_right_top").children().text("发表漫画")
+    }
+});
 
 $(function(){
     var inp1=false,inp2=false,inp3=false,inp4=false,inp5=false,inp6=false,inp7=false,inp8=false;
