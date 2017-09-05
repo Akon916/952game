@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../common/css/reset.css"/>
     <link rel="stylesheet" href="css/list.css"/>
     <link rel="stylesheet" href="../common/icon/iconfont.css"/>
+    <link rel="stylesheet" href="../common/css/foundation-datepicker.css"/>
 </head>
 <body>
 <header id="header">
@@ -47,19 +48,19 @@
                 <span>共有<span>3</span>部漫画</span>
                 <a href="create.html">发布</a>
             </div>
-            <form class="search" action="" >
+            <form class="search" action="create.php" method="post" >
                 <div class="key">
-                    关键词 <input type="text" name="key" placeholder="漫画名称、作者" value="">
+                    关键词 <input type="text" name="key" id="autor_n" placeholder="漫画名称、作者" value="">
                 </div>
                 <div id="select-date">
                     <span></span>
-                    <input type="text" class="time" data-action="time_half" data-date-range="from" name="dateFromStr" value=""> 至
-                    <input type="text" class="time" data-action="time_half" data-date-range="to" name="dateToStr" value="">
-                    <input type="submit" class="submit" value="搜  索">
+                    <input type="text" class="time" id="dpd1" data-action="time_half" data-date-range="from" name="dateFromStr" value=""> 至
+                    <input type="text" class="time" id="dpd2" data-action="time_half" data-date-range="to" name="dateToStr" value="">
+                    <input type="submit" id="sumbit" class="submit" value="搜  索">
                 </div>
             </form>
 
-            <div class="result">
+            <div class="result" style="display: block">
                 <table>
                     <thead>
                     <tr><th>漫画名称</th>
@@ -72,15 +73,14 @@
                     <tbody>
                     <tr>
                         <td class="bookinfo">
-                            <a href="/book/view/5034946843940349669"><img src="https://easyread.nosdn.127.net/pic20170824d51fc4fbe1e24e8588f694a330ba2b75.jpg"></a>
+                            <a href=""><img src="https://easyread.nosdn.127.net/pic20170824d51fc4fbe1e24e8588f694a330ba2b75.jpg"></a>
                             <div class="info">
-                                <p class="title"><a href="/book/view/5034946843940349669">神游国度</a></p>
-
+                                <p class="title"><a href="">神游国度</a></p>
                                 <p>2017-08-24 10:45:56</p>
                                 <p>更新到：暂无话发布上线</p>
                                 <p>点&nbsp;&nbsp;&nbsp;击：0</p>
                                 <p>收&nbsp;&nbsp;&nbsp;藏：0</p>
-                                <p class="edit"><a href="/book/update/5034946843940349669">修改漫画</a></p>
+                                <p class="edit"><a href="reload.html">修改漫画</a></p>
                             </div>
                         </td>
                         <td>已退稿</td>
@@ -88,23 +88,23 @@
                         <td class="num">0</td>
                         <td class="num">0</td>
                         <td class="oper">
-                            <a class="add" href="/article/create/5034946843940349669">新增话</a>
-                            <a href="/book/manage/5034946843940349669">管理话</a>
+                            <a class="add" href="works.html">新增话</a>
+                            <a href="manage.html">管理话</a>
 
-                            <a href="javascript:void(0);" data-bookid="5034946843940349669" data-action="book_applypublish">提交审核</a>
+                            <a href="javascript:void(0);">提交审核</a>
                         </td>
                     </tr>
                     <tr>
                         <td class="bookinfo">
-                            <a href="/book/view/5033227676220158100"><img src="https://easyread.nosdn.127.net/pic201708223fef709f5af14a8dafd0750cd1c758be.jpg"></a>
+                            <a href=""><img src="https://easyread.nosdn.127.net/pic201708223fef709f5af14a8dafd0750cd1c758be.jpg"></a>
                             <div class="info">
-                                <p class="title"><a href="/book/view/5033227676220158100">神游国度</a></p>
+                                <p class="title"><a href="">神游国度</a></p>
 
                                 <p>2017-09-01 11:03:33</p>
                                 <p>更新到：1 初见</p>
                                 <p>点&nbsp;&nbsp;&nbsp;击：523</p>
                                 <p>收&nbsp;&nbsp;&nbsp;藏：2</p>
-                                <p class="edit"><a href="/book/update/5033227676220158100">修改漫画</a></p>
+                                <p class="edit"><a href="reload.html">修改漫画</a></p>
                             </div>
                         </td>
                         <td>已发布</td>
@@ -112,23 +112,23 @@
                         <td class="num">1</td>
                         <td class="num">7</td>
                         <td class="oper">
-                            <a class="add" href="/article/create/5033227676220158100">新增话</a>
-                            <a href="/book/manage/5033227676220158100">管理话</a>
-                            <a href="javascript:void(0);" data-publish-type="0" data-bookid="5033227676220158100" data-action="check_epayaccount">申请上架</a>
+                            <a class="add" href="works.html">新增话</a>
+                            <a href="manage.html">管理话</a>
+                            <a href="javascript:void(0);" >申请上架</a>
 
                         </td>
                     </tr>
                     <tr>
                         <td class="bookinfo">
-                            <a href="/book/view/5032798586050155139"><img src="https://easyread.nosdn.127.net/pic20170821da31de3e25a8484fb5e64021d23cff86.jpg"></a>
+                            <a href=""><img src="https://easyread.nosdn.127.net/pic20170821da31de3e25a8484fb5e64021d23cff86.jpg"></a>
                             <div class="info">
-                                <p class="title"><a href="/book/view/5032798586050155139">140</a></p>
+                                <p class="title"><a href="">140</a></p>
 
                                 <p>2017-09-01 17:06:36</p>
                                 <p>更新到：暂无话发布上线</p>
                                 <p>点&nbsp;&nbsp;&nbsp;击：0</p>
                                 <p>收&nbsp;&nbsp;&nbsp;藏：0</p>
-                                <p class="edit"><a href="/book/update/5032798586050155139">修改漫画</a></p>
+                                <p class="edit"><a href="reload.html">修改漫画</a></p>
                             </div>
                         </td>
                         <td>已退稿</td>
@@ -136,10 +136,9 @@
                         <td class="num">0</td>
                         <td class="num">0</td>
                         <td class="oper">
-                            <a class="add" href="/article/create/5032798586050155139">新增话</a>
-                            <a href="/book/manage/5032798586050155139">管理话</a>
-
-                            <a href="javascript:void(0);" data-bookid="5032798586050155139" data-action="book_applypublish">提交审核</a>
+                            <a class="add" href="works.html">新增话</a>
+                            <a href="manage.html">管理话</a>
+                            <a href="javascript:void(0);">提交审核</a>
                         </td>
                     </tr>
                     <tr>
@@ -148,6 +147,12 @@
                     </tbody>
                 </table>
             </div>
+      <!--隐藏了没有作品的情况-->
+           <div id="no_works" style="display: none">
+              <p>你还没有发布任何作品╮(╯▽╰)╭
+                  <a href="create.html">赶紧发表下！</a>
+              </p>
+           </div>
 
         </div>
     </div>
@@ -155,5 +160,7 @@
 <?php include '../common/footer.html'?>
 </body>
 <script src="../common/js/jquery-1.8.3.min.js"></script>
-
+<script src="../common/js/foundation-datepicker.min.js"></script>
+<!--<script src="../common/js/foundation-datepicker.zh-CN.js"></script>-->
+<script src="../book/js/list.js"></script>
 </html>
