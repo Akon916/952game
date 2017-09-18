@@ -1,0 +1,632 @@
+
+html{
+    font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+body{
+    background: #F7F7F7;
+    color: #333;
+}
+html, body {
+            height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+}
+fieldset{
+    margin:0;
+    border-radius: 4px;
+    border:1px solid #cccccc;
+}
+img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+input,button{
+    border:0;
+    outline:none;
+}
+ul,li{
+    list-style: none;
+}
+legend{
+    color: #B3B3B3;
+}
+.font-hid {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+#section{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin-top:50px;
+    margin-bottom: -150px;
+}
+#section:after {
+            content: "";
+            display: block;
+        }
+#footer, #section:after {
+    height: 150px;
+}
+#section_all{
+    width: 1150px;
+    margin:0 auto;
+}
+#section_left{
+    width: 300px;
+    height: auto;
+    float: left;
+}
+/*登录内容*/
+#login_Re{
+    margin-left: 20px;
+}
+#login_Re_W{
+
+}
+.login{
+    width: 300px;
+    height:400px;
+    border-radius: 5px;
+    background: rgba(255,255,255,.8);
+    box-shadow: 5px 5px 30px #ddd;
+}
+.login_pad{
+    padding: 20px;
+}
+.login_one{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.login_one>span{
+    font-size: 20px;
+    color: #3FB2E8;
+}
+.login_two{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 20px 0 0;
+    border-bottom: 1px solid #CCCCCC;
+    position: relative;
+    z-index: 10;
+}
+.login_two>input{
+    border:none;
+    background: transparent;
+}
+.login_ecd{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.login_ecd>input{
+    width: 80px;
+    height: 35px;
+    padding-left: 10px;
+    border-bottom:1px solid #CCCCCC;
+}
+.login_ecd>img{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    border:1px solid #ccc;
+    vertical-align: middle;
+}
+#notice_one{
+    position: absolute;
+    top: -23px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+#notice_three{
+    position: absolute;
+    top: -21px;
+    left:136px ;
+    z-index : 100;
+}
+.login_three{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.login_three>a{
+    float: right;
+}
+.login_four{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.login_four>input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border:none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    background:#97d0ea;
+    border-radius: 3px;
+}
+#login_enter_one:hover{
+    background:#3FB2E8 ;
+}
+#login_enter_two:hover{
+    background:#3FB2E8 ;
+}
+.login_five{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.login_five>ul{
+    float: left;
+}
+.login_five>ul>li{
+    float: left;
+}
+.login_five>ul>li:nth-child(2){
+    padding:0 8px;
+}
+.login_five>ul>li>a>img{
+   vertical-align: middle;
+}
+
+.login_register {
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+
+#person_frame{
+    width: 300px;
+    height:350px;
+    border-radius: 5px;
+    background: rgba(255,255,255,.8);
+}
+#person_frame>div:nth-child(1){
+    padding: 10px;
+}
+#person_frame>div:nth-child(1)>div:nth-child(1){
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    float: left;
+    overflow: hidden;
+}
+#person_frame>div:nth-child(1)>div:nth-child(2){
+    width: 170px;
+    height: 100px;
+    margin: 10px 20px 0 0;
+    float: right;
+}
+#person_frame_login{
+    color: #36A9E2;
+    font-size: 15px;
+}
+#person_frame_ptNum{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #888888;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-indent: 20px;
+}
+#person_frame_ptNum>span{
+    color: #888888;
+}
+#person_frame_down{
+    margin-top: 5px;
+}
+#person_frame_down>span,#person_frame_down>a{
+    display: block;
+    float: left;
+    width: 75px;
+    height: 30px;
+    background: rgba(255,255,255,.8);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 13px;
+    cursor: pointer;
+}
+#person_frame_close{
+    margin-left: 10px;
+}
+#person_frame>div:nth-child(2){
+    width: 95%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 70px;
+}
+#person_frame>div:nth-child(2)>span{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 2px solid #36A9E2;
+}
+#played_game{
+    width: 100%;
+    height: 185px;
+    overflow: hidden;
+}
+.avo_line{
+    width: 100%;
+    height: 40px;
+    padding: 4px 0 0 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-top: 1px dashed #DDDDDD;
+}
+.avo_line:hover{
+    background: #ededed;
+    color: #0695d7;
+}
+.avo_line:nth-child(1){
+    background: #ededed;
+}
+.avo_line>a{
+    display: block;
+    width: 100%;
+    height: 32px;
+}
+.avo_line>a>img{
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+.avo_line>a>span{
+    display: block;
+    float: left;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 12px;
+}
+.avo_lineCol{
+    color: #0695d7!important;
+}
+
+#section_two{
+   width:100%;
+   height: 120px;
+   margin: 50px auto;
+   border-top:1px solid #DDDDDD;
+   border-bottom: 1px solid #DDDDDD;
+}
+#section_two>ul{
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+#section_two>ul>li{
+    float: left;
+    line-height: 30px;
+    margin-left: 10px;
+}
+#section_two>ul>li>a{
+    font-size: 12px;
+    color: #999999;
+}
+/*侧面导航*/
+#side{
+    width: 65px;
+    border: 1px solid #FACBD6;
+    border-radius: 4px;
+    position:fixed;
+    left: 50%;
+    top: 500px;
+    margin-left: 630px;
+    z-index: 500;
+    display: none;
+}
+
+#side>ul>li{
+    display: block;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #FFA5B6;
+    cursor: default;
+}
+#side>ul>li:hover{
+    background: #FFA5B6;
+    color: #ffffff;
+}
+.side_line_color{
+    color: #ffffff !important;
+    background: #FFA5B6;
+}
+.side_rel{
+    position: relative;
+}
+.side_pst{
+    position: absolute;
+    left:0;
+    top:-393px;
+}
+
+/*附加登录遮罩层*/
+#login_second{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: none;
+}
+#login_second_all{
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+    background: #ffffff;
+    margin: 10% auto;
+}
+#login_second_content{
+    width:100%;
+    height: auto;
+}
+#login_second_content>div:nth-child(1){
+    width:100%;
+    height: 70px;
+    line-height: 70px;
+    color:#FFA5B6;
+    font-weight: bold;
+    border-bottom: 1px solid #dfdfdf;
+    text-align: center;
+}
+#login_second_content>div:nth-child(1)>span{
+    font-size:22px;
+}
+#close_login{
+    position: relative;
+    top: 0;
+    left:190px;
+    cursor: pointer;
+    color: #B3B3B3;
+    font-size: 24px;
+}
+#login_pad{
+    padding: 0 100px;
+}
+
+
+#section_right{
+    float: right;
+    width: 815px;
+    margin-right:5px;
+    box-shadow: 0px 0px 30px #888;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+#section_one{
+    padding: 50px 0 80px 0;
+    box-shadow: 5px 0px 60px #ddd;
+    border-radius: 8px;
+}
+#section_one:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+#section_tj{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#section_tj>div{
+    display: inline-block;
+    width: 500px;
+    border:2px solid #ddd;
+    border-radius: 3px;
+}
+#section_tj>span{
+    font-size: 22px;
+    font-weight: bold;
+    color: #e56606;
+    padding: 0 5px;
+}
+
+/*遮罩层白色背景的内容*/
+.login_pad{
+    padding: 20px;
+}
+.login_one{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.login_one>span{
+    font-size: 20px;
+    color: #3FB2E8;
+}
+.login_two{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 20px;
+    border-bottom: 1px solid #CCCCCC;
+    position: relative;
+}
+.login_two>input{
+    border:none;
+    background: transparent;
+}
+.er_code{
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    margin-top: 14px;
+}
+.er_code>input{
+    width: 120px;
+    height: 32px;
+    border-radius: 5px;
+    border-bottom:1px solid #DDDDDD;
+    padding-left: 10px;
+}
+.er_code>img{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #DDDDDD;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+#notice_three{
+    position: absolute;
+    top: -16px;
+    left:136px ;
+    z-index : 100;
+}
+.login_three{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.login_three>a{
+    float: right;
+}
+.login_four{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.login_four>input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border:none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    background:#FFA5B6;
+    border-radius: 3px;
+}
+#login_enter_two:hover{
+    background:#FF8080;
+}
+.login_five{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.login_five>ul{
+    float: left;
+}
+.login_five>ul>li{
+    float: left;
+}
+.login_five>ul>li:nth-child(2){
+    padding:0 8px;
+}
+.login_five>ul>li>a>img{
+    vertical-align: middle;
+}
+.login_register {
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+
+/*漫画图片带标题和具体的内容介绍*/
+.cartoon_note_rel{
+    position: relative;
+}
+.cartoon_note_pst{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+.cartoon_note_pst>a{
+    display: block;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .50);
+}
+.cartoon_note_pst>a:first-child{
+    font-size: 14px;
+}
+.cartoon_note_pst>a:last-child{
+    font-size: 16px;
+}
+/*<!--底层弹出动画-->*/
+#cartoon_bottom{
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    left: 0px;
+    bottom:0px;
+    z-index: 100;
+    background: url("../images/bottom_qr_code_bg.png") no-repeat;
+    background-size: 100% 100% ;
+}
+#cartoon_bottom>div{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../images/bottom_qr_code_bg_con.png")no-repeat;
+}
+#cartoon_bottom>div>span:nth-child(1){
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+#cartoon_bottom>div>span:nth-child(2){
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right:0px;
+    top:5px;
+    z-index: 9999;
+    background: url("../images/bottom_qr_code_close.png")no-repeat;
+}
+
+/*轮播图*/
+.picScroll-left{ overflow:hidden; position:relative; float: right;  }
+        .picScroll-left .hd{position: absolute;left: 360px;bottom: 10px;}
+        .picScroll-left .hd .prev,.picScroll-left .hd .next{ display:block;  width:10px; height:15px; float:right; margin-right:6px; margin-top:6px;  overflow:hidden;
+             cursor:pointer;line-height: 15px;font-weight: 600; color: #e56606;}
+        .picScroll-left .hd .next{}
+        .picScroll-left .hd .prevStop{}
+        .picScroll-left .hd .nextStop{}
+        .picScroll-left .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+        .picScroll-left .hd ul li{ float:left;  width:10px; height:10px; overflow:hidden; margin-right:8px; text-indent:-999px; cursor:pointer; background:#ddd;border-radius: 50%; }
+        .picScroll-left .hd ul li.on{ background:#FFA5B6 }
+        .picScroll-left .bd{ padding: 10px 10px 35px 10px;   }
+        .picScroll-left .bd ul{ overflow:hidden; zoom:1; }
+        .picScroll-left .bd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+        .picScroll-left .bd ul li .pic{ text-align:center; }
+        .picScroll-left .bd ul li .pic img{ width:250px; height:450px; display:block; box-shadow: 5px 0px 35px #333;}
+        .picScroll-left .bd ul li .pic a:hover img{ border-color:#999;  }
+        .picScroll-left .bd ul li .title{ line-height:24px; font-weight: 600;   }

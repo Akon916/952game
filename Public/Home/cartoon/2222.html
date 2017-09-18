@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+</head>
+<style type="text/css">
+img{
+  position: absolute;
+}
+   #panel{  
+            position: absolute;  
+            /*width: 200px;height: 200px;  */
+            background: green;  
+        }  
+        #dragIcon{  
+            position: absolute;bottom: 0;right: 0;  
+            width: 20px;height: 20px;  
+            background: yellow;  
+        }  
+</style>
+<body>
+<div id="panel">  
+  <span>jsfkslkfs;lfks;lfks;fksl;f;s</span>
+    <div id="dragIcon"></div>  
+</div>  
+<!-- <img id="fly" src="images/pic%2F2016%2F05%2F09%2Ff21c88c2e53e40b2b46e66d02432d2ba.png"  alt=""> -->
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+<br><br><br><br><br><br><br><b></b><br><br><br>
+</body>
+<script src="common/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+// $(document).mousemove(function() {
+//   var pos=getMousePos(event);
+//   var divFly=document.getElementById("fly");
+//    divFly.style.left = pos.x+"px"; 
+//    divFly.style.top = pos.y+"px"; 
+//  // console.log("x"+pos.x+"y"+pos.y);
+// })
+// function getMousePos(event) {
+//     var e = event || window.event;
+//     var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
+//     var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
+//     var x = e.pageX || e.clientX + scrollX;
+//     var y = e.pageY || e.clientY + scrollY;
+//     return { 'x': x, 'y': y };
+// }
+
+   window.onload = function () {  
+   
+        // 1. 获取两个大小div  
+        var oPanel = document.getElementById('panel');  
+        var oDragIcon = document.getElementById('dragIcon');  
+   
+        // 定义4个变量  
+        var disX = 0;//鼠标按下时光标的X值  
+        var disY = 0;//鼠标按下时光标的Y值  
+        var disW = 0; //拖拽前div的宽  
+        var disH = 0; // 拖拽前div的高  
+   
+        //3. 给小div加点击事件  
+        oDragIcon.onmousedown = function (ev) {  
+            var ev = ev || window.event;  
+            disX = ev.clientX; // 获取鼠标按下时光标x的值  
+            disY = ev.clientY; // 获取鼠标按下时光标Y的值  
+            disW = oPanel.offsetWidth; // 获取拖拽前div的宽  
+            disH = oPanel.offsetHeight; // 获取拖拽前div的高  
+   
+            document.onmousemove = function (ev) {  
+                var ev = ev || window.event;  
+                //拖拽时为了对宽和高 限制一下范围，定义两个变量  
+                var W =  ev.clientX - disX + disW;  
+                var H =  ev.clientY - disY + disH;  
+   
+                if(W<100){  
+                    W = 100;  
+                }  
+                if(W>800){  
+                    W =800;  
+                }  
+                if(H<100){  
+                    H = 100;  
+                }  
+                if(H>500){  
+                    H = 500;  
+                }  
+                oPanel.style.width =W +'px';// 拖拽后物体的宽  
+                oPanel.style.height = H +'px';// 拖拽后物体的高  
+            }  
+            document.onmouseup = function () {  
+                document.onmousemove = null;  
+                document.onmouseup = null;  
+            }  
+        }  
+   
+    }  
+
+
+</script>
+</html>

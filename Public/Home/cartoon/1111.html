@@ -1,75 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+
+        .page-wrap {
+            min-height: 100%;
+            /* equal to footer height */
+            margin-bottom: -142px;
+            width: 100%;
+
+        }
+        .main{
+
+            width: 100%;
+            background: pink;
+        }
+        /*.main:before{*/
+            /*content: "";*/
+            /*display: block;*/
+        /*}*/
+        .page-wrap:after {
+            content: "";
+            display: block;
+        }
+        .site-footer, .page-wrap:after {
+            height: 142px;
+        }
+        .site-footer {
+            background: orange;
+        }
+    </style>
 </head>
-<style>
-    * {
-        margin: 0;
-    }
-    html, body {
-        height: 100%;
-    }
-    #btn{
-        width: 600px;
-
-        border: 1px solid red;
-        margin: 0 auto;
-    }
-    .page-wrap {
-        min-height: 100%;
-        /* equal to footer height */
-        margin-bottom: -142px;
-    }
-    .page-wrap:after {
-        content: "";
-        display: block;
-    }
-    .site-footer, .page-wrap:after {
-        height: 142px;
-    }
-    .site-footer {
-        background: orange;
-        color: #FFFFFF;
-    }
-</style>
 <body>
-<div id="btn">
-    <div class="page-wrap">
 
+<div class="page-wrap">
+    <div class="main">
+        Content!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ea esse maxime nam nostrum
+        rem repellendus suscipit, temporibus. Doloremque ea
+        earum esse illum, reiciendis vel voluptatibus. Aperiam cupiditate facere saepe?
+        <br/><br/><br/><br/><br/><br/><br/><b></b><br/><br/><br/><br/><b></b><br/><br/>
+        Content!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ea esse maxime nam nostrum
+        rem repellendus suscipit, temporibus. Doloremque ea
+        earum esse illum, reiciendis vel voluptatibus. Aperiam cupiditate facere saepe?
+        <br/><br/><br/><br/><br/><br/><br/><b></b><br/><br/><br/><br/><b></b><br/><br/>
 
-
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡
-        Content!德哈卡活
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡
-        Content!德哈卡活
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡活动教案来看大家安利的骄傲了大家安利的骄傲了大量贷款拉克大；看到别人 <br/><br/>
-        Content!德哈卡
-        Content!德哈卡活
 
     </div>
-
-    <footer class="site-footer">
-        I'm the Sticky Footer.
-    </footer>
-
 </div>
 
-</body>
-<script src="common/js/jquery-1.8.3.min.js"></script>
+<footer class="site-footer">
+    I'm the Sticky Footer.
+</footer>
 <script>
 
 </script>
+</body>
 </html>

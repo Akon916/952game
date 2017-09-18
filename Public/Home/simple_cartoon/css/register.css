@@ -1,0 +1,206 @@
+html{
+    font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+body{
+    background: #F7F7F7;
+}
+a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+}
+a:hover{
+    color: #36A9E2;
+}
+fieldset{
+    margin:0;
+    border-radius: 4px;
+    border:1px solid #cccccc;
+}
+img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+input,button{
+    border:0px;
+    outline:none
+}
+ul,li{
+    list-style: none;
+}
+legend{
+    color: #B3B3B3;
+}
+
+#header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 30px #888888;
+    background: rgba(255,255,255,.6);
+}
+#header_all{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+#header_all>a{
+    display: block;
+    height:80px;
+    width: 80px;
+    float: left;
+}
+#header_all>a>img{
+    display: block;
+    float: left;
+    width: 80px;
+    height: auto;
+}
+#header_all>ul,#header_all>ul>li{
+    display: block;
+    float: left;
+}
+#header_all>ul>li{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+#header_all>ul>li>a{
+    height: 66px;
+    width: 80px;
+    line-height: 66px;
+    text-align: center;
+    color: #FFA5B6;
+}
+#header_all>ul>li>a:hover{
+    color: #e56606;
+}
+#section{
+    width: 100%;
+    height: 900px;
+    background: url("../../feiyang/image/login_bg.jpg") top center;
+}
+#section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+#register{
+    width: 900px;
+    margin: 50px auto;
+    height:750px;
+    border-radius: 5px;
+    background: rgba(255,255,255,.8);
+
+}
+#register_top {
+    width: 100%;
+    height:90px;
+    border-bottom: 2px dashed #888888;
+    line-height: 60px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#register_top>span:nth-child(1){
+    display: block;
+    float: left;
+    height: auto;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
+    color: #888888;
+}
+#register_top>div{
+    float: right;
+}
+#register_top>div>span{
+    font-size: 14px;
+}
+#register_top>div>span:nth-child(2)>a{
+    color: #0592D9;
+    cursor: pointer;
+}
+#register_down{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.reg_row{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #484848;
+}
+.reg_row>div{
+    float: left;
+    margin-left: 25px;
+}
+.reg_row>div:nth-child(1){
+    width: 145px;
+    text-align: right;
+}
+.reg_row>div>input{
+    color: #333;
+    font-size: 16px;
+    width: 205px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px;
+    padding: 5px;
+}
+#verification_Code{
+    display: inline-block;
+    height: 35px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 100px;
+    border: 1px solid #868585;
+    border-radius: 2px;
+    vertical-align:middle;
+}
+.reg_line{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dotted #868585;
+}
+.reg_careful{
+    color: #484848;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 150px;
+    box-sizing: border-box;
+}
+.submit_all{
+    width: 100%;
+    height: 50px;
+
+}
+#submit{
+    display: block;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    background:#36A9E2;
+    width: 189px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+#submit:hover{
+    background: #0592D9;
+}
+.agreement{
+    color: #f70400;
+    font-weight: bold;
+}

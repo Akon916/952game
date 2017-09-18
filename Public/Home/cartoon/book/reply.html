@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title> CO7 漫画</title>
+    <link rel="shortcut icon" href="../images/20170814113613362_easyicon_net_32.ico"/>
+    <link rel="stylesheet" href="../common/css/footer.css"/>
+    <link rel="stylesheet" href="../common/css/reset.css"/>
+    <link rel="stylesheet" href="../common/icon/iconfont.css"/>
+    <link rel="stylesheet" href="../book/css/book_header.css"/>
+    <link rel="stylesheet" href="../common/css/foundation-datepicker.css"/>
+    <link rel="stylesheet" href="../common/css/reset.css"/>
+    <link rel="stylesheet" href="../book/css/cheshi.css"/>
+    <style>
+        html {
+            font: 14px "microsoft yahei",Arial,Helvetica,sans-serif
+        }
+
+        body {
+            background: #f7f7f7;
+            color: #333
+        }
+
+        a {
+            color: #222;
+            text-decoration: none;
+            font-size: 14px
+        }
+
+        a:hover {
+            color: #36a9e2
+        }
+
+        fieldset {
+            margin: 0;
+            border: 1px solid #ccc;
+            border-radius: 4px
+        }
+
+        img {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto
+        }
+
+        button,input {
+            outline: 0;
+            border: 0
+        }
+
+        li,ul {
+            list-style: none
+        }
+
+        legend {
+            color: #b3b3b3
+        }
+
+        .clearfix {
+            zoom: 1
+        }
+
+        .font_hid {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal
+        }
+        #section_right {
+            float: right;
+            box-sizing: border-box;
+            padding: 20px 20px 140px;
+            width: 750px;
+            height: 100%;
+            background: #fff
+        }
+
+        #section_right_top {
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid #eee;
+            text-indent: 10px;
+            line-height: 60px
+        }
+
+        #section_right_top>h3 {
+            float: left
+        }
+
+        #section_right_top>a {
+            float: right;
+            display: block;
+            margin-top: 15px;
+            margin-right: 10px;
+            width: 5pc;
+            height: 30px;
+            border-radius: 15px;
+            background: #0592d9;
+            color: #fff;
+            text-align: center;
+            line-height: 30px
+        }
+
+        #section_right_middle {
+            box-sizing: border-box;
+            padding: 0 20px;
+            width: 100%
+        }
+
+        #section_right_middle>div {
+            clear: both;
+            margin: 10px 0 5px;
+            width: 100%;
+            height: 30px;
+            font-size: 9pt
+        }
+
+        #section_right_middle>div>span {
+            float: left;
+            display: block;
+            padding: 10px 0;
+            width: 75pt;
+            text-align: right
+        }
+
+        #select-book {
+            height: 100%
+        }
+
+        #select-book>ul {
+            float: left;
+            width: 500px
+        }
+
+        #select-book>ul>li {
+            float: left
+        }
+
+        #select-book>ul>li .active {
+            background: #0592d9;
+            color: #eee
+        }
+
+        #select-book>ul>li>a {
+            margin-right: 15px;
+            width: 5pc;
+            height: 30px;
+            color: #222;
+            line-height: 30px
+        }
+
+        #select-book>ul>li>a {
+            float: left;
+            display: block;
+            margin-top: 5px;
+            text-align: center;
+            font-size: 9pt
+        }
+
+
+        #select-date>input {
+            width: 5pc;
+            height: 26px;
+            border: 1px solid #ddd
+        }
+
+        #select-date>a {
+            float: left;
+            display: block;
+            margin-top: 2px;
+            margin-right: 20px;
+            width: 66px;
+            height: 26px;
+            background: #0592d9;
+            color: #fff;
+            text-align: center;
+            font-size: 9pt;
+            line-height: 26px
+        }
+
+        #select-date>input:last-child {
+            margin-left: 10px;
+            background-color: #576475;
+            color: #fff
+        }
+
+        #section_right_bottom {
+            margin: 20px 0;
+            border: 1px solid #ededed;
+            background-color: #fff;
+            font-size: 9pt;
+            line-height: 14px
+        }
+        .section_left_list:nth-child(6) {
+            background: #ddd;
+        }
+
+        #section_right_down{
+            margin: 20px 0;
+            border: 1px solid #ededed;
+            font-size: 12px;
+            line-height: 14px;
+            background-color: #fff;
+        }
+        .title-tab{
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #ededed;
+        }
+        .tab-item{
+            float: left;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .tab-item>a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .active_b{
+            border-bottom: solid 2px #ff2853;
+            background: #eeeeee;
+        }
+        .item-media{
+            margin: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid #ededed;
+            border-radius: 4px;
+        }
+        .commenter-avatar{
+            padding-right: 20px;
+            padding-left: 10px;
+        }
+        .commenter-avatar>img{
+            float: left;
+            margin-right: 20px;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+        .media-body{
+            width: 560px;
+            float: left;
+        }
+        .media-heading{
+
+        }
+        .commenter-label {
+            font-weight: 700;
+            color: #666;
+        }
+        .comment-tip {
+            color: #999;
+            padding-left: 5px;
+        }
+        .msg-content {
+            margin-top: 12px;
+            white-space: normal;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+        .msg-action {
+            padding-top: 10px;
+            color: #67697a;
+        }
+        .source-book{
+            color: #008CBA;
+            text-decoration: none;
+            line-height: inherit;
+        }
+        .right{
+            float: right;
+            margin-right: 20px;
+            color: #008CBA;
+        }
+        .item-media{
+            position: relative;
+        }
+        .media-body:after,.item-media:after{
+            display:block;
+            content:"";
+            clear: both;
+        }
+        .no-reply{
+            width: 70px;
+            height: 43px;
+            position: absolute;
+            right: 0;
+            top:0;
+        }
+        .reply{
+            width: 560px;
+            background: #EDEDED;
+            padding: 20px 0 20px 20px;
+            box-sizing: border-box;
+            float: right;
+            margin-top: 20px;
+        }
+        .reply-input{
+            min-height: 36px;
+            width: 430px;
+            height: 36px;
+            overflow-x: hidden;
+            resize: none;
+            border: 1px solid #eeeeee;
+            float: left;
+            outline: none;
+            overflow-y: hidden;
+        }
+        .reply>input{
+            padding: 0;
+            border: 0;
+            height: 34px;
+            width: 80px;
+            min-width: 50px;
+            background-color: #f34c5e;
+            color: #fff;
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        .show_k{
+            display: block!important;
+        }
+        body,html{  height: 100% !important;  }  #section{  min-height: 100%;  margin-bottom: -150px;}
+        #section:after{content: "";  display: block;  width: 100%;  height: 150px;}
+
+    </style>
+</head>
+<body>
+<header id="header">
+    <div id="header_all">
+        <div>
+            <h3>CO7漫画</h3>
+            <span>|</span>
+            <a href=""><h3>作者中心</h3></a>
+        </div>
+        <div>
+            <a href="../index.html">首页</a>
+            <a href="">新手指南</a>
+        </div>
+        <div>
+            <a href="autor.html"><img src="../images/touxiang.png" alt=""/></a>
+            <span class="font_hid">大神542542qwe</span>
+        </div>
+        <div>
+            <i class="iconfont">&#xe615;</i>
+        </div>
+    </div>
+</header>
+<section id="section">
+    <div id="section_all" class="clearfix">
+        <div id="section_left">
+            <?php include 'book_common.html'?>
+        </div>
+        <div id="section_right">
+            <div id="section_right_top">
+                <h3>读者评论</h3>
+            </div>
+            <form action="create.php" method="post" id="section_right_middle">
+                <div id="select-book">
+                    <span>选择作品：</span>
+                    <a href="javascript:void(0);" class=""></a>
+                    <ul class="clearfix">
+                        <li><a class="active" href="">全部</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                    </ul>
+                </div>
+
+                <div id="select-date">
+                    <span>选择时间：</span>
+                    <a href="">全部</a>
+                    <input type="text" class="time" id="dpd1" data-action="time_half" data-date-range="from" name="dateFromStr" value=""> 至
+                    <input type="text" class="time" id="dpd2" data-action="time_half" data-date-range="to" name="dateToStr" value="">
+                    <input type="submit" id="submit" value="确定">
+                </div>
+            </form>
+
+            <div id="section_right_down">
+                <div class="title-tab">
+                    <div class="tab-item"><a href="msg_reply.html">回复消息</a></div>
+                    <div class="tab-item active_b"><a href="reply.html">作品评论</a></div>
+                </div>
+                <div class="item-media">
+                    <img src="../images/not-reply@2x.png" alt="未回复" class="no-reply" />
+                    <div class="commenter-avatar">
+                        <img src="https://easyread.nosdn.127.net/avatar_qq_f293c183b502414896d770c59588d5ce.jpeg" style="width: 60px;height: 60px" class="avator">
+                        <div class="vip-icon-block">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <span class="commenter-label">｡✧* ꧁荣耀王者꧂✧*｡</span><span class="comment-tip">评论我的作品</span>
+                        </div>
+                        <div class="msg-content">
+                            <p>很好看哦 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at autem debitis dicta doloribus, ea earum eligendi error et id ipsam magni nesciunt quod repellendus sed similique velit! Consequatur, nulla.
+                             beatae ea et ex facere fuga fugiat hic illo iusto maiores nam qui quod saepe sequi suscipit tempore tenetur? Beatae!
+                            </p>
+                        </div>
+
+                        <div class="msg-action">
+                            <span class="msg-time">8月23日   来自</span>
+                            <a href="" target="_blank" class="source-book">《神游国度》</a>
+                            <a class="right reply_msg" href="javascript:void(0);" >回复</a>
+                            <a class="right" href="javascript:void(0);" >删除</a>
+                        </div>
+                    </div>
+                    <form class="reply" action="create.php" method="post" style="display: none;">
+                        <div>
+                            <textarea class="reply-input"></textarea>
+                        </div>
+                            <input type="submit" class="right" value="回&nbsp;&nbsp;复">
+                        <p class="err"></p>
+                    </form>
+                </div>
+
+                <div class="item-media">
+                    <img src="../images/not-reply@2x.png" alt="未回复" class="no-reply" style="display: none"/>
+                    <div class="commenter-avatar">
+                        <img src="https://easyread.nosdn.127.net/avatar_qq_f293c183b502414896d770c59588d5ce.jpeg" style="width: 60px;height: 60px" class="avator">
+                        <div class="vip-icon-block">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <span class="commenter-label">｡✧* 嘿！朱丽叶꧂✧*｡</span><span class="comment-tip">评论我的作品</span>
+                        </div>
+                        <div class="msg-content">
+                            <p>真热闹很好看哦
+                            </p>
+                        </div>
+
+                        <div class="msg-action">
+                            <span class="msg-time">8月23日   来自</span>
+                            <a href="" target="_blank" class="source-book">《神游国度》</a>
+                            <a class="right reply_msg" href="javascript:void(0);" >回复</a>
+                            <a class="right" href="javascript:void(0);" >删除</a>
+                        </div>
+                    </div>
+                    <form class="reply" action="create.php" method="post" style="display: none;">
+                        <div>
+                            <textarea class="reply-input"></textarea>
+                        </div>
+                        <input type="submit" class="right" value="回&nbsp;&nbsp;复">
+                        <p class="err"></p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<?php include '../common/footer.html'?>
+</body>
+<script src="../common/js/jquery-1.8.3.min.js"></script>
+<script src="../common/js/foundation-datepicker.js"></script>
+<script src="../common/js/foundation-datepicker.zh-CN.js"></script>
+<script src="../book/js/reply.js"></script>
+
+</html>

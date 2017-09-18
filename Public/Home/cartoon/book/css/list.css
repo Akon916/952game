@@ -159,6 +159,9 @@ legend{
     padding-left: 10px;
     box-sizing: border-box;
 }
+.section_left_list:nth-child(2){
+    background: #dddddd;
+}
 .section_left_list:hover{
     background: #DDDDDD;
 }

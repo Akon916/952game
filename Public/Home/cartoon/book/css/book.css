@@ -342,3 +342,17 @@ legend{
     color: #888888;
     line-height: 20px;
 }
+/*绝对底部*/
+body,html{
+    height: 100% !important;
+}
+#section{
+    min-height: 100%;
+    margin-bottom: -150px!important;
+}
+#section:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 150px;
+}

@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/book/create.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/css/autor.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/css/book.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/book_header.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/css/cheshi.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/css/cpay.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/css/create.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/css/list.css" charset="UTF-8" />
@@ -18,6 +20,8 @@
     <file url="file://$PROJECT_DIR$/book/js/create.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/js/list.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/js/manage.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/js/reply.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/js/tucao.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/js/update.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/js/view.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/book/js/works.js" charset="UTF-8" />

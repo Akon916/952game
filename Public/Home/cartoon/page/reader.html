@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title> CO7 漫画</title>
+    <link rel="shortcut icon" href="../images/20170814113613362_easyicon_net_32.ico"/>
+    <link rel="stylesheet" href="../common/css/reset.css"/>
+    <link rel="stylesheet" href="../css/reader.css"/>
+    <link rel="stylesheet" href="../common/icon/iconfont.css">
+    <link rel="stylesheet" href="../common/css/jquery.mCustomScrollbar.css">
+</head>
+<body>
+
+<header id="header">
+    <div id="h_logo">
+        <a href="../index.html">
+            <img src="../images/co7-logo.png" alt="">
+            <h3>吸欧7 漫画</h3>
+        </a>
+    </div>
+     <div id="h_login">
+        
+         <div class="h_login_en">
+            <div style="display: block;">
+                 <span id="entry_lg">登录</span>
+                 <span class="color_c">|</span>
+                 <span><a href="../login/register.html">注册</a></span>
+            </div>
+          
+             <!--登录后的头像内容-->
+             <a href="" style="display:none">
+                 <img src="../images/touxiang.png" id="person_show" alt=""/>
+             </a>
+             <div id="person_center_pst">
+                 <div id="person_name">getian</div>
+                 <div id="person_point">
+                     <a href="">钻石: <span>0</span></a>
+                     <a href="">金币: <span>1000</span></a>
+                 </div>
+                 <div id="person_vip"><a href="">开通VIP</a></div>
+                 <div id="person_SignOut">退出</div>
+             </div>
+         </div>
+         <div class="h_meg">
+             <ul>
+                 <li class="header_msg_rel">
+                     <a href="" id="person_msg">
+                        <i class="iconfont">&#xe673;</i>
+                        消息
+                     </a>
+                     <ul class="header_msg_pst">
+                         <li>
+                             <a href="">
+                                 <span>评论</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="">
+                                 <span>反馈</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="">
+                                 <span>私信</span>
+                             </a>
+                         </li>
+                     </ul>
+                     <ul class="header_msg_pst" style="display: none">
+                         <li>
+                             <a href="">
+                                 <span>评论</span>
+                                 <span>1</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="">
+                                 <span>反馈</span>
+                                 <span>1</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="">
+                                 <span>私信</span>
+                                 <span>1</span>
+                             </a>
+                         </li>
+                     </ul>
+                 </li>
+                 <li class="header_msg_rel">
+                     <a href="">
+                     <i class="iconfont">&#xe609;</i>
+                     书架
+                     </a>
+                     <div class="header_book_pst" style="display: none">
+                          <div>
+                              <span>收藏你喜欢的漫画，一起追</span>
+                              <span id="login_book">立即登录</span>
+                          </div>
+                     </div>
+                     <div class="header_book_pst">
+                         <img src="../images/nodata-2.png" alt=""/>
+                         <span>空荡荡的...赶紧去收藏</span>
+                     </div>
+                     <ul class="header_book_pst_two" style="display: none">
+                          <li class="book_style">
+                              <a href="">
+                                  <img src="../images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                              </a>
+                              <div>
+                                  <a href="">救命，我还不想死！</a>
+                                  <span> 更新至: <a href="">32话</a></span>
+                              </div>
+                          </li>
+                          <li class="book_style">
+                             <a href="">
+                                 <img src="../images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                             </a>
+                             <div>
+                                 <a href="">救命，我还不想死！</a>
+                                 <span> 更新至: <a href="">32话</a></span>
+                             </div>
+                          </li>
+                          <li class="book_style">
+                             <a href="">
+                                 <img src="../images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                             </a>
+                             <div>
+                                 <a href="">救命，我还不想死！</a>
+                                 <span> 更新至: <a href="">32话</a></span>
+                             </div>
+                          </li>
+                          <li class="cle_book">
+                             <a href="">全部收藏(5)</a>
+                          </li>
+                     </ul>
+                 </li>
+                 <li class="header_msg_rel">
+                     <a href="">
+                        <i class="iconfont">&#xe658;</i>
+                        历史
+                     </a>
+                     <div class="header_his_pst">
+                         <div>
+                             <span>还没有看过任何漫画，赶紧去 <a href="">挑选</a>吧...</span>
+                         </div>
+                     </div>
+                     <ul class="header_book_pst_two" style="display: none">
+                         <li class="book_style">
+                             <a href="">
+                                 <img src="../images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                             </a>
+                             <div>
+                                 <a href="">救命，我还不想死！</a>
+                                 <span> 更新至: <a href="">32话</a></span>
+                             </div>
+                         </li>
+                         <li class="book_style">
+                             <a href="">
+                                 <img src="../images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                             </a>
+                             <div>
+                                 <a href="">救命，我还不想死！</a>
+                                 <span> 更新至: <a href="">32话</a></span>
+                             </div>
+                         </li>
+                         <li class="book_style">
+                             <a href="">
+                                 <img src="../images/pic20170714f97c762b18da410fbcdb3584dc66c674.jpg" alt=""/>
+                             </a>
+                             <div>
+                                 <a href="">救命，我还不想死！</a>
+                                 <span> 更新至: <a href="">32话</a></span>
+                             </div>
+                         </li>
+                         <li class="cle_book">
+                             <a href="">历史收藏(5)</a>
+                         </li>
+                     </ul>
+                 </li>
+                 <li>
+                    <a href="">
+                        <i class="iconfont">&#xe61e;</i>
+                    </a>
+                 </li>
+             </ul>
+         </div>
+
+    </div>
+    <div id="h_content" class="hid_font">
+        <a href="">首页</a>
+        <i> > </i>
+       <a href="">中国诡实录</a>
+        <i> > </i>
+        <span>170话 <span>黑出租</span></span>
+    </div>
+   
+</header>
+
+<section id="section">
+    <div id="banner_t">
+        <a href="">
+            <img src="../images/pic20170912763317f3c4694c49826d3d76882d6f42.jpg" alt="">
+        </a>
+    </div>
+
+    <div id="content">
+        <div class="page_size" style="width: 800px; ">
+            <img src="../images/store_file_download.jpg" alt="">
+        </div>
+        <div class="page_size" style="width: 800px; ">
+            <img src="../images/store_file_download (1).jpg" alt="">
+        </div>
+        <div class="page_size" style="width: 800px; ">
+            <img src="../images/pic20170330e51e57e7bb0c46aeb034c20916f0d42b.jpeg" alt="">
+        </div>
+        <div class="page_size" style="width: 800px; ">
+            <img src="../images/store_file_download (2).jpg" alt="">
+        </div>
+        <div class="page_size" style="width: 800px; ">
+            <img src="../images/store_file_download (3).jpg" alt="">
+        </div>
+    </div>
+
+    <div id="next">
+        <span>下一话</span>
+        <em class="iconfont">&#xe641;</em>
+    </div>
+
+    <div id="give_gift">
+        <div>
+            <div>
+                <em class="iconfont">&#xe602;</em>
+            </div>
+            <span>收藏</span>
+        </div>
+         <div>
+             <div>
+                <em class="iconfont">&#xe605;</em> 
+             </div>
+            <span>送礼物</span>
+        </div>
+    </div>
+
+    <div id="banner_d">
+         <a href="">
+            <img src="../images/pic20170912763317f3c4694c49826d3d76882d6f42.jpg" alt="">
+        </a>
+    </div>
+</section>
+
+<aside id="aside">
+    <div class="guess">
+        <span>猜你喜欢ヾ(✿ﾟ▽ﾟ)ノ</span>
+    </div>
+    <div class="content_scroll content">
+        <a href="">
+        <img src="../images/pic20170617f39f302979cc4f75b385dd308361edac.jpg" alt="">
+        <span>广东灵异档案</span>
+        </a>
+        <a href="">
+        <img src="../images/pic20170617f39f302979cc4f75b385dd308361edac.jpg" alt="">
+        <span>广东灵异档案</span>
+        </a>
+        <a href="">
+        <img src="../images/pic20170617f39f302979cc4f75b385dd308361edac.jpg" alt="">
+        <span>广东灵异档案</span>
+        </a>
+        <a href="">
+        <img src="../images/pic20170617f39f302979cc4f75b385dd308361edac.jpg" alt="">
+        <span>广东灵异档案</span>
+        </a>
+        <a href="">
+        <img src="../images/pic20170617f39f302979cc4f75b385dd308361edac.jpg" alt="">
+        <span>广东灵异档案</span>
+        </a>
+        <a href="">
+        <img src="../images/pic20170617f39f302979cc4f75b385dd308361edac.jpg" alt="">
+        <span>广东灵异档案</span>
+        </a>
+
+    </div>
+    <div class="toggle_c">
+        <span id="togge_scroll">猜你会喜欢</span>
+        <span class="rudder">＜</span>
+        <span class="iconfont sub" style="display: none;">&#xe611;</span>
+    </div>
+</aside>
+<aside id="aside_right">
+    <div id="tocao_h">吐槽</div>
+    <div class="txtMarquee-top">
+        <div class="bd">
+            <ul class="infoList">
+                <li class="toco_list">
+                    <div>
+                        <img src="../images/004a2c2c4f5541b29b4b8cb52ba6fda9.jpg" alt=""/>
+                        <div>
+                            <span class="font_hid">懵懂小男孩</span>
+                            <span class="font_hid">今天11:15</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        这是一群傻逼穿裆江湖的故事，有时候出现在印度，有时候又在泰国
+                    </div>
+                </li>
+                <li class="toco_list">
+                    <div>
+                        <img src="../images/004a2c2c4f5541b29b4b8cb52ba6fda9.jpg" alt=""/>
+                        <div>
+                            <span class="font_hid">懵懂小男孩43424242424</span>
+                            <span class="font_hid">今天11:15</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        这是一群傻逼穿裆江湖的故事，有时候出现在印度，有时候又在泰国
+                    </div>
+                </li>
+                <li class="toco_list">
+                    <div>
+                        <img src="../images/004a2c2c4f5541b29b4b8cb52ba6fda9.jpg" alt=""/>
+                        <div>
+                            <span class="font_hid">懵懂小男孩43424242424</span>
+                            <span class="font_hid">今天11:15</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        这是一群傻逼穿裆江湖的故事，有时候出现在印度，有时候又在泰国
+                    </div>
+                </li>
+                <li class="toco_list">
+                    <div>
+                        <img src="../images/004a2c2c4f5541b29b4b8cb52ba6fda9.jpg" alt=""/>
+                        <div>
+                            <span class="font_hid">懵懂小男孩43424242424</span>
+                            <span class="font_hid">今天11:15</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        这是一群傻逼穿裆江湖的故事，有时候出现在印度，有时候又在泰国
+                    </div>
+                </li>
+                <li class="toco_list">
+                    <div>
+                        <img src="../images/004a2c2c4f5541b29b4b8cb52ba6fda9.jpg" alt=""/>
+                        <div>
+                            <span class="font_hid">懵懂小男孩43424242424</span>
+                            <span class="font_hid">今天11:15</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        这是一群傻逼穿裆江湖的故事，有时候出现在印度，有时候又在泰国
+                    </div>
+                </li>
+                <li class="toco_list">
+                    <div>
+                        <img src="../images/004a2c2c4f5541b29b4b8cb52ba6fda9.jpg" alt=""/>
+                        <div>
+                            <span class="font_hid">懵懂小男孩43424242424</span>
+                            <span class="font_hid">今天11:15</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        这是一群傻逼穿裆江湖的故事，有时候出现在印度，有时候又在泰国
+                    </div>
+                </li>
+                <li class="toco_list">
+                    <div>
+                        <img src="../images/004a2c2c4f5541b29b4b8cb52ba6fda9.jpg" alt=""/>
+                        <div>
+                            <span class="font_hid">懵懂小男孩43424242424</span>
+                            <span class="font_hid">今天11:15</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        这是一群傻逼穿裆江湖的故事，有时候出现在印度，有时候又在泰国
+                    </div>
+                </li>
+            </ul>
+            <div class="hd">
+                <a class="next">∧</a>
+                <a class="prev">∨</a>
+            </div>
+        </div>
+    </div>
+    <div id="tocao_f">
+        <div id="send_tocao">我要来一发</div>
+        <div id="yin_tocao">
+            <span></span>
+            <i class="tocao_list">隐藏</i>
+        </div>
+        <div id="tool">
+            显示工具栏
+        </div>
+    </div>
+</aside>
+<footer id="footer">
+    <div id="footer_all">
+        <div id="f_left">
+            <div class="change_s">
+                <div class="font_s f_ruduce">－</div>
+                <div class="size_c">默认大小</div>
+                <div class="font_s f_add">＋</div>
+            </div>
+            <div class="change_page">
+                <div class="change_btn">
+                    <span>页数 ：</span>
+                    <i class="page_init">1</i>
+                    <i>/</i>
+                    <i class="page_sum">110</i>
+                    <span class="ud">∧</span>
+
+                    <div class="page_scl">
+                        <div></div>
+                         <ul class="page_act">
+                            <!--  <li>
+                                 <a href="">第 <span>1</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>2</span> 页</a>
+                             </li>
+                             <li>
+                                <a href=""> 第 <span>3</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>4</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>5</span> 页</a>
+                             </li>
+                             <li>
+                                <a href=""> 第 <span>6</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>7</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>8</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>9</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>10</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>11</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>12</span> 页</a>
+                             </li>
+                             <li>
+                                 <a href=""> 第 <span>13</span> 页</a>
+                             </li> -->
+                         </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="f_mid">
+            <span>吐槽数: <span class="toc_f">84</span></span>
+            <span class="tucao_btn">我也吐吐</span>
+            <span class="tucao_btn">关闭吐槽</span>
+        </div>
+
+        <div id="f_right">
+            <ul>
+                <li>上一话</li>
+                <li>下一话</li>
+                <li class="tabl_p">
+
+                    <span class="tabl_toggle">目录</span>
+                    <div class="tabl">
+                        <div class="tabl_title">
+                            <h3 class="tabl_left">目录</h3>
+                            <p class="tabl_rgt">∨</p>
+                        </div>
+                        <div class="tabl_mde">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <span>1</span>
+                                        <span>来吧，做你想做的一切</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>2</span>
+                                        <span>想让我放过他，哭着求我吧</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>3</span>
+                                        <span>再见了我的玩具</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>4</span>
+                                        <span>来吧，做你想做的一切</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>5</span>
+                                        <span>想让我放过他，哭着求我吧</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>6</span>
+                                        <span>再见了我的玩具</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>7</span>
+                                        <span>来吧，做你想做的一切</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>8</span>
+                                        <span>想让我放过他，哭着求我吧</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>9</span>
+                                        <span>再见了我的玩具</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>10</span>
+                                        <span>来吧，做你想做的一切</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>11</span>
+                                        <span>想让我放过他，哭着求我吧</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>12</span>
+                                        <span>再见了我的玩具</span>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="">
+                                        <span>13</span>
+                                        <span>想让我放过他，哭着求我吧</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>14</span>
+                                        <span>再见了我的玩具</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="tabl_footer">
+                            <p>共 <b>16</b> 话</p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="f_page">左右翻页</li>
+                <li>上下滚动</li>
+                <li class="switch_h">
+                    <i class="iconfont switch">&#xe67a;</i>
+                    <span class="swi_n">开灯</span>
+                </li>
+                <li class="fix_h"> 
+                    <i class="iconfont fixed" id="fixed">&#xe606;</i>
+                    <span class="fix_n">点击固定工具栏</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+        
+</footer>
+<div id="complaints" style="display: none">
+    <div id="cpt_main">
+        <div class="cpt_s">
+            <h4 class="str_tgl"> ╮(╯▽╰)╭</h4>
+            <table class="cpt_table" style="display: none;">           
+               <tbody>
+                <tr> 
+                  <td data-click="onSelect:0">(ﾉ&gt;ω&lt;)ﾉ</td>
+                  <td data-click="onSelect:1">（￣▽￣）</td>
+                  <td data-click="onSelect:2">(〃∀〃)</td>
+                  <td data-click="onSelect:3">╮(╯_╰)╭</td>
+                  <td data-click="onSelect:4">(&gt;﹏&lt;)</td>
+                 </tr>
+                  <tr>      
+                     <td data-click="onSelect:5">(╥﹏╥)</td>    
+                     <td data-click="onSelect:6">｡ﾟヽ(ﾟ´Д`)ﾉﾟ｡</td>         
+                     <td data-click="onSelect:7">(|||ﾟдﾟ)</td>
+                     <td data-click="onSelect:8">(╯‵□′)╯︵┴─┴</td>         
+                     <td data-click="onSelect:9">(&nbsp;Φ&nbsp;ω&nbsp;Φ&nbsp;)</td> 
+                 </tr>
+                 <tr>
+                    <td data-click="onSelect:10">இдஇ</td>
+                    <td data-click="onSelect:11">→_→</td>
+                    <td data-click="onSelect:12">←_←</td>
+                    <td data-click="onSelect:13">(・`ω´・)</td>
+                    <td data-click="onSelect:14">⊙_⊙</td>
+                </tr>
+                    <td data-click="onSelect:15">(*´∀`)~♥</td>
+                    <td data-click="onSelect:16">(&nbsp;͡°&nbsp;͜ʖ&nbsp;͡°)</td>
+                    <td data-click="onSelect:17">o(≧∇≦o)</td>
+                    <td data-click="onSelect:18">(￣3￣)</td>
+                    <td data-click="onSelect:19">ԅ(¯﹃¯ԅ)</td>
+                </tr>
+                <tr>
+                    <td data-click="onSelect:20">(๑•̀ㅂ•́)و✧</td>
+                    <td data-click="onSelect:21">(*￣∇￣*)~朕喜欢！</td>
+                    <td data-click="onSelect:22">-ಥ﹏ಥ-什么鬼</td>
+                    <td data-click="onSelect:23">♪&nbsp;作者大大加油♪</td>
+                    <td data-click="onSelect:24">๛ก(ｰ̀ωｰ́ก)求快更</td>
+                </tr>
+            </tbody>
+         </table>
+        </div>
+        <div class="cpt_m">
+            <textarea spellcheck="false" name="" id="cpt_t" cols="30" rows="10" placeholder="吐槽来一发(○’ω’○)"></textarea>
+            <p>还可以输入<span class="surplus">50</span>个字</p>
+        </div>
+        <div class="cpt_b">
+            <button class="cpt_send">发送</button>
+            <button class="cpt_close">关闭</button>
+        </div>
+    </div>
+</div>
+
+<!-- 吐槽位置温馨提醒     -->
+<div id="complaints_ads" style="display: none">
+    <img src="../images/pic%2F2016%2F05%2F09%2Ff21c88c2e53e40b2b46e66d02432d2ba.png" alt="">
+    <p>请在黄色区域点选吐槽位置</p>
+</div>
+<!-- //鼠标的跟随图案 -->
+<div id="fly" style="position: absolute;width: 32px;height: auto;">
+    <img src="../images/pic%2F2016%2F05%2F09%2Ff21c88c2e53e40b2b46e66d02432d2ba.png"  alt="">
+</div>
+</body>
+<script src="../common/js/jquery-1.8.3.min.js"></script>
+<script src="../common/js/jquery.mCustomScrollbar.js"></script>
+<script src="../common/js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="../js/reader.js"></script>
+
+</html>

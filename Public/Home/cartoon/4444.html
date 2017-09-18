@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	#parent{
+		width: 400px;
+		height:350px;
+		border: 1px solid #333;
+		margin:  100px auto;
+	}
+</style>
+<body>
+	<div id="parent">
+		
+	</div>
+</body>
+<script src="common/js/jquery-1.8.3.min.js"></script>
+<script>
+	 $("#parent").mousemove(function(event){
+	 	var event= event||window.event;
+	 	 var x=event.offsetX
+		 var y=event.offsetY
+		 
+		 $(this).one("click",function(){
+		 	console.log("X coords: " + x + ", Y coords: " + y);
+		 })
+	 })
+</script>
+</html>

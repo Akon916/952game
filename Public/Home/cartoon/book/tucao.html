@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title> CO7 漫画</title>
+    <link rel="shortcut icon" href="../images/20170814113613362_easyicon_net_32.ico"/>
+    <link rel="stylesheet" href="../common/css/footer.css"/>
+    <link rel="stylesheet" href="../common/css/reset.css"/>
+    <link rel="stylesheet" href="../common/icon/iconfont.css"/>
+    <link rel="stylesheet" href="../common/css/foundation-datepicker.css">
+    <link rel="stylesheet" href="../book/css/book_header.css"/>
+    <style>
+        html{font:14px "microsoft yahei",Arial,Helvetica,sans-serif}body{background:#f7f7f7;color:#333}a{color:#222;text-decoration:none;font-size:14px}a:hover{color:#36a9e2}fieldset{margin:0;border:1px solid #ccc;border-radius:4px}img{margin:0;padding:0;width:100%;height:auto}button,input{outline:0;border:0}li,ul{list-style:none}legend{color:#b3b3b3}.clearfix{zoom:1}.font_hid{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.section_left_list:nth-child(5){background:#ddd}#section_right{float:right;box-sizing:border-box;padding:20px 20px 140px;width:750px;height:100%;background:#fff}#section_right_top{width:100%;height:60px;border-bottom:1px solid #eee;text-indent:10px;line-height:60px}#section_right_top>h3{float:left}#section_right_top>a{float:right;display:block;margin-top:15px;margin-right:10px;width:5pc;height:30px;border-radius:15px;background:#0592d9;color:#fff;text-align:center;line-height:30px}#section_right_middle{box-sizing:border-box;padding:0 20px;width:100%}#section_right_middle>div{clear:both;margin:10px 0 5px;width:100%;height:30px;font-size:9pt}#section_right_middle>div>span{float:left;display:block;padding:10px 0;width:75pt;text-align:right}#select-book{height:100%}#select-book>ul{float:left;width:500px}#select-book>ul>li{float:left}#select-book>ul>li .active{background:#0592d9;color:#eee}#select-book>ul>li>a{margin-right:15px;width:5pc;height:30px;color:#222;line-height:30px}#select-book>ul>li>a,#select-chap>select{float:left;display:block;margin-top:5px;text-align:center;font-size:9pt}#select-chap>select{width:66px;height:26px;outline:0;border-color:#ddd;background-color:#fff}#select-date>input{width:5pc;height:26px;border:1px solid #ddd}#select-date>a{float:left;display:block;margin-top:2px;margin-right:20px;width:66px;height:26px;background:#0592d9;color:#fff;text-align:center;font-size:9pt;line-height:26px}#select-date>input:last-child{margin-left:10px;background-color:#576475;color:#fff}#section_right_bottom{margin:20px 0;border:1px solid #ededed;background-color:#fff;font-size:9pt;line-height:14px}#section_right_bottom>div{padding:20px 20px 15px;border-bottom:1px solid #ededed}#section_right_bottom>.title{padding:0 20px;color:#b1b1b1;font-size:14px;line-height:38px}.item{overflow:hidden;margin-bottom:10px;background:#eee}.item:last-child{margin-bottom:0}.item .avator{float:left;display:block;margin-right:20px;width:4pc;height:4pc;border-radius:50%}.content{float:left!important;width:60%}.item p.top{padding:10px 0;color:#666;font-size:9pt}.item .tucao-text{display:block;color:#333;font-size:14px;line-height:1pc}.cgrey{margin-top:8px;color:#b1b1b1}.tx-right{float:right;text-align:right}.fc-9c{color:#0592d9;cursor:default}.modify_top{width:100%;height:40px;border-bottom:1px solid #eee;text-indent:10px;line-height:40px}.modify_top>h3{float:left}.modify_top>span{float:right;margin-right:10px;font-weight:700;font-size:20px;cursor:default}.modify>form{box-sizing:border-box;padding:20px 10px;width:100%;height:250px}#section_all{position:relative}#modify_del{position:absolute;top:300px;left:300px;width:25pc;height:200px;background:#fff;box-shadow:0 2px 8px rgba(55,55,55,.22)}#modify_del>div:nth-child(2){width:100%;height:90pt;text-align:center;line-height:150px}#modify_del>div:nth-child(3){width:100%;height:50px;line-height:50px}#modify_del>div:nth-child(3)>input{float:left;display:block;width:75pt;height:35px;line-height:35px}#modify_del>div:nth-child(3)>input:nth-child(1){margin-left:90px;background:#e4393c;color:#fff}#modify_del>div:nth-child(3)>input:nth-child(2){margin-left:20px}#tucao_toggle{position:absolute;top:150px;left:300px;overflow:hidden;width:600px;background:#fff;box-shadow:0 2px 8px rgba(55,55,55,.22)}.head{height:40px;border-bottom:1px solid #e3e3e3;background-color:#fafafa;text-indent:10px;font-size:1pc;line-height:40px}.right{float:right;margin-right:10px}.right>span{font-size:26px;line-height:40px;cursor:default}.right>a{position:relative;right:5px;bottom:2px;color:#0592d9}#tucao_toggle form li{padding:10px}#tucao_toggle .btns{margin-top:5px;padding:20px 0;border-top:1px solid #e3e3e3;text-align:center}#tucao_toggle .btns input.submit{margin-right:40px;width:90pt;height:35px;background-color:#f34e5e;color:#fff}#tucao_toggle .btns input.cancel{width:90pt;height:35px;background-color:#b4b4b4;color:#fff}
+        body,html{  height: 100% !important;  }  #section{  min-height: 100%;  margin-bottom: -150px;}  #section:after{content: "";  display: block;  width: 100%;  height: 150px;}
+
+    </style>
+</head>
+<body>
+<header id="header">
+    <div id="header_all">
+        <div>
+            <h3>CO7漫画</h3>
+            <span>|</span>
+            <a href=""><h3>作者中心</h3></a>
+        </div>
+        <div>
+            <a href="../index.html">首页</a>
+            <a href="">新手指南</a>
+        </div>
+        <div>
+            <a href="autor.html"><img src="../images/touxiang.png" alt=""/></a>
+            <span class="font_hid">大神542542qwe</span>
+        </div>
+        <div>
+            <i class="iconfont">&#xe615;</i>
+        </div>
+    </div>
+</header>
+<section id="section">
+    <div id="section_all" class="clearfix">
+        <div id="section_left">
+            <?php include 'book_common.html'?>
+        </div>
+        <div id="section_right">
+            <div id="section_right_top">
+                <h3>漫画吐槽</h3>
+                <a href="javascript:void(0);" id="open_toggle">吐槽开关</a>
+            </div>
+            <form action="create.php" method="post" id="section_right_middle">
+                <div id="select-book">
+                    <span>选择作品：</span>
+                    <a href="javascript:void(0);" class=""></a>
+                    <ul class="clearfix">
+                        <li><a class="active" href="">全部</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                        <li><a href="">神游国度</a></li>
+                    </ul>
+                </div>
+                <div id="select-chap">
+                    <span>选择章节：</span>
+                    <select>
+                        <option value="" selected="selected">全部</option>
+                    </select>
+                </div>
+                <div id="select-date">
+                    <span>选择时间：</span>
+                    <a href="">全部</a>
+                    <input type="text" style="text-align: center;" class="time" id="dpd1" data-action="time_half" data-date-range="from" name="dateFromStr" value=""> 至
+                    <input type="text" style="text-align: center;"  class="time" id="dpd2" data-action="time_half" data-date-range="to" name="dateToStr" value="">
+                    <input type="submit" id="submit" value="确定">
+                </div>
+            </form>
+            <div id="section_right_bottom">
+                <div class="title">共1条吐槽</div>
+
+                <div class="item">
+                    <img class="avator" src="https://easyread.nosdn.127.net/avatar_qq_f7cb125047f146cbb1d4114c68fbcaaa.jpeg">
+                    <div class="clearfix">
+                        <div class="content">
+                            <p class="top">Akon1</p>
+                            <a class="tucao-text" target="_blank" href="">画风惊奇~~~~~~</a>
+                            <div class="cgrey">
+                                <span class="">《神游国度》</span>
+                                <span class="">1</span>:<span class="">初见</span>
+                                <span class="">第1页</span>
+                            </div>
+                        </div>
+                        <div class="tx-right">
+                            <p class="top">8月23日  </p>
+                            <p>
+                                <a class="fc-9c">删除</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="avator" src="https://easyread.nosdn.127.net/avatar_qq_f7cb125047f146cbb1d4114c68fbcaaa.jpeg">
+                    <div class="clearfix">
+                        <div class="content">
+                            <p class="top">Akon1</p>
+                            <a class="tucao-text" target="_blank" href="">画风惊奇~~~~~~</a>
+                            <div class="cgrey">
+                                <span class="">《神游国度》</span>
+                                <span class="">1</span>:<span class="">初见</span>
+                                <span class="">第1页</span>
+                            </div>
+                        </div>
+                        <div class="tx-right">
+                            <p class="top">8月23日  </p>
+                            <p>
+                                <a class="fc-9c">删除</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="avator" src="https://easyread.nosdn.127.net/avatar_qq_f7cb125047f146cbb1d4114c68fbcaaa.jpeg">
+                    <div class="clearfix">
+                        <div class="content">
+                            <p class="top">Akon1</p>
+                            <a class="tucao-text" target="_blank" href="">画风惊奇~~~~~~</a>
+                            <div class="cgrey">
+                                <span class="">《神游国度》</span>
+                                <span class="">1</span>:<span class="">初见</span>
+                                <span class="">第1页</span>
+                            </div>
+                        </div>
+                        <div class="tx-right">
+                            <p class="top">8月23日  </p>
+                            <p>
+                                <a class="fc-9c">删除</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div style="clear: both"></div>
+
+        <!--话删除-->
+        <form id="modify_del" style="display: none;" action="create.php" method="post">
+            <div class="modify_top">
+                <h3>删除提示</h3>
+                <span class="close_modify">×</span>
+            </div>
+            <div>
+                确认删除整个话！
+            </div>
+            <div>
+                <input type="submit" class="submit_del" value="删除">
+                <input type="button" class="close_btn" value="取消">
+            </div>
+        </form>
+
+        <!--吐槽开关-->
+        <div id="tucao_toggle" style="display: none" >
+            <div class="head">
+                吐槽开关
+                <div class="right">
+                    <a href="javascript:void(0);" id="all_chose">全选</a>
+                    <span id="close_toggle">×</span>
+                </div>
+            </div>
+            <form action="create.php" method="post">
+                <ul>
+                    <li>神游国度
+                        <div class="right">
+                            <input type="checkbox" checked="" name="img[]"  class="chbox" value="1" id="123">
+                            <label for="123">允许吐槽</label>
+                        </div>
+                    </li>
+                    <li>傲视九重天
+                        <div class="right">
+                            <input type="checkbox" checked="" name="img[]" class="chbox" value="1" id="124">
+                            <label for="124">允许吐槽</label>
+                        </div>
+                    </li>
+                    <li>傲视九重天
+                        <div class="right">
+                            <input type="checkbox"  name="img[]"  class="chbox" value="1" id="1245">
+                            <label for="1245">允许吐槽</label>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btns">
+                    <input type="submit" class="submit" value="确定">
+                    <input type="button" class="cancel" value="取消">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</section>
+<?php include '../common/footer.html'?>
+</body>
+<script src="../common/js/jquery-1.8.3.min.js"></script>
+<script src="../common/js/foundation-datepicker.js"></script>
+<script src="../common/js/foundation-datepicker.zh-CN.js"></script>
+<script src="../book/js/tucao.js"></script>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport"
+					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<title> CO7 漫画</title>
+		<link rel="shortcut icon" href="../images/20170814113613362_easyicon_net_32.ico"/>
+		<link rel="stylesheet" href="../common/css/footer.css"/>
+		<link rel="stylesheet" href="../common/css/reset.css"/>
+		<link rel="stylesheet" href="../common/icon/iconfont.css"/>
+		<link rel="stylesheet" href="../book/css/book_header.css"/>
+		<link rel="stylesheet" type="text/css" href="../book/css/data.css">
+		<style>
+			 
+				body,html{  height: 100% !important;  }  #section{  min-height: 100%;  margin-bottom: -150px;}  #section:after{content: "";  display: block;  width: 100%;  height: 150px;}
+
+		</style>
+</head>
+<body>
+<header id="header">
+		<div id="header_all">
+				<div>
+						<h3>CO7漫画</h3>
+						<span>|</span>
+						<a href=""><h3>作者中心</h3></a>
+				</div>
+				<div>
+						<a href="../index.html">首页</a>
+						<a href="">新手指南</a>
+				</div>
+				<div>
+						<a href="autor.html"><img src="../images/touxiang.png" alt=""/></a>
+						<span class="font_hid">大神542542qwe</span>
+				</div>
+				<div>
+						<i class="iconfont">&#xe615;</i>
+				</div>
+		</div>
+</header>
+<section id="section">
+		<div id="section_all" class="clearfix">
+				<div id="section_left">
+						<?php include 'book_common.html'?>
+				</div>
+				<div id="section_right">
+						<div id="section_right_top">
+								<h3>数据分析</h3>
+						</div>
+						<div id="section_right_bottom">
+								
+								<div id="select-book">
+										<span>选择作品：</span>
+										<ul class="clearfix">
+											<li class="active" ><a href="">全部</a></li>
+													<li><a href="">神游国度</a></li>
+													<li><a href="">140</a></li>
+													<li><a href="">神游国度</a></li>
+													<li><a href="">140</a></li>
+													<li><a href="">神游国度</a></li>
+													<li><a href="">140</a></li>
+													<li><a href="">神游国度</a></li>
+													<li><a href="">140</a></li>
+													<li><a href="">神游国度</a></li>
+													<li><a href="">140</a></li>
+													<li><a href="">神游国度</a></li>
+										</ul>
+								</div>
+
+								<div class="mh-panel">
+									<h2 class="mh-panel-heading">每日吐槽数（最近7天）</h2>
+									<div class="chart-area">
+											 <div class="sp-nodata" style="display: none">
+														真心没有分析啊，求求你
+														<a href="/book/create">发个漫画</a>
+														让我来分析啦！
+											</div>
+
+											<div id="container_one" style="min-width:400px;height:400px"></div>
+
+									</div>
+								</div>
+
+								 <div class="mh-panel">
+									<h2 class="mh-panel-heading">每点击数（最近7天）</h2>
+									<div class="chart-area">
+											 <div class="sp-nodata" style="display: none;">
+														真心没有分析啊，求求你
+														<a href="/book/create">发个漫画</a>
+														让我来分析啦！
+											</div>
+
+											<div id="container_two" style="min-width:400px;height:400px"></div>
+
+									</div>
+								</div>
+				
+						</div>
+				</div>
+				<div style="clear: both"></div>
+
+		</div>
+
+</section>
+<?php include '../common/footer.html'?>
+</body>
+<script src="../common/js/jquery-1.8.3.min.js"></script>
+<script src="../common/js/highcharts.js"></script>
+<script src="js/data.js"></script>
+</html>
